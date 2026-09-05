@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gaming Dock - Your ultimate destination for discovering the latest games, updates, and gaming content. Explore action, adventure, racing, and more.">
+    <meta name="keywords" content="gaming, games, video games, gaming news, game updates, gaming platform">
+    <meta name="author" content="Gaming Dock">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Gaming Dock - Your Ultimate Gaming Destination">
+    <meta property="og:description" content="Discover the latest games, updates, and gaming content all in one place.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./assets/og-image.jpg">
+    
+    <title>Gaming Dock - Your Ultimate Gaming Destination</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">GAMING<span class="logo-accent">DOCK</span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#games" class="nav-link">Games</a></li>
+                <li><a href="#updates" class="nav-link">Updates</a></li>
+                <li><a href="#categories" class="nav-link">Categories</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="hero-grid"></div>
+            <div class="hero-glow"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-logo">
+                <span class="hero-logo-text">GAMING<span class="hero-logo-accent">DOCK</span></span>
+            </div>
+            <h1 class="hero-title">YOUR ULTIMATE GAMING DOCK</h1>
+            <p class="hero-description">Discover the latest games, updates, and gaming content all in one place. Your gaming journey starts here.</p>
+            <div class="hero-buttons">
+                <a href="#games" class="btn btn-primary">EXPLORE GAMES</a>
+                <a href="#updates" class="btn btn-secondary">LATEST UPDATES</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section class="games-section" id="games">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">EXPLORE GAMES</h2>
+                <p class="section-subtitle">Discover your next gaming adventure</p>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" id="searchInput" class="search-input" placeholder="Search games by name...">
+                <span class="search-icon">🔍</span>
+            </div>
+
+            <!-- Categories Filter -->
+            <div class="categories-filter" id="categories">
+                <button class="category-btn active" data-category="all">All Games</button>
+                <button class="category-btn" data-category="Action">Action</button>
+                <button class="category-btn" data-category="Adventure">Adventure</button>
+                <button class="category-btn" data-category="Racing">Racing</button>
+                <button class="category-btn" data-category="Simulator">Simulator</button>
+                <button class="category-btn" data-category="Story Mode">Story Mode</button>
+                <button class="category-btn" data-category="Open World">Open World</button>
+                <button class="category-btn" data-category="Multiplayer">Multiplayer</button>
+            </div>
+
+            <!-- Games Grid -->
+            <div class="games-grid" id="gamesGrid">
+                <!-- Games will be dynamically loaded here -->
+            </div>
+
+            <!-- No Results Message -->
+            <div class="no-results" id="noResults">
+                <p>No games found matching your search.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Updates Section -->
+    <section class="updates-section" id="updates">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">LATEST GAME UPDATES</h2>
+                <p class="section-subtitle">Stay up to date with the gaming world</p>
+            </div>
+
+            <div class="updates-grid" id="updatesGrid">
+                <!-- Updates will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">ABOUT GAMING DOCK</h2>
+                <p class="section-subtitle">Your ultimate gaming destination</p>
+            </div>
+            <div class="about-content">
+                <div class="about-card">
+                    <div class="about-icon">🎮</div>
+                    <h3>Extensive Game Library</h3>
+                    <p>Discover thousands of games across all genres and platforms. From indie gems to AAA titles.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">📰</div>
+                    <h3>Latest Updates</h3>
+                    <p>Stay informed with the latest gaming news, patches, and release announcements.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">🌟</div>
+                    <h3>Curated Content</h3>
+                    <p>Hand-picked recommendations and detailed game information to help you choose your next adventure.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">GET IN TOUCH</h2>
+                <p class="section-subtitle">Have questions? We'd love to hear from you</p>
+            </div>
+            <div class="contact-content">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">SEND MESSAGE</button>
+                </form>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Email</h3>
+                        <p>contact@gamingdock.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Follow Us</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link">Facebook</a>
+                            <a href="#" class="social-link">Twitter</a>
+                            <a href="#" class="social-link">Instagram</a>
+                            <a href="#" class="social-link">Discord</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-text">GAMING<span class="logo-accent">DOCK</span></span>
+                    </div>
+                    <p class="footer-description">Your ultimate destination for gaming. Discover, explore, and stay updated with the latest in the gaming world.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#games">Games</a></li>
+                        <li><a href="#updates">Updates</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="#games">Action</a></li>
+                        <li><a href="#games">Adventure</a></li>
+                        <li><a href="#games">Racing</a></li>
+                        <li><a href="#games">Multiplayer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Discord</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Gaming Dock. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Game Detail Modal -->
+    <div class="modal" id="gameModal">
+        <div class="modal-content">
+            <span class="modal-close" id="modalClose">&times;</span>
+            <div class="modal-body" id="modalBody">
+                <!-- Game details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+  </html>
