@@ -276,14 +276,17 @@ document.addEventListener("DOMContentLoaded", function () {
     loadUserData();
 
     renderGames();
+
     renderUpdates();
 
     setupEventListeners();
+
     setupCookieConsent();
 
     updateUserUI();
 
     navigateTo("home");
+
 });
 
 
@@ -295,18 +298,26 @@ function loadUserData() {
 
     try {
 
-        const savedUser = localStorage.getItem("gamingDockUser");
+        const savedUser =
+            localStorage.getItem("gamingDockUser");
 
         if (savedUser) {
+
             currentUser = JSON.parse(savedUser);
+
         }
 
     } catch (error) {
 
-        console.error("Could not load user data:", error);
+        console.error(
+            "Could not load user data:",
+            error
+        );
+
         currentUser = null;
 
     }
+
 }
 
 
@@ -319,19 +330,29 @@ function saveUserData() {
     try {
 
         if (currentUser) {
+
             localStorage.setItem(
                 "gamingDockUser",
                 JSON.stringify(currentUser)
             );
+
         } else {
-            localStorage.removeItem("gamingDockUser");
+
+            localStorage.removeItem(
+                "gamingDockUser"
+            );
+
         }
 
     } catch (error) {
 
-        console.error("Could not save user data:", error);
+        console.error(
+            "Could not save user data:",
+            error
+        );
 
     }
+
 }
 
 
@@ -341,174 +362,259 @@ function saveUserData() {
 
 function setupEventListeners() {
 
-    /* Navigation */
+    /* -----------------------------------------
+       NAVIGATION
+       ----------------------------------------- */
 
-    document.querySelectorAll(".nav-link").forEach(function (link) {
+    document
+        .querySelectorAll(".nav-link")
+        .forEach(function (link) {
 
-        link.addEventListener("click", function (event) {
+            link.addEventListener(
+                "click",
+                function (event) {
 
-            event.preventDefault();
+                    event.preventDefault();
 
-            const page = this.getAttribute("data-page");
+                    const page =
+                        this.getAttribute("data-page");
 
-            if (page) {
-                navigateTo(page);
-            }
+                    if (page) {
 
-            closeHamburger();
+                        navigateTo(page);
+
+                    }
+
+                    closeHamburger();
+
+                }
+            );
 
         });
 
-    });
 
+    /* -----------------------------------------
+       HAMBURGER
+       ----------------------------------------- */
 
-    /* Hamburger */
+    const hamburger =
+        document.getElementById("hamburger");
 
-    const hamburger = document.getElementById("hamburger");
-    const navMenu = document.getElementById("navMenu");
+    const navMenu =
+        document.getElementById("navMenu");
+
 
     if (hamburger && navMenu) {
 
-        hamburger.addEventListener("click", function () {
+        hamburger.addEventListener(
+            "click",
+            function () {
 
-            hamburger.classList.toggle("active");
-            navMenu.classList.toggle("active");
+                hamburger.classList.toggle(
+                    "active"
+                );
 
-        });
+                navMenu.classList.toggle(
+                    "active"
+                );
+
+            }
+        );
 
     }
 
 
-    /* Search */
+    /* -----------------------------------------
+       SEARCH
+       ----------------------------------------- */
 
-    const searchInput = document.getElementById("searchInput");
+    const searchInput =
+        document.getElementById("searchInput");
+
 
     if (searchInput) {
 
-        searchInput.addEventListener("input", function () {
+        searchInput.addEventListener(
+            "input",
+            function () {
 
-            handleSearch(this.value);
+                handleSearch(this.value);
 
-        });
+            }
+        );
 
     }
 
 
-    /* Category buttons */
+    /* -----------------------------------------
+       CATEGORY BUTTONS
+       ----------------------------------------- */
 
-    document.querySelectorAll("[data-category]").forEach(function (button) {
+    document
+        .querySelectorAll("[data-category]")
+        .forEach(function (button) {
 
-        button.addEventListener("click", function () {
+            button.addEventListener(
+                "click",
+                function () {
 
-            const category = this.getAttribute("data-category");
+                    const category =
+                        this.getAttribute(
+                            "data-category"
+                        );
 
-            if (category) {
-                filterGames(category);
-            }
+                    if (category) {
+
+                        filterGames(category);
+
+                    }
+
+                }
+            );
 
         });
 
-    });
 
+    /* -----------------------------------------
+       LOGIN FORM
+       ----------------------------------------- */
 
-    /* Login form */
+    const loginForm =
+        document.getElementById("loginForm");
 
-    const loginForm = document.getElementById("loginForm");
 
     if (loginForm) {
 
-        loginForm.addEventListener("submit", function (event) {
+        loginForm.addEventListener(
+            "submit",
+            function (event) {
 
-            event.preventDefault();
+                event.preventDefault();
 
-            handleLogin();
+                handleLogin();
 
-        });
+            }
+        );
 
     }
 
 
-    /* Register form */
+    /* -----------------------------------------
+       REGISTER FORM
+       ----------------------------------------- */
 
-    const registerForm = document.getElementById("registerForm");
+    const registerForm =
+        document.getElementById("registerForm");
+
 
     if (registerForm) {
 
-        registerForm.addEventListener("submit", function (event) {
+        registerForm.addEventListener(
+            "submit",
+            function (event) {
 
-            event.preventDefault();
+                event.preventDefault();
 
-            handleRegister();
+                handleRegister();
 
-        });
-
-    }
-
-
-    /* Contact form */
-
-    const contactForm = document.getElementById("contactForm");
-
-    if (contactForm) {
-
-        contactForm.addEventListener("submit", function (event) {
-
-            event.preventDefault();
-
-            handleContactForm();
-
-        });
+            }
+        );
 
     }
 
 
-    /* Cookie accept */
+    /*
+       CONTACT FORM
 
-    const cookieAccept = document.getElementById("cookieAccept");
+       IMPORTANT:
+       No event.preventDefault() here.
+
+       The Contact Form is submitted directly
+       to Formspree through the HTML form action.
+
+       Form action:
+       https://formspree.io/f/xbgjaype
+    */
+
+
+    /* -----------------------------------------
+       COOKIE ACCEPT
+       ----------------------------------------- */
+
+    const cookieAccept =
+        document.getElementById("cookieAccept");
+
 
     if (cookieAccept) {
 
-        cookieAccept.addEventListener("click", function () {
+        cookieAccept.addEventListener(
+            "click",
+            function () {
 
-            localStorage.setItem("gamingDockCookies", "accepted");
+                localStorage.setItem(
+                    "gamingDockCookies",
+                    "accepted"
+                );
 
-            hideCookieConsent();
+                hideCookieConsent();
 
-        });
+            }
+        );
 
     }
 
 
-    /* Cookie decline */
+    /* -----------------------------------------
+       COOKIE DECLINE
+       ----------------------------------------- */
 
-    const cookieDecline = document.getElementById("cookieDecline");
+    const cookieDecline =
+        document.getElementById("cookieDecline");
+
 
     if (cookieDecline) {
 
-        cookieDecline.addEventListener("click", function () {
+        cookieDecline.addEventListener(
+            "click",
+            function () {
 
-            localStorage.setItem("gamingDockCookies", "declined");
+                localStorage.setItem(
+                    "gamingDockCookies",
+                    "declined"
+                );
 
-            hideCookieConsent();
+                hideCookieConsent();
 
-        });
+            }
+        );
 
     }
 
 
-    /* Close modal */
+    /* -----------------------------------------
+       GAME MODAL
+       ----------------------------------------- */
 
-    const modal = document.getElementById("gameDetailsModal");
+    const modal =
+        document.getElementById(
+            "gameDetailsModal"
+        );
+
 
     if (modal) {
 
-        modal.addEventListener("click", function (event) {
+        modal.addEventListener(
+            "click",
+            function (event) {
 
-            if (event.target === modal) {
-                closeGameDetails();
+                if (event.target === modal) {
+
+                    closeGameDetails();
+
+                }
+
             }
-
-        });
+        );
 
     }
 
@@ -521,7 +627,9 @@ function setupEventListeners() {
 
 function navigateTo(page) {
 
-    const allPages = document.querySelectorAll(".page");
+    const allPages =
+        document.querySelectorAll(".page");
+
 
     allPages.forEach(function (pageElement) {
 
@@ -530,11 +638,16 @@ function navigateTo(page) {
     });
 
 
-    const pageElement = document.getElementById(page);
+    const pageElement =
+        document.getElementById(page);
+
 
     if (!pageElement) {
 
-        console.warn("Page not found:", page);
+        console.warn(
+            "Page not found:",
+            page
+        );
 
         return;
 
@@ -572,15 +685,28 @@ function navigateTo(page) {
 
 function closeHamburger() {
 
-    const hamburger = document.getElementById("hamburger");
-    const navMenu = document.getElementById("navMenu");
+    const hamburger =
+        document.getElementById("hamburger");
+
+    const navMenu =
+        document.getElementById("navMenu");
+
 
     if (hamburger) {
-        hamburger.classList.remove("active");
+
+        hamburger.classList.remove(
+            "active"
+        );
+
     }
 
+
     if (navMenu) {
-        navMenu.classList.remove("active");
+
+        navMenu.classList.remove(
+            "active"
+        );
+
     }
 
 }
@@ -592,11 +718,17 @@ function closeHamburger() {
 
 function renderGames() {
 
-    const container = document.getElementById("gamesContainer");
+    const container =
+        document.getElementById(
+            "gamesContainer"
+        );
+
 
     if (!container) {
 
-        console.warn("gamesContainer not found.");
+        console.warn(
+            "gamesContainer not found."
+        );
 
         return;
 
@@ -606,13 +738,19 @@ function renderGames() {
     container.innerHTML = "";
 
 
+    const noGamesMessage =
+        document.getElementById(
+            "noGamesMessage"
+        );
+
+
     if (filteredGames.length === 0) {
 
-        const noGamesMessage =
-            document.getElementById("noGamesMessage");
-
         if (noGamesMessage) {
-            noGamesMessage.style.display = "block";
+
+            noGamesMessage.style.display =
+                "block";
+
         }
 
         return;
@@ -620,30 +758,36 @@ function renderGames() {
     }
 
 
-    const noGamesMessage =
-        document.getElementById("noGamesMessage");
-
     if (noGamesMessage) {
-        noGamesMessage.style.display = "none";
+
+        noGamesMessage.style.display =
+            "none";
+
     }
 
 
     filteredGames.forEach(function (game) {
 
-        const card = document.createElement("div");
+        const card =
+            document.createElement("div");
+
 
         card.className = "game-card";
 
 
         card.innerHTML = `
+
             <div class="game-image">
+
                 <img
                     src="${game.cover}"
                     alt="${escapeHTML(game.title)}"
                     loading="lazy"
                     onerror="this.src='https://via.placeholder.com/600x400?text=Gaming+Dock'"
                 >
+
             </div>
+
 
             <div class="game-card-content">
 
@@ -651,15 +795,30 @@ function renderGames() {
                     ${escapeHTML(game.category)}
                 </span>
 
-                <h3>${escapeHTML(game.title)}</h3>
+                <h3>
+                    ${escapeHTML(game.title)}
+                </h3>
 
-                <p>${escapeHTML(game.description)}</p>
+                <p>
+                    ${escapeHTML(game.description)}
+                </p>
 
                 <div class="game-meta">
-                    <span>${escapeHTML(game.genre)}</span>
-                    <span>${escapeHTML(game.platform)}</span>
-                    <span>${escapeHTML(game.releaseYear)}</span>
+
+                    <span>
+                        ${escapeHTML(game.genre)}
+                    </span>
+
+                    <span>
+                        ${escapeHTML(game.platform)}
+                    </span>
+
+                    <span>
+                        ${escapeHTML(game.releaseYear)}
+                    </span>
+
                 </div>
+
 
                 <button
                     class="btn btn-primary"
@@ -669,6 +828,7 @@ function renderGames() {
                 </button>
 
             </div>
+
         `;
 
 
@@ -685,7 +845,10 @@ function renderGames() {
 
 function handleSearch(searchTerm) {
 
-    const term = searchTerm.trim().toLowerCase();
+    const term =
+        String(searchTerm)
+            .trim()
+            .toLowerCase();
 
 
     if (!term) {
@@ -694,16 +857,36 @@ function handleSearch(searchTerm) {
 
     } else {
 
-        filteredGames = games.filter(function (game) {
+        filteredGames =
+            games.filter(function (game) {
 
-            return (
-                game.title.toLowerCase().includes(term) ||
-                game.genre.toLowerCase().includes(term) ||
-                game.category.toLowerCase().includes(term) ||
-                game.description.toLowerCase().includes(term)
-            );
+                return (
 
-        });
+                    game.title
+                        .toLowerCase()
+                        .includes(term)
+
+                    ||
+
+                    game.genre
+                        .toLowerCase()
+                        .includes(term)
+
+                    ||
+
+                    game.category
+                        .toLowerCase()
+                        .includes(term)
+
+                    ||
+
+                    game.description
+                        .toLowerCase()
+                        .includes(term)
+
+                );
+
+            });
 
     }
 
@@ -719,22 +902,37 @@ function handleSearch(searchTerm) {
 
 function filterGames(category) {
 
-    if (!category || category.toLowerCase() === "all") {
+    if (
+        !category ||
+        category.toLowerCase() === "all"
+    ) {
 
         filteredGames = [...games];
 
     } else {
 
-        const selectedCategory = category.toLowerCase();
+        const selectedCategory =
+            category.toLowerCase();
 
-        filteredGames = games.filter(function (game) {
 
-            return (
-                game.category.toLowerCase() === selectedCategory ||
-                game.genre.toLowerCase() === selectedCategory
-            );
+        filteredGames =
+            games.filter(function (game) {
 
-        });
+                return (
+
+                    game.category
+                        .toLowerCase()
+                        === selectedCategory
+
+                    ||
+
+                    game.genre
+                        .toLowerCase()
+                        === selectedCategory
+
+                );
+
+            });
 
     }
 
@@ -742,7 +940,9 @@ function filterGames(category) {
     renderGames();
 
 
-    const gamesSection = document.getElementById("games");
+    const gamesSection =
+        document.getElementById("games");
+
 
     if (gamesSection) {
 
@@ -761,16 +961,20 @@ function filterGames(category) {
 
 function viewGameDetails(gameId) {
 
-    const game = games.find(function (item) {
+    const game =
+        games.find(function (item) {
 
-        return item.id === Number(gameId);
+            return item.id === Number(gameId);
 
-    });
+        });
 
 
     if (!game) {
 
-        console.error("Game not found:", gameId);
+        console.error(
+            "Game not found:",
+            gameId
+        );
 
         return;
 
@@ -780,7 +984,11 @@ function viewGameDetails(gameId) {
     currentGame = game;
 
 
-    const modal = document.getElementById("gameDetailsModal");
+    const modal =
+        document.getElementById(
+            "gameDetailsModal"
+        );
+
 
     if (!modal) {
 
@@ -796,13 +1004,19 @@ function viewGameDetails(gameId) {
 
 
     const detailsContainer =
-        modal.querySelector(".modal-content") ||
-        modal.querySelector(".game-details");
+        modal.querySelector(
+            ".modal-content"
+        ) ||
+        modal.querySelector(
+            ".game-details"
+        );
 
 
     if (!detailsContainer) {
 
-        console.warn("Modal content container not found.");
+        console.warn(
+            "Modal content container not found."
+        );
 
         return;
 
@@ -814,30 +1028,26 @@ function viewGameDetails(gameId) {
 
     if (currentUser) {
 
-        if (game.downloadUrl) {
+        downloadButtonHTML = `
 
-            downloadButtonHTML = `
-                <button
-                    class="btn btn-primary"
-                    onclick="downloadGame(${game.id})"
-                >
-                    DOWNLOAD GAME
-                </button>
-            `;
+            <button
+                class="btn btn-primary"
+                onclick="downloadGame(${game.id})"
+            >
+                DOWNLOAD GAME
+            </button>
 
-        } else {
+        `;
 
-            downloadButtonHTML = `
-                <button
-                    class="btn btn-primary"
-                    onclick="downloadGame(${game.id})"
-                >
-                    DOWNLOAD GAME
-                </button>
+
+        if (!game.downloadUrl) {
+
+            downloadButtonHTML += `
 
                 <p class="download-info">
                     Download link will be available soon.
                 </p>
+
             `;
 
         }
@@ -845,6 +1055,7 @@ function viewGameDetails(gameId) {
     } else {
 
         downloadButtonHTML = `
+
             <button
                 class="btn btn-primary"
                 onclick="promptLogin()"
@@ -855,6 +1066,7 @@ function viewGameDetails(gameId) {
             <p class="download-info">
                 You must be logged in to download this game.
             </p>
+
         `;
 
     }
@@ -870,6 +1082,7 @@ function viewGameDetails(gameId) {
             &times;
         </button>
 
+
         <div class="game-details-inner">
 
             <img
@@ -879,17 +1092,23 @@ function viewGameDetails(gameId) {
                 onerror="this.src='https://via.placeholder.com/600x400?text=Gaming+Dock'"
             >
 
+
             <div class="game-details-info">
 
                 <span class="game-category">
                     ${escapeHTML(game.category)}
                 </span>
 
-                <h2>${escapeHTML(game.title)}</h2>
+
+                <h2>
+                    ${escapeHTML(game.title)}
+                </h2>
+
 
                 <p class="game-description">
                     ${escapeHTML(game.description)}
                 </p>
+
 
                 <div class="game-details-meta">
 
@@ -910,6 +1129,7 @@ function viewGameDetails(gameId) {
 
                 </div>
 
+
                 <div class="download-area">
                     ${downloadButtonHTML}
                 </div>
@@ -921,18 +1141,32 @@ function viewGameDetails(gameId) {
 
         <div class="requirements">
 
-            <h3>System Requirements</h3>
+            <h3>
+                System Requirements
+            </h3>
 
-            <h4>Minimum</h4>
+
+            <h4>
+                Minimum
+            </h4>
+
 
             <p>
-                ${escapeHTML(game.systemRequirements.minimum)}
+                ${escapeHTML(
+                    game.systemRequirements.minimum
+                )}
             </p>
 
-            <h4>Recommended</h4>
+
+            <h4>
+                Recommended
+            </h4>
+
 
             <p>
-                ${escapeHTML(game.systemRequirements.recommended)}
+                ${escapeHTML(
+                    game.systemRequirements.recommended
+                )}
             </p>
 
         </div>
@@ -940,23 +1174,32 @@ function viewGameDetails(gameId) {
 
         <div class="screenshots">
 
-            <h3>Screenshots</h3>
+            <h3>
+                Screenshots
+            </h3>
+
 
             <div class="screenshots-grid">
 
-                ${game.screenshots.map(function (image, index) {
+                ${
+                    game.screenshots
+                        .map(function (image, index) {
 
-                    return `
-                        <img
-                            src="${image}"
-                            alt="${escapeHTML(game.title)} screenshot ${index + 1}"
-                            loading="lazy"
-                            onclick="openScreenshot('${image}')"
-                            onerror="this.src='https://via.placeholder.com/1000x550?text=Screenshot'"
-                        >
-                    `;
+                            return `
 
-                }).join("")}
+                                <img
+                                    src="${image}"
+                                    alt="${escapeHTML(game.title)} screenshot ${index + 1}"
+                                    loading="lazy"
+                                    onclick="openScreenshot('${image}')"
+                                    onerror="this.src='https://via.placeholder.com/1000x550?text=Screenshot'"
+                                >
+
+                            `;
+
+                        })
+                        .join("")
+                }
 
             </div>
 
@@ -967,7 +1210,8 @@ function viewGameDetails(gameId) {
 
     modal.classList.add("active");
 
-    document.body.style.overflow = "hidden";
+    document.body.style.overflow =
+        "hidden";
 
 }
 
@@ -979,7 +1223,9 @@ function viewGameDetails(gameId) {
 function closeGameDetails() {
 
     const modal =
-        document.getElementById("gameDetailsModal");
+        document.getElementById(
+            "gameDetailsModal"
+        );
 
 
     if (modal) {
@@ -1002,7 +1248,18 @@ function closeGameDetails() {
 
 function openScreenshot(imageUrl) {
 
-    window.open(imageUrl, "_blank");
+    if (!imageUrl) {
+
+        return;
+
+    }
+
+
+    window.open(
+        imageUrl,
+        "_blank",
+        "noopener,noreferrer"
+    );
 
 }
 
@@ -1013,11 +1270,12 @@ function openScreenshot(imageUrl) {
 
 function downloadGame(gameId) {
 
-    const game = games.find(function (item) {
+    const game =
+        games.find(function (item) {
 
-        return item.id === Number(gameId);
+            return item.id === Number(gameId);
 
-    });
+        });
 
 
     if (!game) {
@@ -1053,7 +1311,8 @@ function downloadGame(gameId) {
     }
 
 
-    window.location.href = game.downloadUrl;
+    window.location.href =
+        game.downloadUrl;
 
 }
 
@@ -1078,23 +1337,36 @@ function promptLogin() {
 function handleLogin() {
 
     const emailInput =
-        document.getElementById("loginEmail");
+        document.getElementById(
+            "loginEmail"
+        );
 
     const passwordInput =
-        document.getElementById("loginPassword");
+        document.getElementById(
+            "loginPassword"
+        );
 
 
-    if (!emailInput || !passwordInput) {
+    if (
+        !emailInput ||
+        !passwordInput
+    ) {
 
-        console.warn("Login form fields not found.");
+        console.warn(
+            "Login form fields not found."
+        );
 
         return;
 
     }
 
 
-    const email = emailInput.value.trim();
-    const password = passwordInput.value;
+    const email =
+        emailInput.value.trim();
+
+
+    const password =
+        passwordInput.value;
 
 
     if (!email || !password) {
@@ -1110,12 +1382,12 @@ function handleLogin() {
 
 
     /*
-       DEMO FRONTEND LOGIN
+       FRONTEND DEMO AUTHENTICATION
 
-       This does NOT store the password.
-       For real production authentication,
-       use Firebase Auth, Supabase Auth,
-       Auth0 or a secure backend.
+       The password is NOT stored.
+
+       For production authentication use
+       a secure authentication provider/backend.
     */
 
 
@@ -1129,7 +1401,8 @@ function handleLogin() {
         email: email,
 
         joined:
-            new Date().toLocaleDateString()
+            new Date()
+                .toLocaleDateString()
 
     };
 
@@ -1161,16 +1434,24 @@ function handleLogin() {
 function handleRegister() {
 
     const nameInput =
-        document.getElementById("registerName");
+        document.getElementById(
+            "registerName"
+        );
 
     const emailInput =
-        document.getElementById("registerEmail");
+        document.getElementById(
+            "registerEmail"
+        );
 
     const passwordInput =
-        document.getElementById("registerPassword");
+        document.getElementById(
+            "registerPassword"
+        );
 
     const confirmInput =
-        document.getElementById("registerConfirmPassword");
+        document.getElementById(
+            "registerConfirmPassword"
+        );
 
 
     if (
@@ -1179,16 +1460,26 @@ function handleRegister() {
         !passwordInput
     ) {
 
-        console.warn("Register form fields not found.");
+        console.warn(
+            "Register form fields not found."
+        );
 
         return;
 
     }
 
 
-    const name = nameInput.value.trim();
-    const email = emailInput.value.trim();
-    const password = passwordInput.value;
+    const name =
+        nameInput.value.trim();
+
+
+    const email =
+        emailInput.value.trim();
+
+
+    const password =
+        passwordInput.value;
+
 
     const confirmPassword =
         confirmInput
@@ -1196,7 +1487,11 @@ function handleRegister() {
             : password;
 
 
-    if (!name || !email || !password) {
+    if (
+        !name ||
+        !email ||
+        !password
+    ) {
 
         showFormMessage(
             "Please fill in all required fields.",
@@ -1220,7 +1515,10 @@ function handleRegister() {
     }
 
 
-    if (password !== confirmPassword) {
+    if (
+        password !==
+        confirmPassword
+    ) {
 
         showFormMessage(
             "Passwords do not match.",
@@ -1235,7 +1533,7 @@ function handleRegister() {
     /*
        DEMO ACCOUNT
 
-       Password is intentionally NOT saved
+       Password is intentionally NOT stored
        in localStorage.
     */
 
@@ -1247,7 +1545,8 @@ function handleRegister() {
         email: email,
 
         joined:
-            new Date().toLocaleDateString()
+            new Date()
+                .toLocaleDateString()
 
     };
 
@@ -1296,16 +1595,23 @@ function logout() {
 function updateUserUI() {
 
     const profileNav =
-        document.getElementById("profileNav");
+        document.getElementById(
+            "profileNav"
+        );
+
 
     const loginNav =
-        document.getElementById("loginNav");
+        document.getElementById(
+            "loginNav"
+        );
 
 
     if (profileNav) {
 
         profileNav.style.display =
-            currentUser ? "" : "none";
+            currentUser
+                ? ""
+                : "none";
 
     }
 
@@ -1313,23 +1619,29 @@ function updateUserUI() {
     if (loginNav) {
 
         loginNav.style.display =
-            currentUser ? "none" : "";
+            currentUser
+                ? "none"
+                : "";
 
     }
 
 
     const userNameElements =
-        document.querySelectorAll(".user-name");
+        document.querySelectorAll(
+            ".user-name"
+        );
 
 
-    userNameElements.forEach(function (element) {
+    userNameElements.forEach(
+        function (element) {
 
-        element.textContent =
-            currentUser
-                ? currentUser.name
-                : "Guest";
+            element.textContent =
+                currentUser
+                    ? currentUser.name
+                    : "Guest";
 
-    });
+        }
+    );
 
 }
 
@@ -1341,7 +1653,9 @@ function updateUserUI() {
 function renderProfile() {
 
     const profileContainer =
-        document.getElementById("profileContent");
+        document.getElementById(
+            "profileContent"
+        );
 
 
     if (!profileContainer) {
@@ -1357,7 +1671,9 @@ function renderProfile() {
 
             <div class="profile-login-message">
 
-                <h2>Login Required</h2>
+                <h2>
+                    Login Required
+                </h2>
 
                 <p>
                     Please login to view your Gaming Dock profile.
@@ -1384,25 +1700,38 @@ function renderProfile() {
         <div class="profile-card">
 
             <div class="profile-avatar">
+
                 ${escapeHTML(
                     currentUser.name
                         .charAt(0)
                         .toUpperCase()
                 )}
+
             </div>
 
+
             <h2>
-                ${escapeHTML(currentUser.name)}
+                ${escapeHTML(
+                    currentUser.name
+                )}
             </h2>
 
+
             <p>
-                ${escapeHTML(currentUser.email)}
+                ${escapeHTML(
+                    currentUser.email
+                )}
             </p>
+
 
             <p>
                 Member since:
-                ${escapeHTML(currentUser.joined || "Recently")}
+                ${escapeHTML(
+                    currentUser.joined ||
+                    "Recently"
+                )}
             </p>
+
 
             <button
                 class="btn btn-primary"
@@ -1425,12 +1754,16 @@ function renderProfile() {
 function renderUpdates() {
 
     const container =
-        document.getElementById("updatesContainer");
+        document.getElementById(
+            "updatesContainer"
+        );
 
 
     if (!container) {
 
-        console.warn("updatesContainer not found.");
+        console.warn(
+            "updatesContainer not found."
+        );
 
         return;
 
@@ -1446,7 +1779,9 @@ function renderUpdates() {
 
             <div class="no-updates">
 
-                <h3>Latest Game Updates</h3>
+                <h3>
+                    Latest Game Updates
+                </h3>
 
                 <p>
                     New Release Games Update will appear here.
@@ -1461,57 +1796,72 @@ function renderUpdates() {
     }
 
 
-    updates.forEach(function (update) {
+    updates.forEach(
+        function (update) {
 
-        const card =
-            document.createElement("article");
-
-
-        card.className = "update-card";
-
-
-        card.innerHTML = `
-
-            <div class="update-image">
-
-                <img
-                    src="${update.image}"
-                    alt="${escapeHTML(update.title)}"
-                    loading="lazy"
-                    onerror="this.src='https://via.placeholder.com/700x400?text=Gaming+Dock+Update'"
-                >
-
-            </div>
-
-            <div class="update-content">
-
-                <span class="update-date">
-                    ${escapeHTML(update.date)}
-                </span>
-
-                <h3>
-                    ${escapeHTML(update.title)}
-                </h3>
-
-                <p>
-                    ${escapeHTML(update.description)}
-                </p>
-
-                <button
-                    class="btn btn-secondary"
-                    onclick="readUpdate(${update.id})"
-                >
-                    READ MORE
-                </button>
-
-            </div>
-
-        `;
+            const card =
+                document.createElement(
+                    "article"
+                );
 
 
-        container.appendChild(card);
+            card.className =
+                "update-card";
 
-    });
+
+            card.innerHTML = `
+
+                <div class="update-image">
+
+                    <img
+                        src="${update.image}"
+                        alt="${escapeHTML(update.title)}"
+                        loading="lazy"
+                        onerror="this.src='https://via.placeholder.com/700x400?text=Gaming+Dock+Update'"
+                    >
+
+                </div>
+
+
+                <div class="update-content">
+
+                    <span class="update-date">
+                        ${escapeHTML(
+                            update.date
+                        )}
+                    </span>
+
+
+                    <h3>
+                        ${escapeHTML(
+                            update.title
+                        )}
+                    </h3>
+
+
+                    <p>
+                        ${escapeHTML(
+                            update.description
+                        )}
+                    </p>
+
+
+                    <button
+                        class="btn btn-secondary"
+                        onclick="readUpdate(${update.id})"
+                    >
+                        READ MORE
+                    </button>
+
+                </div>
+
+            `;
+
+
+            container.appendChild(card);
+
+        }
+    );
 
 }
 
@@ -1523,11 +1873,14 @@ function renderUpdates() {
 function readUpdate(updateId) {
 
     const update =
-        updates.find(function (item) {
+        updates.find(
+            function (item) {
 
-            return item.id === Number(updateId);
+                return item.id ===
+                    Number(updateId);
 
-        });
+            }
+        );
 
 
     if (!update) {
@@ -1547,121 +1900,43 @@ function readUpdate(updateId) {
 
 
 /* =========================================================
-   CONTACT FORM
-   ========================================================= */
-
-function handleContactForm() {
-
-    const form = document.getElementById("contactForm");
-
-    if (!form) {
-
-        console.warn("Contact form not found.");
-
-        return;
-
-    }
-
-
-    const name =
-        document.getElementById("contactName");
-
-    const email =
-        document.getElementById("contactEmail");
-
-    const subject =
-        document.getElementById("contactSubject");
-
-    const message =
-        document.getElementById("contactMessage");
-
-
-    if (!name || !email || !message) {
-
-        console.warn("Contact form fields not found.");
-
-        return;
-
-    }
-
-
-    if (
-        !name.value.trim() ||
-        !email.value.trim() ||
-        !message.value.trim()
-    ) {
-
-        showFormMessage(
-            "Please fill in all required fields.",
-            "error"
-        );
-
-        return;
-
-    }
-
-
-    /*
-       Gaming Dock Contact Form
-
-       Form submission is handled by Formspree
-       through the form action in index.html.
-
-       Do NOT use event.preventDefault() here,
-       otherwise the form will not reach Formspree.
-    */
-
-
-    console.log("Gaming Dock Contact Form submitted:", {
-
-        name: name.value.trim(),
-
-        email: email.value.trim(),
-
-        subject:
-            subject
-                ? subject.value.trim()
-                : "",
-
-        message: message.value.trim()
-
-    });
-
-
-    /*
-       IMPORTANT:
-       Do not use form.reset() here because the
-       browser needs to submit the form to Formspree.
-    */
-
-}
-
-
-/* =========================================================
    FORM MESSAGE
    ========================================================= */
 
-function showFormMessage(message, type) {
+function showFormMessage(
+    message,
+    type
+) {
 
     const messageElement =
-        document.getElementById("formMessage");
+        document.getElementById(
+            "formMessage"
+        );
 
 
     if (messageElement) {
 
-        messageElement.textContent = message;
+        messageElement.textContent =
+            message;
+
 
         messageElement.className =
             "form-message " + type;
 
-        messageElement.style.display = "block";
+
+        messageElement.style.display =
+            "block";
 
 
-        setTimeout(function () {
+        setTimeout(
+            function () {
 
-            messageElement.style.display = "none";
+                messageElement.style.display =
+                    "none";
 
-        }, 4000);
+            },
+            4000
+        );
 
 
         return;
@@ -1681,7 +1956,9 @@ function showFormMessage(message, type) {
 function setupCookieConsent() {
 
     const cookieConsent =
-        document.getElementById("cookieConsent");
+        document.getElementById(
+            "cookieConsent"
+        );
 
 
     if (!cookieConsent) {
@@ -1692,16 +1969,20 @@ function setupCookieConsent() {
 
 
     const cookieChoice =
-        localStorage.getItem("gamingDockCookies");
+        localStorage.getItem(
+            "gamingDockCookies"
+        );
 
 
     if (cookieChoice) {
 
-        cookieConsent.style.display = "none";
+        cookieConsent.style.display =
+            "none";
 
     } else {
 
-        cookieConsent.style.display = "block";
+        cookieConsent.style.display =
+            "block";
 
     }
 
@@ -1715,12 +1996,15 @@ function setupCookieConsent() {
 function hideCookieConsent() {
 
     const cookieConsent =
-        document.getElementById("cookieConsent");
+        document.getElementById(
+            "cookieConsent"
+        );
 
 
     if (cookieConsent) {
 
-        cookieConsent.style.display = "none";
+        cookieConsent.style.display =
+            "none";
 
     }
 
@@ -1733,7 +2017,10 @@ function hideCookieConsent() {
 
 function escapeHTML(value) {
 
-    if (value === undefined || value === null) {
+    if (
+        value === undefined ||
+        value === null
+    ) {
 
         return "";
 
@@ -1742,15 +2029,30 @@ function escapeHTML(value) {
 
     return String(value)
 
-        .replace(/&/g, "&amp;")
+        .replace(
+            /&/g,
+            "&amp;"
+        )
 
-        .replace(/</g, "&lt;")
+        .replace(
+            /</g,
+            "&lt;"
+        )
 
-        .replace(/>/g, "&gt;")
+        .replace(
+            />/g,
+            "&gt;"
+        )
 
-        .replace(/"/g, "&quot;")
+        .replace(
+            /"/g,
+            "&quot;"
+        )
 
-        .replace(/'/g, "&#039;");
+        .replace(
+            /'/g,
+            "&#039;"
+        );
 
 }
 
@@ -1759,33 +2061,45 @@ function escapeHTML(value) {
    GLOBAL FUNCTIONS
    ========================================================= */
 
-window.navigateTo = navigateTo;
+window.navigateTo =
+    navigateTo;
 
-window.viewGameDetails = viewGameDetails;
+window.viewGameDetails =
+    viewGameDetails;
 
-window.closeGameDetails = closeGameDetails;
+window.closeGameDetails =
+    closeGameDetails;
 
-window.downloadGame = downloadGame;
+window.downloadGame =
+    downloadGame;
 
-window.promptLogin = promptLogin;
+window.promptLogin =
+    promptLogin;
 
-window.handleLogin = handleLogin;
+window.handleLogin =
+    handleLogin;
 
-window.handleRegister = handleRegister;
+window.handleRegister =
+    handleRegister;
 
-window.logout = logout;
+window.logout =
+    logout;
 
-window.filterGames = filterGames;
+window.filterGames =
+    filterGames;
 
-window.handleSearch = handleSearch;
+window.handleSearch =
+    handleSearch;
 
-window.readUpdate = readUpdate;
+window.readUpdate =
+    readUpdate;
 
-window.openScreenshot = openScreenshot;
+window.openScreenshot =
+    openScreenshot;
 
 
 /* =========================================================
-   DEBUG MESSAGE
+   DEBUG
    ========================================================= */
 
 console.log(
