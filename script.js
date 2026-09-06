@@ -1552,6 +1552,17 @@ function readUpdate(updateId) {
 
 function handleContactForm() {
 
+    const form = document.getElementById("contactForm");
+
+    if (!form) {
+
+        console.warn("Contact form not found.");
+
+        return;
+
+    }
+
+
     const name =
         document.getElementById("contactName");
 
@@ -1591,17 +1602,17 @@ function handleContactForm() {
 
 
     /*
-       This is only frontend validation.
+       Gaming Dock Contact Form
 
-       A static HTML/JS website cannot securely
-       send Gmail messages directly.
+       Form submission is handled by Formspree
+       through the form action in index.html.
 
-       Connect a backend/email service later
-       for actual email delivery.
+       Do NOT use event.preventDefault() here,
+       otherwise the form will not reach Formspree.
     */
 
 
-    console.log("Gaming Dock Contact Form:", {
+    console.log("Gaming Dock Contact Form submitted:", {
 
         name: name.value.trim(),
 
@@ -1617,21 +1628,11 @@ function handleContactForm() {
     });
 
 
-    showFormMessage(
-        "Your message has been received. We will contact you soon.",
-        "success"
-    );
-
-
-    const form =
-        document.getElementById("contactForm");
-
-
-    if (form) {
-
-        form.reset();
-
-    }
+    /*
+       IMPORTANT:
+       Do not use form.reset() here because the
+       browser needs to submit the form to Formspree.
+    */
 
 }
 
