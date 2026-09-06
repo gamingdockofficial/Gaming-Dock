@@ -1,550 +1,803 @@
-// ===== GAMES DATA =====
-// Easy to edit - Add your games here
-const gamesData = [
+/* ===================================
+   GAMING DOCK - JAVASCRIPT
+   Complete Functionality
+   =================================== */
+
+// ===================================
+// DATA - GAMES
+// ===================================
+
+const games = [
     {
         id: 1,
-        title: "Cyber Revolution 2077",
+        title: "Neon Cyber Blaze",
         genre: "Action",
-        description: "An open-world action-adventure set in a dystopian future with deep RPG elements.",
-        platform: "PC, PS5, Xbox",
-        year: 2023,
-        image: "",
-        screenshots: ["", "", ""],
+        category: "Action",
+        description: "Experience intense cyberpunk action in a neon-soaked future. Engage in high-speed combat with advanced weaponry and intense boss battles.",
+        platform: "PC, PlayStation 5",
+        releaseYear: "2024",
+        cover: "https://via.placeholder.com/400x300?text=Neon+Cyber+Blaze",
+        screenshots: [
+            "https://via.placeholder.com/400x300?text=Screenshot+1",
+            "https://via.placeholder.com/400x300?text=Screenshot+2",
+            "https://via.placeholder.com/400x300?text=Screenshot+3"
+        ],
         systemRequirements: {
-            minimum: "OS: Windows 10, Processor: Intel Core i5-3570K, Memory: 8 GB RAM, Graphics: NVIDIA GTX 780",
-            recommended: "OS: Windows 10, Processor: Intel Core i7-4790, Memory: 16 GB RAM, Graphics: NVIDIA RTX 2060"
+            minimum: "OS: Windows 10, CPU: Intel i5, RAM: 8GB, GPU: GTX 1060, Storage: 50GB",
+            recommended: "OS: Windows 11, CPU: Intel i9, RAM: 16GB, GPU: RTX 3080, Storage: 50GB SSD"
         },
-        fullDescription: "Immerse yourself in a sprawling metropolis where every choice shapes your destiny. Navigate through neon-lit streets, engage in intense combat, and uncover the dark secrets of a world controlled by mega-corporations."
+        downloadUrl: ""
     },
     {
         id: 2,
-        title: "Fantasy Quest Legends",
+        title: "Lost Kingdoms Adventure",
         genre: "Adventure",
-        description: "Embark on an epic fantasy adventure through mystical lands filled with magic and monsters.",
-        platform: "PC, PS5, Nintendo Switch",
-        year: 2023,
-        image: "",
-        screenshots: ["", "", ""],
+        category: "Adventure",
+        description: "Embark on an epic adventure across mystical kingdoms. Solve puzzles, discover secrets, and uncover the ancient mysteries of a forgotten world.",
+        platform: "PC, Xbox Series X",
+        releaseYear: "2024",
+        cover: "https://via.placeholder.com/400x300?text=Lost+Kingdoms",
+        screenshots: [
+            "https://via.placeholder.com/400x300?text=Screenshot+1",
+            "https://via.placeholder.com/400x300?text=Screenshot+2",
+            "https://via.placeholder.com/400x300?text=Screenshot+3"
+        ],
         systemRequirements: {
-            minimum: "OS: Windows 10, Processor: Intel Core i5-4460, Memory: 8 GB RAM, Graphics: NVIDIA GTX 960",
-            recommended: "OS: Windows 10, Processor: Intel Core i7-6700K, Memory: 16 GB RAM, Graphics: NVIDIA RTX 3060"
+            minimum: "OS: Windows 10, CPU: Ryzen 5, RAM: 8GB, GPU: RX 580, Storage: 60GB",
+            recommended: "OS: Windows 11, CPU: Ryzen 9, RAM: 16GB, GPU: RX 6800 XT, Storage: 60GB SSD"
         },
-        fullDescription: "Explore vast kingdoms, battle mythical creatures, and forge your legend in this epic fantasy RPG. Master powerful spells, collect legendary weapons, and make choices that will determine the fate of the realm."
+        downloadUrl: ""
     },
     {
         id: 3,
-        title: "Speed Rivals Ultimate",
+        title: "Thunder Racing Championship",
         genre: "Racing",
-        description: "High-octane racing game featuring stunning visuals and intense competition.",
-        platform: "PC, PS5, Xbox",
-        year: 2024,
-        image: "",
-        screenshots: ["", "", ""],
+        category: "Racing",
+        description: "Race at extreme speeds through breathtaking tracks. Customize vehicles, compete in multiplayer races, and become the ultimate racing champion.",
+        platform: "PC, PlayStation 5, Xbox Series X",
+        releaseYear: "2024",
+        cover: "https://via.placeholder.com/400x300?text=Thunder+Racing",
+        screenshots: [
+            "https://via.placeholder.com/400x300?text=Screenshot+1",
+            "https://via.placeholder.com/400x300?text=Screenshot+2",
+            "https://via.placeholder.com/400x300?text=Screenshot+3"
+        ],
         systemRequirements: {
-            minimum: "OS: Windows 10, Processor: Intel Core i5-7600K, Memory: 8 GB RAM, Graphics: NVIDIA GTX 1060",
-            recommended: "OS: Windows 10, Processor: Intel Core i7-8700K, Memory: 16 GB RAM, Graphics: NVIDIA RTX 3070"
+            minimum: "OS: Windows 10, CPU: Intel i5, RAM: 12GB, GPU: GTX 1070, Storage: 80GB",
+            recommended: "OS: Windows 11, CPU: Intel i9 K, RAM: 32GB, GPU: RTX 4080, Storage: 80GB NVMe SSD"
         },
-        fullDescription: "Experience the thrill of high-speed racing across diverse locations worldwide. Customize your dream car, compete in various racing modes, and dominate the leaderboards in this ultimate racing experience."
+        downloadUrl: ""
     },
     {
         id: 4,
-        title: "Farm Life Simulator",
+        title: "Flight Simulator Pro",
         genre: "Simulator",
-        description: "Build and manage your dream farm in this relaxing simulation experience.",
-        platform: "PC, Nintendo Switch",
-        year: 2023,
-        image: "",
-        screenshots: ["", "", ""],
+        category: "Simulator",
+        description: "Experience the most realistic flight simulation. Pilot commercial and military aircraft with authentic physics and stunning world graphics.",
+        platform: "PC",
+        releaseYear: "2023",
+        cover: "https://via.placeholder.com/400x300?text=Flight+Simulator",
+        screenshots: [
+            "https://via.placeholder.com/400x300?text=Screenshot+1",
+            "https://via.placeholder.com/400x300?text=Screenshot+2",
+            "https://via.placeholder.com/400x300?text=Screenshot+3"
+        ],
         systemRequirements: {
-            minimum: "OS: Windows 10, Processor: Intel Core i3-4130, Memory: 4 GB RAM, Graphics: NVIDIA GTX 750",
-            recommended: "OS: Windows 10, Processor: Intel Core i5-6600K, Memory: 8 GB RAM, Graphics: NVIDIA GTX 1050"
+            minimum: "OS: Windows 10, CPU: Intel i5, RAM: 16GB, GPU: GTX 1080, Storage: 150GB",
+            recommended: "OS: Windows 11, CPU: Intel i9, RAM: 32GB, GPU: RTX 4090, Storage: 150GB NVMe SSD"
         },
-        fullDescription: "Create and cultivate your perfect farm. Plant crops, raise animals, and build relationships with townspeople in this peaceful farming simulator. Experience the changing seasons and grow your agricultural empire."
+        downloadUrl: ""
     },
     {
         id: 5,
-        title: "The Last Guardian",
-        genre: "Story Mode",
-        description: "A narrative-driven adventure with emotional storytelling and stunning visuals.",
-        platform: "PS5, PC",
-        year: 2023,
-        image: "",
-        screenshots: ["", "", ""],
+        title: "Chronicles of Fate",
+        genre: "Story",
+        category: "Story Mode",
+        description: "A narrative-driven adventure where your choices shape the story. Uncover deep character development and emotional storytelling across multiple endings.",
+        platform: "PC, PlayStation 5, Nintendo Switch",
+        releaseYear: "2024",
+        cover: "https://via.placeholder.com/400x300?text=Chronicles+of+Fate",
+        screenshots: [
+            "https://via.placeholder.com/400x300?text=Screenshot+1",
+            "https://via.placeholder.com/400x300?text=Screenshot+2",
+            "https://via.placeholder.com/400x300?text=Screenshot+3"
+        ],
         systemRequirements: {
-            minimum: "OS: Windows 10, Processor: Intel Core i5-6600K, Memory: 8 GB RAM, Graphics: NVIDIA GTX 1060",
-            recommended: "OS: Windows 10, Processor: Intel Core i7-8700K, Memory: 16 GB RAM, Graphics: NVIDIA RTX 2070"
+            minimum: "OS: Windows 10, CPU: Intel i5, RAM: 8GB, GPU: GTX 960, Storage: 40GB",
+            recommended: "OS: Windows 11, CPU: Intel i7, RAM: 16GB, GPU: RTX 2070, Storage: 40GB SSD"
         },
-        fullDescription: "Experience a deeply moving story of friendship and survival. Navigate through beautiful yet dangerous environments while forming an unbreakable bond with your mysterious companion in this unforgettable adventure."
+        downloadUrl: ""
     },
     {
         id: 6,
-        title: "Wasteland Odyssey",
+        title: "Infinite Horizons",
         genre: "Open World",
-        description: "Survive and thrive in a post-apocalyptic open world filled with danger and opportunity.",
-        platform: "PC, PS5, Xbox",
-        year: 2024,
-        image: "",
-        screenshots: ["", "", ""],
+        category: "Open World",
+        description: "Explore a vast open world filled with secrets, missions, and dynamic environments. Freedom to play your way in this expansive sandbox adventure.",
+        platform: "PC, PlayStation 5, Xbox Series X",
+        releaseYear: "2024",
+        cover: "https://via.placeholder.com/400x300?text=Infinite+Horizons",
+        screenshots: [
+            "https://via.placeholder.com/400x300?text=Screenshot+1",
+            "https://via.placeholder.com/400x300?text=Screenshot+2",
+            "https://via.placeholder.com/400x300?text=Screenshot+3"
+        ],
         systemRequirements: {
-            minimum: "OS: Windows 10, Processor: Intel Core i5-8400, Memory: 12 GB RAM, Graphics: NVIDIA GTX 1660",
-            recommended: "OS: Windows 10, Processor: Intel Core i7-9700K, Memory: 16 GB RAM, Graphics: NVIDIA RTX 3080"
+            minimum: "OS: Windows 10, CPU: Ryzen 7, RAM: 16GB, GPU: RX 5700 XT, Storage: 100GB",
+            recommended: "OS: Windows 11, CPU: Ryzen 9 5950X, RAM: 32GB, GPU: RTX 3090 Ti, Storage: 100GB NVMe SSD"
         },
-        fullDescription: "Explore a vast wasteland where every decision matters. Scavenge for resources, build settlements, and forge alliances in a world reclaimed by nature. Your survival depends on your wits and adaptability."
+        downloadUrl: ""
     },
     {
         id: 7,
-        title: "Battle Arena Champions",
+        title: "Squad Legends Battle",
         genre: "Multiplayer",
-        description: "Team-based multiplayer combat with various heroes and strategic gameplay.",
-        platform: "PC, PS5, Xbox",
-        year: 2023,
-        image: "",
-        screenshots: ["", "", ""],
+        category: "Multiplayer",
+        description: "Team-based multiplayer action with intense competitive gameplay. Form squads, strategize, and dominate the battlefield against players worldwide.",
+        platform: "PC, PlayStation 5, Xbox Series X",
+        releaseYear: "2024",
+        cover: "https://via.placeholder.com/400x300?text=Squad+Legends",
+        screenshots: [
+            "https://via.placeholder.com/400x300?text=Screenshot+1",
+            "https://via.placeholder.com/400x300?text=Screenshot+2",
+            "https://via.placeholder.com/400x300?text=Screenshot+3"
+        ],
         systemRequirements: {
-            minimum: "OS: Windows 10, Processor: Intel Core i5-6600K, Memory: 8 GB RAM, Graphics: NVIDIA GTX 1050 Ti",
-            recommended: "OS: Windows 10, Processor: Intel Core i7-7700K, Memory: 16 GB RAM, Graphics: NVIDIA RTX 2060"
+            minimum: "OS: Windows 10, CPU: Intel i7, RAM: 16GB, GPU: RTX 2080, Storage: 120GB",
+            recommended: "OS: Windows 11, CPU: Intel i9 K, RAM: 32GB, GPU: RTX 4070 Ti, Storage: 120GB SSD"
         },
-        fullDescription: "Compete in intense 5v5 battles with unique heroes, each with their own abilities and playstyles. Master team strategies, climb the ranked ladder, and become a legend in the arena."
+        downloadUrl: ""
     },
     {
         id: 8,
-        title: "Stealth Operative",
-        genre: "Action",
-        description: "Master the art of stealth in this tactical espionage thriller.",
-        platform: "PC, PS5, Xbox",
-        year: 2024,
-        image: "",
-        screenshots: ["", "", ""],
-        systemRequirements: {
-            minimum: "OS: Windows 10, Processor: Intel Core i5-7600K, Memory: 8 GB RAM, Graphics: NVIDIA GTX 1060",
-            recommended: "OS: Windows 10, Processor: Intel Core i7-8700K, Memory: 16 GB RAM, Graphics: NVIDIA RTX 3060"
-        },
-        fullDescription: "Infiltrate enemy bases, gather intelligence, and complete missions without leaving a trace. Use cutting-edge gadgets and strategic thinking to overcome complex security systems in this stealth-action masterpiece."
-    },
-    {
-        id: 9,
-        title: "Cosmic Explorers",
+        title: "Mystic Dungeon Crawler",
         genre: "Adventure",
-        description: "Explore the infinite cosmos and discover alien worlds in this space exploration game.",
-        platform: "PC, PS5",
-        year: 2024,
-        image: "",
-        screenshots: ["", "", ""],
+        category: "Adventure",
+        description: "Delve into mysterious dungeons filled with treasures and dangers. Combat-focused adventure with roguelike elements and stunning visual design.",
+        platform: "PC, Nintendo Switch",
+        releaseYear: "2023",
+        cover: "https://via.placeholder.com/400x300?text=Mystic+Dungeon",
+        screenshots: [
+            "https://via.placeholder.com/400x300?text=Screenshot+1",
+            "https://via.placeholder.com/400x300?text=Screenshot+2",
+            "https://via.placeholder.com/400x300?text=Screenshot+3"
+        ],
         systemRequirements: {
-            minimum: "OS: Windows 10, Processor: Intel Core i5-8400, Memory: 12 GB RAM, Graphics: NVIDIA GTX 1660",
-            recommended: "OS: Windows 10, Processor: Intel Core i7-9700K, Memory: 16 GB RAM, Graphics: NVIDIA RTX 3070"
+            minimum: "OS: Windows 10, CPU: Intel i5, RAM: 8GB, GPU: GTX 1050, Storage: 35GB",
+            recommended: "OS: Windows 11, CPU: Ryzen 7, RAM: 16GB, GPU: RTX 2070, Storage: 35GB SSD"
         },
-        fullDescription: "Traverse the galaxy, discover procedurally generated planets, and encounter diverse alien civilizations. Trade, fight, or explore - the choice is yours in this expansive space adventure."
-    },
-    {
-        id: 10,
-        title: "Circuit Champions",
-        genre: "Racing",
-        description: "Professional circuit racing with realistic physics and authentic motorsport experience.",
-        platform: "PC, Xbox",
-        year: 2023,
-        image: "",
-        screenshots: ["", "", ""],
-        systemRequirements: {
-            minimum: "OS: Windows 10, Processor: Intel Core i5-7600K, Memory: 8 GB RAM, Graphics: NVIDIA GTX 1060",
-            recommended: "OS: Windows 10, Processor: Intel Core i7-8700K, Memory: 16 GB RAM, Graphics: NVIDIA RTX 3080"
-        },
-        fullDescription: "Experience authentic motorsport with realistic vehicle physics, dynamic weather, and legendary racing circuits. Compete in championships, fine-tune your setup, and master the art of professional racing."
-    },
-    {
-        id: 11,
-        title: "City Builder Pro",
-        genre: "Simulator",
-        description: "Design and manage a thriving metropolis in this comprehensive city simulation.",
-        platform: "PC",
-        year: 2023,
-        image: "",
-        screenshots: ["", "", ""],
-        systemRequirements: {
-            minimum: "OS: Windows 10, Processor: Intel Core i5-4460, Memory: 8 GB RAM, Graphics: NVIDIA GTX 960",
-            recommended: "OS: Windows 10, Processor: Intel Core i7-6700K, Memory: 16 GB RAM, Graphics: NVIDIA RTX 2060"
-        },
-        fullDescription: "Build your dream city from the ground up. Manage resources, plan infrastructure, and keep your citizens happy while balancing budgets and responding to various challenges in this deep city-building experience."
-    },
-    {
-        id: 12,
-        title: "Echoes of Eternity",
-        genre: "Story Mode",
-        description: "A time-traveling narrative adventure that explores themes of choice and consequence.",
-        platform: "PC, PS5, Xbox",
-        year: 2024,
-        image: "",
-        screenshots: ["", "", ""],
-        systemRequirements: {
-            minimum: "OS: Windows 10, Processor: Intel Core i5-6600K, Memory: 8 GB RAM, Graphics: NVIDIA GTX 1060",
-            recommended: "OS: Windows 10, Processor: Intel Core i7-8700K, Memory: 16 GB RAM, Graphics: NVIDIA RTX 2070"
-        },
-        fullDescription: "Navigate through different timelines, making decisions that ripple across history. Every choice creates branching narratives in this emotionally charged story about destiny, sacrifice, and redemption."
+        downloadUrl: ""
     }
 ];
 
-// ===== UPDATES DATA =====
-// Easy to edit - Add your updates/news here
-const updatesData = [
+// ===================================
+// DATA - UPDATES
+// ===================================
+
+const updates = [
     {
         id: 1,
-        title: "Major Update: New Game Modes Released",
-        date: "March 15, 2024",
-        description: "Experience fresh gameplay with three new game modes added across our most popular titles. Including Team Deathmatch, Survival Challenge, and Time Trial modes.",
-        image: "",
-        content: "Full update details here..."
+        title: "Neon Cyber Blaze - Major Update 2.0",
+        date: "December 15, 2024",
+        image: "https://via.placeholder.com/400x250?text=Update+1",
+        description: "Massive content update featuring new weapons, abilities, and a challenging new campaign chapter. Plus gameplay improvements and bug fixes.",
+        content: "Experience the game like never before with our biggest update yet!"
     },
     {
         id: 2,
-        title: "Spring Sale: Up to 70% Off Premium Games",
-        date: "March 10, 2024",
-        description: "Don't miss our biggest sale of the season! Get incredible discounts on AAA titles, indie favorites, and everything in between.",
-        image: "",
-        content: "Sale details here..."
+        title: "Thunder Racing - New Track Pack Released",
+        date: "December 10, 2024",
+        image: "https://via.placeholder.com/400x250?text=Update+2",
+        description: "5 brand new racing tracks with unique environments and challenges. New car skins and performance balancing updates included.",
+        content: "Race in style with our latest track collection!"
     },
     {
         id: 3,
-        title: "Community Tournament Announced",
-        date: "March 5, 2024",
-        description: "Join thousands of players in our global gaming tournament. Compete for prizes, glory, and exclusive in-game rewards starting next month.",
-        image: "",
-        content: "Tournament information here..."
+        title: "Squad Legends - Seasonal Pass Now Available",
+        date: "December 8, 2024",
+        image: "https://via.placeholder.com/400x250?text=Update+3",
+        description: "Season 5 brings new operators, cosmetics, and exclusive rewards. Battle pass progression has been enhanced for better rewards.",
+        content: "Join the action-packed season 5 today!"
     },
     {
         id: 4,
-        title: "Performance Optimization Patch Live",
-        date: "March 1, 2024",
-        description: "We've rolled out significant performance improvements across all platforms. Experience smoother gameplay with increased frame rates and reduced load times.",
-        image: "",
-        content: "Patch notes here..."
+        title: "Lost Kingdoms - Story Expansion Announced",
+        date: "December 5, 2024",
+        image: "https://via.placeholder.com/400x250?text=Update+4",
+        description: "A new chapter with 15+ hours of gameplay, new puzzles, and expanded lore. Coming next month with special launch pricing.",
+        content: "New mysteries await in the lost kingdoms!"
     },
     {
         id: 5,
-        title: "New DLC: Expanded Universe Content",
-        date: "February 25, 2024",
-        description: "Dive into brand new storylines, characters, and locations with our latest DLC expansion. Available now for our flagship open-world titles.",
-        image: "",
-        content: "DLC details here..."
-    },
-    {
-        id: 6,
-        title: "Cross-Platform Play Now Available",
-        date: "February 20, 2024",
-        description: "Play with friends regardless of their platform! Cross-platform multiplayer is now live for all supported games.",
-        image: "",
-        content: "Cross-play information here..."
+        title: "Infinite Horizons - Holiday Event Live",
+        date: "December 1, 2024",
+        image: "https://via.placeholder.com/400x250?text=Update+5",
+        description: "Limited-time holiday event with special cosmetics, limited-edition weapons, and exclusive holiday missions for all players.",
+        content: "Celebrate the holidays in the world of Infinite Horizons!"
     }
 ];
 
-// ===== GLOBAL VARIABLES =====
-let currentCategory = 'all';
-let searchQuery = '';
+// ===================================
+// STATE MANAGEMENT
+// ===================================
 
-// ===== DOM ELEMENTS =====
-const hamburger = document.getElementById('hamburger');
-const navMenu = document.getElementById('navMenu');
-const navLinks = document.querySelectorAll('.nav-link');
-const searchInput = document.getElementById('searchInput');
-const categoryBtns = document.querySelectorAll('.category-btn');
-const gamesGrid = document.getElementById('gamesGrid');
-const updatesGrid = document.getElementById('updatesGrid');
-const noResults = document.getElementById('noResults');
-const gameModal = document.getElementById('gameModal');
-const modalClose = document.getElementById('modalClose');
-const modalBody = document.getElementById('modalBody');
-const contactForm = document.getElementById('contactForm');
+let currentUser = null;
+let currentPage = 'home';
+let filteredGames = [...games];
+let selectedCategory = 'all';
 
-// ===== INITIALIZATION =====
-document.addEventListener('DOMContentLoaded', () => {
-    initNavigation();
-    initSearch();
-    initCategoryFilter();
+// Load user from localStorage on page load
+function loadUserData() {
+    const userData = localStorage.getItem('gamingDockUser');
+    if (userData) {
+        try {
+            currentUser = JSON.parse(userData);
+            updateUserUI();
+        } catch (e) {
+            console.log('Invalid user data');
+            currentUser = null;
+        }
+    }
+}
+
+// ===================================
+// INITIALIZATION
+// ===================================
+
+document.addEventListener('DOMContentLoaded', function() {
+    loadUserData();
     renderGames();
     renderUpdates();
-    initModal();
-    initContactForm();
-    initScrollAnimations();
+    setupEventListeners();
+    setupCookieConsent();
+    updateUserUI();
+    navigateTo('home');
 });
 
-// ===== NAVIGATION =====
-function initNavigation() {
-    // Hamburger menu toggle
-    hamburger.addEventListener('click', () => {
+// ===================================
+// EVENT LISTENERS
+// ===================================
+
+function setupEventListeners() {
+    // Navigation
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const page = this.getAttribute('data-page');
+            navigateTo(page);
+            closeHamburger();
+        });
+    });
+
+    // Hamburger Menu
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('navMenu');
+    
+    hamburger.addEventListener('click', function() {
         hamburger.classList.toggle('active');
         navMenu.classList.toggle('active');
     });
 
-    // Close menu when clicking a link
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
-            
-            // Update active link
-            navLinks.forEach(l => l.classList.remove('active'));
-            link.classList.add('active');
-        });
-    });
-
-    // Navbar scroll effect
-    window.addEventListener('scroll', () => {
-        const navbar = document.getElementById('navbar');
-        if (window.scrollY > 100) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    });
-
-    // Smooth scroll for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                const offset = 70; // Height of fixed navbar
-                const targetPosition = target.offsetTop - offset;
-                window.scrollTo({
-                    top: targetPosition,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
-}
-
-// ===== SEARCH FUNCTIONALITY =====
-function initSearch() {
-    searchInput.addEventListener('input', (e) => {
-        searchQuery = e.target.value.toLowerCase();
-        renderGames();
-    });
-}
-
-// ===== CATEGORY FILTER =====
-function initCategoryFilter() {
-    categoryBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            // Update active button
-            categoryBtns.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            
-            // Update category and render
-            currentCategory = btn.dataset.category;
-            renderGames();
-        });
-    });
-}
-
-// ===== RENDER GAMES =====
-function renderGames() {
-    // Filter games
-    let filteredGames = gamesData.filter(game => {
-        const matchesCategory = currentCategory === 'all' || game.genre === currentCategory;
-        const matchesSearch = game.title.toLowerCase().includes(searchQuery) ||
-                            game.description.toLowerCase().includes(searchQuery) ||
-                            game.genre.toLowerCase().includes(searchQuery);
-        return matchesCategory && matchesSearch;
-    });
-
-    // Clear grid
-    gamesGrid.innerHTML = '';
-
-    // Show/hide no results message
-    if (filteredGames.length === 0) {
-        noResults.classList.add('show');
-        return;
-    } else {
-        noResults.classList.remove('show');
+    // Search
+    const searchInput = document.getElementById('searchInput');
+    if (searchInput) {
+        searchInput.addEventListener('input', handleSearch);
     }
 
-    // Render game cards
+    // Category Filter
+    document.querySelectorAll('.category-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            selectedCategory = this.getAttribute('data-category');
+            filterGames();
+        });
+    });
+
+    // Contact Form
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', handleContactForm);
+    }
+}
+
+// ===================================
+// NAVIGATION
+// ===================================
+
+function navigateTo(page) {
+    // Hide all pages
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    
+    // Show selected page
+    const pageElement = document.getElementById(page);
+    if (pageElement) {
+        pageElement.classList.add('active');
+        currentPage = page;
+        
+        // Update nav links
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('data-page') === page) {
+                link.classList.add('active');
+            }
+        });
+
+        // Special handling for certain pages
+        if (page === 'profile') {
+            if (!currentUser) {
+                navigateTo('login');
+                return;
+            }
+            displayProfile();
+        }
+
+        // Scroll to top
+        window.scrollTo(0, 0);
+    }
+}
+
+function closeHamburger() {
+    document.getElementById('hamburger').classList.remove('active');
+    document.getElementById('navMenu').classList.remove('active');
+}
+
+// ===================================
+// GAMES RENDERING
+// ===================================
+
+function renderGames() {
+    const container = document.getElementById('gamesContainer');
+    if (!container) return;
+
+    container.innerHTML = '';
+    
+    if (filteredGames.length === 0) {
+        document.getElementById('noGamesMessage').style.display = 'block';
+        return;
+    }
+    
+    document.getElementById('noGamesMessage').style.display = 'none';
+
     filteredGames.forEach(game => {
-        const gameCard = createGameCard(game);
-        gamesGrid.appendChild(gameCard);
+        const gameCard = document.createElement('div');
+        gameCard.className = 'game-card';
+        gameCard.innerHTML = `
+            <div class="game-card-image">
+                <img src="${game.cover}" alt="${game.title}">
+            </div>
+            <div class="game-card-content">
+                <h3 class="game-title">${game.title}</h3>
+                <span class="game-genre">${game.genre}</span>
+                <p class="game-description">${game.description}</p>
+                <div class="game-meta">
+                    <div class="game-meta-item">
+                        <span>📱 ${game.platform.split(',')[0].trim()}</span>
+                    </div>
+                    <div class="game-meta-item">
+                        <span>📅 ${game.releaseYear}</span>
+                    </div>
+                </div>
+                <button class="game-card-button" onclick="viewGameDetails(${game.id})">VIEW DETAILS</button>
+            </div>
+        `;
+        container.appendChild(gameCard);
     });
 }
 
-// ===== CREATE GAME CARD =====
-function createGameCard(game) {
-    const card = document.createElement('div');
-    card.className = 'game-card';
-    card.innerHTML = `
-        <div class="game-image">
-            ${game.image ? `<img src="${game.image}" alt="${game.title}" loading="lazy">` : ''}
-        </div>
-        <div class="game-info">
-            <h3 class="game-title">${game.title}</h3>
-            <span class="game-genre">${game.genre}</span>
-            <p class="game-description">${game.description}</p>
-            <div class="game-meta">
-                <span class="game-platform">🎮 ${game.platform}</span>
-                <span class="game-year">📅 ${game.year}</span>
-            </div>
-            <button class="view-details-btn" onclick="showGameDetails(${game.id})">View Details</button>
-        </div>
-    `;
-    return card;
+// ===================================
+// GAME SEARCH & FILTER
+// ===================================
+
+function handleSearch(event) {
+    const searchTerm = event.target.value.toLowerCase();
+    
+    filteredGames = games.filter(game => {
+        const matchesSearch = game.title.toLowerCase().includes(searchTerm) ||
+                            game.genre.toLowerCase().includes(searchTerm) ||
+                            game.description.toLowerCase().includes(searchTerm);
+        const matchesCategory = selectedCategory === 'all' || game.category === selectedCategory;
+        return matchesSearch && matchesCategory;
+    });
+    
+    renderGames();
 }
 
-// ===== SHOW GAME DETAILS =====
-function showGameDetails(gameId) {
-    const game = gamesData.find(g => g.id === gameId);
+function filterGames() {
+    const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+    
+    filteredGames = games.filter(game => {
+        const matchesSearch = game.title.toLowerCase().includes(searchTerm) ||
+                            game.genre.toLowerCase().includes(searchTerm) ||
+                            game.description.toLowerCase().includes(searchTerm);
+        const matchesCategory = selectedCategory === 'all' || game.category === selectedCategory;
+        return matchesSearch && matchesCategory;
+    });
+    
+    renderGames();
+}
+
+function filterByCategory(category) {
+    navigateTo('games');
+    setTimeout(() => {
+        selectedCategory = category;
+        document.querySelectorAll('.category-btn').forEach(btn => {
+            btn.classList.remove('active');
+            if (btn.getAttribute('data-category') === category) {
+                btn.classList.add('active');
+            }
+        });
+        filterGames();
+    }, 100);
+}
+
+// ===================================
+// GAME DETAILS MODAL
+// ===================================
+
+function viewGameDetails(gameId) {
+    const game = games.find(g => g.id === gameId);
     if (!game) return;
 
-    modalBody.innerHTML = `
-        <div class="modal-game-cover">${game.image ? `<img src="${game.image}" alt="${game.title}">` : ''}</div>
-        <h2 class="modal-game-title">${game.title}</h2>
-        
-        <div class="modal-game-info">
-            <div class="info-item">
-                <div class="info-label">Genre</div>
-                <div class="info-value">${game.genre}</div>
+    const modal = document.getElementById('gameDetailsModal');
+    const container = document.getElementById('gameDetailsContainer');
+
+    const downloadButtonHTML = currentUser
+        ? `<button class="btn-primary btn-full" onclick="downloadGame(${game.id})">
+             ${game.downloadUrl ? 'DOWNLOAD GAME' : 'DOWNLOAD GAME - Link Coming Soon'}
+           </button>`
+        : `<button class="btn-secondary btn-full" onclick="promptLogin()">
+             LOGIN TO DOWNLOAD
+           </button>`;
+
+    container.innerHTML = `
+        <div class="game-details-header">
+            <div class="game-details-cover">
+                <img src="${game.cover}" alt="${game.title}">
             </div>
-            <div class="info-item">
-                <div class="info-label">Platform</div>
-                <div class="info-value">${game.platform}</div>
-            </div>
-            <div class="info-item">
-                <div class="info-label">Release Year</div>
-                <div class="info-value">${game.year}</div>
+            <div class="game-details-info">
+                <h2 class="game-details-title">${game.title}</h2>
+                <div class="game-details-meta">
+                    <div class="game-details-meta-item">
+                        <span class="game-details-meta-label">Genre</span>
+                        <span class="game-details-meta-value">${game.genre}</span>
+                    </div>
+                    <div class="game-details-meta-item">
+                        <span class="game-details-meta-label">Platform</span>
+                        <span class="game-details-meta-value">${game.platform}</span>
+                    </div>
+                    <div class="game-details-meta-item">
+                        <span class="game-details-meta-label">Released</span>
+                        <span class="game-details-meta-value">${game.releaseYear}</span>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="modal-section">
+        <div class="game-details-description">
             <h3>About This Game</h3>
-            <p>${game.fullDescription}</p>
+            <p>${game.description}</p>
         </div>
 
-        <div class="modal-section">
+        <div class="game-details-requirements">
             <h3>System Requirements</h3>
-            <p><strong>Minimum:</strong><br>${game.systemRequirements.minimum}</p>
-            <p><strong>Recommended:</strong><br>${game.systemRequirements.recommended}</p>
-        </div>
-
-        <div class="modal-section">
-            <h3>Screenshots</h3>
-            <div class="screenshots-grid">
-                <div class="screenshot"></div>
-                <div class="screenshot"></div>
-                <div class="screenshot"></div>
+            <div class="requirements-box">
+                <h4>Minimum</h4>
+                <p>${game.systemRequirements.minimum}</p>
+            </div>
+            <div class="requirements-box">
+                <h4>Recommended</h4>
+                <p>${game.systemRequirements.recommended}</p>
             </div>
         </div>
 
-        <button class="btn btn-primary back-btn" onclick="closeModal()">Back to Games</button>
+        <div class="game-details-download">
+            <h3>Ready to Play?</h3>
+            <p class="download-message ${!currentUser ? 'login-required' : game.downloadUrl ? '' : 'available-soon'}">
+                ${!currentUser ? 'You must be logged in to download this game.' : game.downloadUrl ? 'Start your adventure now!' : 'Download link will be available soon.'}
+            </p>
+            ${downloadButtonHTML}
+        </div>
+
+        ${game.screenshots && game.screenshots.length > 0 ? `
+            <div class="game-gallery">
+                <h3>Screenshots</h3>
+                <div class="gallery-grid">
+                    ${game.screenshots.map(screenshot => `
+                        <div class="gallery-item">
+                            <img src="${screenshot}" alt="Screenshot">
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+        ` : ''}
     `;
 
-    gameModal.classList.add('show');
+    modal.classList.add('active');
     document.body.style.overflow = 'hidden';
 }
 
-// ===== MODAL CONTROLS =====
-function initModal() {
-    modalClose.addEventListener('click', closeModal);
-    
-    gameModal.addEventListener('click', (e) => {
-        if (e.target === gameModal) {
-            closeModal();
-        }
-    });
-
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && gameModal.classList.contains('show')) {
-            closeModal();
-        }
-    });
-}
-
-function closeModal() {
-    gameModal.classList.remove('show');
+function closeGameDetails() {
+    const modal = document.getElementById('gameDetailsModal');
+    modal.classList.remove('active');
     document.body.style.overflow = 'auto';
 }
 
-// ===== RENDER UPDATES =====
+function downloadGame(gameId) {
+    const game = games.find(g => g.id === gameId);
+    if (!game) return;
+
+    if (!currentUser) {
+        promptLogin();
+        return;
+    }
+
+    if (!game.downloadUrl) {
+        alert('Download link will be available soon. Please check back later!');
+        return;
+    }
+
+    window.location.href = game.downloadUrl;
+}
+
+function promptLogin() {
+    alert('Please log in to download games. Redirecting to login page...');
+    closeGameDetails();
+    navigateTo('login');
+}
+
+// ===================================
+// UPDATES RENDERING
+// ===================================
+
 function renderUpdates() {
-    updatesGrid.innerHTML = '';
-    
-    updatesData.forEach(update => {
-        const updateCard = createUpdateCard(update);
-        updatesGrid.appendChild(updateCard);
+    const container = document.getElementById('updatesContainer');
+    if (!container) return;
+
+    container.innerHTML = '';
+
+    updates.forEach(update => {
+        const updateCard = document.createElement('div');
+        updateCard.className = 'update-card';
+        updateCard.innerHTML = `
+            <div class="update-image">
+                <img src="${update.image}" alt="${update.title}">
+            </div>
+            <div class="update-content">
+                <p class="update-date">${update.date}</p>
+                <h3 class="update-title">${update.title}</h3>
+                <p class="update-description">${update.description}</p>
+                <button class="update-card-button" onclick="alert('${update.content}')">READ MORE</button>
+            </div>
+        `;
+        container.appendChild(updateCard);
     });
 }
 
-// ===== CREATE UPDATE CARD =====
-function createUpdateCard(update) {
-    const card = document.createElement('div');
-    card.className = 'update-card';
-    card.innerHTML = `
-        <div class="update-image">
-            ${update.image ? `<img src="${update.image}" alt="${update.title}" loading="lazy">` : ''}
-        </div>
-        <div class="update-info">
-            <div class="update-date">${update.date}</div>
-            <h3 class="update-title">${update.title}</h3>
-            <p class="update-description">${update.description}</p>
-            <a href="#" class="read-more-btn">Read More →</a>
-        </div>
-    `;
-    return card;
-}
+// ===================================
+// AUTHENTICATION
+// ===================================
 
-// ===== CONTACT FORM =====
-function initContactForm() {
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
+function handleLogin(event) {
+    event.preventDefault();
 
-        // Here you would typically send this data to a backend
-        // For now, we'll just show an alert
-        alert(`Thank you ${name}! Your message has been received. We'll get back to you at ${email} soon.`);
-        
-        contactForm.reset();
-    });
-}
+    const email = document.getElementById('loginEmail').value;
+    const password = document.getElementById('loginPassword').value;
 
-// ===== SCROLL ANIMATIONS =====
-function initScrollAnimations() {
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -100px 0px'
+    // Frontend validation only
+    if (!email || !password) {
+        showAuthMessage('loginMessage', 'Please fill in all fields', 'error');
+        return;
+    }
+
+    if (!email.includes('@')) {
+        showAuthMessage('loginMessage', 'Please enter a valid email', 'error');
+        return;
+    }
+
+    // Simulate successful login (FRONTEND ONLY - NOT SECURE)
+    const user = {
+        email: email,
+        username: email.split('@')[0],
+        memberSince: new Date().toLocaleDateString()
     };
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.animation = 'fadeInUp 0.6s ease forwards';
-            }
-        });
-    }, observerOptions);
+    currentUser = user;
+    localStorage.setItem('gamingDockUser', JSON.stringify(user));
 
-    // Observe sections
-    document.querySelectorAll('.section-header, .game-card, .update-card, .about-card').forEach(el => {
-        observer.observe(el);
+    showAuthMessage('loginMessage', 'Login successful! Redirecting...', 'success');
+    
+    setTimeout(() => {
+        document.getElementById('loginForm').reset();
+        updateUserUI();
+        navigateTo('home');
+    }, 1500);
+}
+
+function handleRegister(event) {
+    event.preventDefault();
+
+    const username = document.getElementById('registerUsername').value;
+    const email = document.getElementById('registerEmail').value;
+    const password = document.getElementById('registerPassword').value;
+    const confirm = document.getElementById('registerConfirm').value;
+
+    // Frontend validation
+    if (!username || !email || !password || !confirm) {
+        showAuthMessage('registerMessage', 'Please fill in all fields', 'error');
+        return;
+    }
+
+    if (username.length < 3) {
+        showAuthMessage('registerMessage', 'Username must be at least 3 characters', 'error');
+        return;
+    }
+
+    if (!email.includes('@')) {
+        showAuthMessage('registerMessage', 'Please enter a valid email', 'error');
+        return;
+    }
+
+    if (password.length < 6) {
+        showAuthMessage('registerMessage', 'Password must be at least 6 characters', 'error');
+        return;
+    }
+
+    if (password !== confirm) {
+        showAuthMessage('registerMessage', 'Passwords do not match', 'error');
+        return;
+    }
+
+    // Simulate successful registration
+    const user = {
+        email: email,
+        username: username,
+        memberSince: new Date().toLocaleDateString()
+    };
+
+    currentUser = user;
+    localStorage.setItem('gamingDockUser', JSON.stringify(user));
+
+    showAuthMessage('registerMessage', 'Registration successful! Redirecting to home...', 'success');
+    
+    setTimeout(() => {
+        document.getElementById('registerForm').reset();
+        updateUserUI();
+        navigateTo('home');
+    }, 1500);
+}
+
+function handleLogout() {
+    currentUser = null;
+    localStorage.removeItem('gamingDockUser');
+    updateUserUI();
+    navigateTo('home');
+    alert('You have been logged out');
+}
+
+function showAuthMessage(elementId, message, type) {
+    const messageElement = document.getElementById(elementId);
+    if (messageElement) {
+        messageElement.textContent = message;
+        messageElement.className = `auth-message ${type}`;
+    }
+}
+
+// ===================================
+// USER UI UPDATES
+// ===================================
+
+function updateUserUI() {
+    const profileNav = document.getElementById('profileNav');
+    const loginNav = document.getElementById('loginNav');
+
+    if (currentUser) {
+        profileNav.style.display = 'block';
+        loginNav.style.display = 'none';
+    } else {
+        profileNav.style.display = 'none';
+        loginNav.style.display = 'block';
+    }
+}
+
+function displayProfile() {
+    if (!currentUser) {
+        navigateTo('login');
+        return;
+    }
+
+    document.getElementById('profileUsername').textContent = currentUser.username;
+    document.getElementById('profileEmail').textContent = currentUser.email;
+    document.getElementById('profileUsernameDisplay').textContent = currentUser.username;
+    document.getElementById('profileEmailDisplay').textContent = currentUser.email;
+    document.getElementById('profileMemberSince').textContent = currentUser.memberSince;
+}
+
+// ===================================
+// CONTACT FORM
+// ===================================
+
+function handleContactForm(event) {
+    event.preventDefault();
+
+    const name = document.getElementById('contactName').value;
+    const email = document.getElementById('contactEmail').value;
+    const subject = document.getElementById('contactSubject').value;
+    const message = document.getElementById('contactMessage').value;
+
+    // Frontend validation
+    if (!name || !email || !subject || !message) {
+        showFormMessage('Please fill in all fields');
+        return;
+    }
+
+    if (!email.includes('@')) {
+        showFormMessage('Please enter a valid email');
+        return;
+    }
+
+    if (message.length < 10) {
+        showFormMessage('Message must be at least 10 characters');
+        return;
+    }
+
+    // Simulate form submission
+    console.log('Form Data:', { name, email, subject, message });
+    
+    showFormMessage('Message sent successfully! We will contact you soon.', 'success');
+    
+    setTimeout(() => {
+        document.getElementById('contactForm').reset();
+        showFormMessage('');
+    }, 2000);
+}
+
+function showFormMessage(message, type = 'error') {
+    // Create or update message element
+    let messageElement = document.querySelector('.form-message');
+    if (!messageElement) {
+        messageElement = document.createElement('div');
+        messageElement.className = 'form-message';
+        document.getElementById('contactForm').appendChild(messageElement);
+    }
+
+    messageElement.textContent = message;
+    messageElement.className = `form-message ${type}`;
+}
+
+// ===================================
+// COOKIE CONSENT
+// ===================================
+
+function setupCookieConsent() {
+    const cookieConsent = document.getElementById('cookieConsent');
+    const cookieAccept = document.getElementById('cookieAccept');
+    const cookieDecline = document.getElementById('cookieDecline');
+
+    // Check if user has already made a choice
+    const cookieChoice = localStorage.getItem('gamingDockCookieChoice');
+    if (!cookieChoice) {
+        cookieConsent.classList.add('active');
+    }
+
+    cookieAccept.addEventListener('click', function() {
+        localStorage.setItem('gamingDockCookieChoice', 'accepted');
+        cookieConsent.classList.remove('active');
+    });
+
+    cookieDecline.addEventListener('click', function() {
+        localStorage.setItem('gamingDockCookieChoice', 'declined');
+        cookieConsent.classList.remove('active');
     });
 }
 
-// ===== UTILITY FUNCTIONS =====
-// Make showGameDetails available globally
-window.showGameDetails = showGameDetails;
-window.closeModal = closeModal;
+// ===================================
+// MODAL CLOSING
+// ===================================
 
-// Lazy loading for images
-if ('IntersectionObserver' in window) {
-    const imageObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const img = entry.target;
-                img.src = img.dataset.src;
-                img.classList.add('loaded');
-                observer.unobserve(img);
-            }
-        });
-    });
-
-    document.querySelectorAll('img[data-src]').forEach(img => {
-        imageObserver.observe(img);
-    });
-}
+document.addEventListener('click', function(event) {
+    const modal = document.getElementById('gameDetailsModal');
+    if (event.target === modal) {
+        closeGameDetails();
+    }
+});
