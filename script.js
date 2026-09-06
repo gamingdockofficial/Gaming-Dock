@@ -9,165 +9,217 @@
 
 const games = [
     {
+     const games = [
+    {
         id: 1,
-        title: "Neon Cyber Blaze",
+        title: "Grand Theft Auto V",
         genre: "Action",
-        category: "Action",
-        description: "Experience intense cyberpunk action in a neon-soaked future. Engage in high-speed combat with advanced weaponry and intense boss battles.",
-        platform: "PC, PlayStation 5",
-        releaseYear: "2024",
-        cover: "https://via.placeholder.com/400x300?text=Neon+Cyber+Blaze",
+        category: "Open World",
+        description: "Explore Los Santos in a massive open-world action adventure featuring missions, vehicles, and a cinematic story.",
+        platform: "PC",
+        releaseYear: "2015",
+        cover: "https://via.placeholder.com/400x300?text=Grand+Theft+Auto+V",
         screenshots: [
-            "https://via.placeholder.com/400x300?text=Screenshot+1",
-            "https://via.placeholder.com/400x300?text=Screenshot+2",
-            "https://via.placeholder.com/400x300?text=Screenshot+3"
+            "https://via.placeholder.com/800x450?text=GTA+V+Screenshot+1",
+            "https://via.placeholder.com/800x450?text=GTA+V+Screenshot+2",
+            "https://via.placeholder.com/800x450?text=GTA+V+Screenshot+3"
         ],
         systemRequirements: {
-            minimum: "OS: Windows 10, CPU: Intel i5, RAM: 8GB, GPU: GTX 1060, Storage: 50GB",
-            recommended: "OS: Windows 11, CPU: Intel i9, RAM: 16GB, GPU: RTX 3080, Storage: 50GB SSD"
+            minimum: "OS: Windows 10, CPU: Intel Core 2 Quad, RAM: 4GB, GPU: NVIDIA 9800 GT, Storage: 72GB",
+            recommended: "OS: Windows 10/11, CPU: Intel Core i5, RAM: 8GB, GPU: GTX 1060, Storage: 72GB"
         },
         downloadUrl: ""
     },
+
     {
         id: 2,
-        title: "Lost Kingdoms Adventure",
-        genre: "Adventure",
-        category: "Adventure",
-        description: "Embark on an epic adventure across mystical kingdoms. Solve puzzles, discover secrets, and uncover the ancient mysteries of a forgotten world.",
-        platform: "PC, Xbox Series X",
-        releaseYear: "2024",
-        cover: "https://via.placeholder.com/400x300?text=Lost+Kingdoms",
-        screenshots: [
-            "https://via.placeholder.com/400x300?text=Screenshot+1",
-            "https://via.placeholder.com/400x300?text=Screenshot+2",
-            "https://via.placeholder.com/400x300?text=Screenshot+3"
-        ],
-        systemRequirements: {
-            minimum: "OS: Windows 10, CPU: Ryzen 5, RAM: 8GB, GPU: RX 580, Storage: 60GB",
-            recommended: "OS: Windows 11, CPU: Ryzen 9, RAM: 16GB, GPU: RX 6800 XT, Storage: 60GB SSD"
-        },
-        downloadUrl: ""
-    },
-    {
-        id: 3,
-        title: "Thunder Racing Championship",
+        title: "Need for Speed Rivals",
         genre: "Racing",
         category: "Racing",
-        description: "Race at extreme speeds through breathtaking tracks. Customize vehicles, compete in multiplayer races, and become the ultimate racing champion.",
-        platform: "PC, PlayStation 5, Xbox Series X",
-        releaseYear: "2024",
-        cover: "https://via.placeholder.com/400x300?text=Thunder+Racing",
+        description: "Experience intense high-speed races and police pursuits across a dynamic open-world racing environment.",
+        platform: "PC",
+        releaseYear: "2013",
+        cover: "https://via.placeholder.com/400x300?text=Need+for+Speed+Rivals",
         screenshots: [
-            "https://via.placeholder.com/400x300?text=Screenshot+1",
-            "https://via.placeholder.com/400x300?text=Screenshot+2",
-            "https://via.placeholder.com/400x300?text=Screenshot+3"
+            "https://via.placeholder.com/800x450?text=NFS+Rivals+Screenshot+1",
+            "https://via.placeholder.com/800x450?text=NFS+Rivals+Screenshot+2",
+            "https://via.placeholder.com/800x450?text=NFS+Rivals+Screenshot+3"
         ],
         systemRequirements: {
-            minimum: "OS: Windows 10, CPU: Intel i5, RAM: 12GB, GPU: GTX 1070, Storage: 80GB",
-            recommended: "OS: Windows 11, CPU: Intel i9 K, RAM: 32GB, GPU: RTX 4080, Storage: 80GB NVMe SSD"
+            minimum: "OS: Windows 7, CPU: Intel Core 2 Duo, RAM: 4GB, GPU: GTX 460, Storage: 30GB",
+            recommended: "OS: Windows 8/10/11, CPU: Intel Core i5, RAM: 8GB, GPU: GTX 660, Storage: 30GB"
         },
         downloadUrl: ""
     },
+
+    {
+        id: 3,
+        title: "Assassin's Creed III",
+        genre: "Adventure",
+        category: "Story Mode",
+        description: "Follow an epic historical adventure through a large world filled with exploration, combat, and memorable missions.",
+        platform: "PC",
+        releaseYear: "2012",
+        cover: "https://via.placeholder.com/400x300?text=Assassins+Creed+III",
+        screenshots: [
+            "https://via.placeholder.com/800x450?text=AC+III+Screenshot+1",
+            "https://via.placeholder.com/800x450?text=AC+III+Screenshot+2",
+            "https://via.placeholder.com/800x450?text=AC+III+Screenshot+3"
+        ],
+        systemRequirements: {
+            minimum: "OS: Windows 7, CPU: Intel Core 2 Duo, RAM: 2GB, GPU: GTX 260, Storage: 17GB",
+            recommended: "OS: Windows 10/11, CPU: Intel Core i5, RAM: 4GB, GPU: GTX 660, Storage: 17GB"
+        },
+        downloadUrl: ""
+    },
+
     {
         id: 4,
-        title: "Flight Simulator Pro",
-        genre: "Simulator",
-        category: "Simulator",
-        description: "Experience the most realistic flight simulation. Pilot commercial and military aircraft with authentic physics and stunning world graphics.",
+        title: "Far Cry 3",
+        genre: "Action",
+        category: "Open World",
+        description: "Survive on a dangerous tropical island while exploring the environment, completing missions, and facing enemies.",
         platform: "PC",
-        releaseYear: "2023",
-        cover: "https://via.placeholder.com/400x300?text=Flight+Simulator",
+        releaseYear: "2012",
+        cover: "https://via.placeholder.com/400x300?text=Far+Cry+3",
         screenshots: [
-            "https://via.placeholder.com/400x300?text=Screenshot+1",
-            "https://via.placeholder.com/400x300?text=Screenshot+2",
-            "https://via.placeholder.com/400x300?text=Screenshot+3"
+            "https://via.placeholder.com/800x450?text=Far+Cry+3+Screenshot+1",
+            "https://via.placeholder.com/800x450?text=Far+Cry+3+Screenshot+2",
+            "https://via.placeholder.com/800x450?text=Far+Cry+3+Screenshot+3"
         ],
         systemRequirements: {
-            minimum: "OS: Windows 10, CPU: Intel i5, RAM: 16GB, GPU: GTX 1080, Storage: 150GB",
-            recommended: "OS: Windows 11, CPU: Intel i9, RAM: 32GB, GPU: RTX 4090, Storage: 150GB NVMe SSD"
+            minimum: "OS: Windows 7, CPU: Intel Core 2 Duo, RAM: 4GB, GPU: GTX 8800, Storage: 15GB",
+            recommended: "OS: Windows 10/11, CPU: Intel Core i5, RAM: 8GB, GPU: GTX 560, Storage: 15GB"
         },
         downloadUrl: ""
     },
+
     {
         id: 5,
-        title: "Chronicles of Fate",
-        genre: "Story",
+        title: "Tomb Raider",
+        genre: "Adventure",
         category: "Story Mode",
-        description: "A narrative-driven adventure where your choices shape the story. Uncover deep character development and emotional storytelling across multiple endings.",
-        platform: "PC, PlayStation 5, Nintendo Switch",
-        releaseYear: "2024",
-        cover: "https://via.placeholder.com/400x300?text=Chronicles+of+Fate",
+        description: "Join Lara Croft on a dangerous expedition involving exploration, survival, puzzles, and intense action.",
+        platform: "PC",
+        releaseYear: "2013",
+        cover: "https://via.placeholder.com/400x300?text=Tomb+Raider",
         screenshots: [
-            "https://via.placeholder.com/400x300?text=Screenshot+1",
-            "https://via.placeholder.com/400x300?text=Screenshot+2",
-            "https://via.placeholder.com/400x300?text=Screenshot+3"
+            "https://via.placeholder.com/800x450?text=Tomb+Raider+Screenshot+1",
+            "https://via.placeholder.com/800x450?text=Tomb+Raider+Screenshot+2",
+            "https://via.placeholder.com/800x450?text=Tomb+Raider+Screenshot+3"
         ],
         systemRequirements: {
-            minimum: "OS: Windows 10, CPU: Intel i5, RAM: 8GB, GPU: GTX 960, Storage: 40GB",
-            recommended: "OS: Windows 11, CPU: Intel i7, RAM: 16GB, GPU: RTX 2070, Storage: 40GB SSD"
+            minimum: "OS: Windows 7, CPU: Intel Core 2 Duo, RAM: 2GB, GPU: Radeon HD 2600, Storage: 12GB",
+            recommended: "OS: Windows 10/11, CPU: Intel Core i5, RAM: 8GB, GPU: GTX 660, Storage: 12GB"
         },
         downloadUrl: ""
     },
+
     {
         id: 6,
-        title: "Infinite Horizons",
-        genre: "Open World",
+        title: "Sleeping Dogs",
+        genre: "Action",
         category: "Open World",
-        description: "Explore a vast open world filled with secrets, missions, and dynamic environments. Freedom to play your way in this expansive sandbox adventure.",
-        platform: "PC, PlayStation 5, Xbox Series X",
-        releaseYear: "2024",
-        cover: "https://via.placeholder.com/400x300?text=Infinite+Horizons",
+        description: "Explore a detailed city while taking part in an undercover crime story packed with driving, combat, and missions.",
+        platform: "PC",
+        releaseYear: "2012",
+        cover: "https://via.placeholder.com/400x300?text=Sleeping+Dogs",
         screenshots: [
-            "https://via.placeholder.com/400x300?text=Screenshot+1",
-            "https://via.placeholder.com/400x300?text=Screenshot+2",
-            "https://via.placeholder.com/400x300?text=Screenshot+3"
+            "https://via.placeholder.com/800x450?text=Sleeping+Dogs+Screenshot+1",
+            "https://via.placeholder.com/800x450?text=Sleeping+Dogs+Screenshot+2",
+            "https://via.placeholder.com/800x450?text=Sleeping+Dogs+Screenshot+3"
         ],
         systemRequirements: {
-            minimum: "OS: Windows 10, CPU: Ryzen 7, RAM: 16GB, GPU: RX 5700 XT, Storage: 100GB",
-            recommended: "OS: Windows 11, CPU: Ryzen 9 5950X, RAM: 32GB, GPU: RTX 3090 Ti, Storage: 100GB NVMe SSD"
+            minimum: "OS: Windows 7, CPU: Core 2 Duo, RAM: 2GB, GPU: GeForce 8800 GT, Storage: 15GB",
+            recommended: "OS: Windows 10/11, CPU: Intel Core i5, RAM: 4GB, GPU: GTX 560, Storage: 15GB"
         },
         downloadUrl: ""
     },
+
     {
         id: 7,
-        title: "Squad Legends Battle",
-        genre: "Multiplayer",
-        category: "Multiplayer",
-        description: "Team-based multiplayer action with intense competitive gameplay. Form squads, strategize, and dominate the battlefield against players worldwide.",
-        platform: "PC, PlayStation 5, Xbox Series X",
-        releaseYear: "2024",
-        cover: "https://via.placeholder.com/400x300?text=Squad+Legends",
+        title: "Mafia II",
+        genre: "Action",
+        category: "Story Mode",
+        description: "Experience a cinematic crime story set in a detailed city with driving, combat, exploration, and memorable characters.",
+        platform: "PC",
+        releaseYear: "2010",
+        cover: "https://via.placeholder.com/400x300?text=Mafia+II",
         screenshots: [
-            "https://via.placeholder.com/400x300?text=Screenshot+1",
-            "https://via.placeholder.com/400x300?text=Screenshot+2",
-            "https://via.placeholder.com/400x300?text=Screenshot+3"
+            "https://via.placeholder.com/800x450?text=Mafia+II+Screenshot+1",
+            "https://via.placeholder.com/800x450?text=Mafia+II+Screenshot+2",
+            "https://via.placeholder.com/800x450?text=Mafia+II+Screenshot+3"
         ],
         systemRequirements: {
-            minimum: "OS: Windows 10, CPU: Intel i7, RAM: 16GB, GPU: RTX 2080, Storage: 120GB",
-            recommended: "OS: Windows 11, CPU: Intel i9 K, RAM: 32GB, GPU: RTX 4070 Ti, Storage: 120GB SSD"
+            minimum: "OS: Windows 7, CPU: Pentium D 3GHz, RAM: 2GB, GPU: GeForce 8600, Storage: 8GB",
+            recommended: "OS: Windows 10/11, CPU: Intel Core i5, RAM: 4GB, GPU: GTX 560, Storage: 8GB"
         },
         downloadUrl: ""
     },
+
     {
         id: 8,
-        title: "Mystic Dungeon Crawler",
-        genre: "Adventure",
-        category: "Adventure",
-        description: "Delve into mysterious dungeons filled with treasures and dangers. Combat-focused adventure with roguelike elements and stunning visual design.",
-        platform: "PC, Nintendo Switch",
-        releaseYear: "2023",
-        cover: "https://via.placeholder.com/400x300?text=Mystic+Dungeon",
+        title: "Just Cause 2",
+        genre: "Action",
+        category: "Open World",
+        description: "Explore a huge island filled with vehicles, missions, stunts, and explosive open-world gameplay.",
+        platform: "PC",
+        releaseYear: "2010",
+        cover: "https://via.placeholder.com/400x300?text=Just+Cause+2",
         screenshots: [
-            "https://via.placeholder.com/400x300?text=Screenshot+1",
-            "https://via.placeholder.com/400x300?text=Screenshot+2",
-            "https://via.placeholder.com/400x300?text=Screenshot+3"
+            "https://via.placeholder.com/800x450?text=Just+Cause+2+Screenshot+1",
+            "https://via.placeholder.com/800x450?text=Just+Cause+2+Screenshot+2",
+            "https://via.placeholder.com/800x450?text=Just+Cause+2+Screenshot+3"
         ],
         systemRequirements: {
-            minimum: "OS: Windows 10, CPU: Intel i5, RAM: 8GB, GPU: GTX 1050, Storage: 35GB",
-            recommended: "OS: Windows 11, CPU: Ryzen 7, RAM: 16GB, GPU: RTX 2070, Storage: 35GB SSD"
+            minimum: "OS: Windows Vista/7, CPU: Dual Core 2.6GHz, RAM: 2GB, GPU: GTX 8800, Storage: 10GB",
+            recommended: "OS: Windows 10/11, CPU: Intel Core i5, RAM: 4GB, GPU: GTX 560, Storage: 10GB"
+        },
+        downloadUrl: ""
+    },
+
+    {
+        id: 9,
+        title: "Euro Truck Simulator 2",
+        genre: "Simulator",
+        category: "Simulator",
+        description: "Drive across European roads, deliver cargo, customize trucks, and build your own transport business.",
+        platform: "PC",
+        releaseYear: "2012",
+        cover: "https://via.placeholder.com/400x300?text=Euro+Truck+Simulator+2",
+        screenshots: [
+            "https://via.placeholder.com/800x450?text=ETS2+Screenshot+1",
+            "https://via.placeholder.com/800x450?text=ETS2+Screenshot+2",
+            "https://via.placeholder.com/800x450?text=ETS2+Screenshot+3"
+        ],
+        systemRequirements: {
+            minimum: "OS: Windows 7, CPU: Dual Core 2.4GHz, RAM: 4GB, GPU: GTX 760, Storage: 25GB",
+            recommended: "OS: Windows 10/11, CPU: Quad Core, RAM: 8GB, GPU: GTX 1060, Storage: 25GB"
+        },
+        downloadUrl: ""
+    },
+
+    {
+        id: 10,
+        title: "Batman: Arkham City",
+        genre: "Action",
+        category: "Adventure",
+        description: "Take control of Batman in a dark open environment featuring combat, investigation, exploration, and a cinematic story.",
+        platform: "PC",
+        releaseYear: "2011",
+        cover: "https://via.placeholder.com/400x300?text=Batman+Arkham+City",
+        screenshots: [
+            "https://via.placeholder.com/800x450?text=Batman+Screenshot+1",
+            "https://via.placeholder.com/800x450?text=Batman+Screenshot+2",
+            "https://via.placeholder.com/800x450?text=Batman+Screenshot+3"
+        ],
+        systemRequirements: {
+            minimum: "OS: Windows 7, CPU: Intel Core 2 Duo, RAM: 2GB, GPU: NVIDIA 8800 GT, Storage: 17GB",
+            recommended: "OS: Windows 10/11, CPU: Intel Core i5, RAM: 8GB, GPU: GTX 660, Storage: 17GB"
         },
         downloadUrl: ""
     }
+];   
 ];
 
 // ===================================
@@ -176,45 +228,217 @@ const games = [
 
 const updates = [
     {
+        const games = [
+    {
         id: 1,
-        title: "Neon Cyber Blaze - Major Update 2.0",
-        date: "December 15, 2024",
-        image: "https://via.placeholder.com/400x250?text=Update+1",
-        description: "Massive content update featuring new weapons, abilities, and a challenging new campaign chapter. Plus gameplay improvements and bug fixes.",
-        content: "Experience the game like never before with our biggest update yet!"
+        title: "Grand Theft Auto V",
+        genre: "Action",
+        category: "Open World",
+        description: "Explore Los Santos in a massive open-world action adventure featuring missions, vehicles, and a cinematic story.",
+        platform: "PC",
+        releaseYear: "2015",
+        cover: "https://via.placeholder.com/400x300?text=Grand+Theft+Auto+V",
+        screenshots: [
+            "https://via.placeholder.com/800x450?text=GTA+V+Screenshot+1",
+            "https://via.placeholder.com/800x450?text=GTA+V+Screenshot+2",
+            "https://via.placeholder.com/800x450?text=GTA+V+Screenshot+3"
+        ],
+        systemRequirements: {
+            minimum: "OS: Windows 10, CPU: Intel Core 2 Quad, RAM: 4GB, GPU: NVIDIA 9800 GT, Storage: 72GB",
+            recommended: "OS: Windows 10/11, CPU: Intel Core i5, RAM: 8GB, GPU: GTX 1060, Storage: 72GB"
+        },
+        downloadUrl: ""
     },
+
     {
         id: 2,
-        title: "Thunder Racing - New Track Pack Released",
-        date: "December 10, 2024",
-        image: "https://via.placeholder.com/400x250?text=Update+2",
-        description: "5 brand new racing tracks with unique environments and challenges. New car skins and performance balancing updates included.",
-        content: "Race in style with our latest track collection!"
+        title: "Need for Speed Rivals",
+        genre: "Racing",
+        category: "Racing",
+        description: "Experience intense high-speed races and police pursuits across a dynamic open-world racing environment.",
+        platform: "PC",
+        releaseYear: "2013",
+        cover: "https://via.placeholder.com/400x300?text=Need+for+Speed+Rivals",
+        screenshots: [
+            "https://via.placeholder.com/800x450?text=NFS+Rivals+Screenshot+1",
+            "https://via.placeholder.com/800x450?text=NFS+Rivals+Screenshot+2",
+            "https://via.placeholder.com/800x450?text=NFS+Rivals+Screenshot+3"
+        ],
+        systemRequirements: {
+            minimum: "OS: Windows 7, CPU: Intel Core 2 Duo, RAM: 4GB, GPU: GTX 460, Storage: 30GB",
+            recommended: "OS: Windows 8/10/11, CPU: Intel Core i5, RAM: 8GB, GPU: GTX 660, Storage: 30GB"
+        },
+        downloadUrl: ""
     },
+
     {
         id: 3,
-        title: "Squad Legends - Seasonal Pass Now Available",
-        date: "December 8, 2024",
-        image: "https://via.placeholder.com/400x250?text=Update+3",
-        description: "Season 5 brings new operators, cosmetics, and exclusive rewards. Battle pass progression has been enhanced for better rewards.",
-        content: "Join the action-packed season 5 today!"
+        title: "Assassin's Creed III",
+        genre: "Adventure",
+        category: "Story Mode",
+        description: "Follow an epic historical adventure through a large world filled with exploration, combat, and memorable missions.",
+        platform: "PC",
+        releaseYear: "2012",
+        cover: "https://via.placeholder.com/400x300?text=Assassins+Creed+III",
+        screenshots: [
+            "https://via.placeholder.com/800x450?text=AC+III+Screenshot+1",
+            "https://via.placeholder.com/800x450?text=AC+III+Screenshot+2",
+            "https://via.placeholder.com/800x450?text=AC+III+Screenshot+3"
+        ],
+        systemRequirements: {
+            minimum: "OS: Windows 7, CPU: Intel Core 2 Duo, RAM: 2GB, GPU: GTX 260, Storage: 17GB",
+            recommended: "OS: Windows 10/11, CPU: Intel Core i5, RAM: 4GB, GPU: GTX 660, Storage: 17GB"
+        },
+        downloadUrl: ""
     },
+
     {
         id: 4,
-        title: "Lost Kingdoms - Story Expansion Announced",
-        date: "December 5, 2024",
-        image: "https://via.placeholder.com/400x250?text=Update+4",
-        description: "A new chapter with 15+ hours of gameplay, new puzzles, and expanded lore. Coming next month with special launch pricing.",
-        content: "New mysteries await in the lost kingdoms!"
+        title: "Far Cry 3",
+        genre: "Action",
+        category: "Open World",
+        description: "Survive on a dangerous tropical island while exploring the environment, completing missions, and facing enemies.",
+        platform: "PC",
+        releaseYear: "2012",
+        cover: "https://via.placeholder.com/400x300?text=Far+Cry+3",
+        screenshots: [
+            "https://via.placeholder.com/800x450?text=Far+Cry+3+Screenshot+1",
+            "https://via.placeholder.com/800x450?text=Far+Cry+3+Screenshot+2",
+            "https://via.placeholder.com/800x450?text=Far+Cry+3+Screenshot+3"
+        ],
+        systemRequirements: {
+            minimum: "OS: Windows 7, CPU: Intel Core 2 Duo, RAM: 4GB, GPU: GTX 8800, Storage: 15GB",
+            recommended: "OS: Windows 10/11, CPU: Intel Core i5, RAM: 8GB, GPU: GTX 560, Storage: 15GB"
+        },
+        downloadUrl: ""
     },
+
     {
         id: 5,
-        title: "Infinite Horizons - Holiday Event Live",
-        date: "December 1, 2024",
-        image: "https://via.placeholder.com/400x250?text=Update+5",
-        description: "Limited-time holiday event with special cosmetics, limited-edition weapons, and exclusive holiday missions for all players.",
-        content: "Celebrate the holidays in the world of Infinite Horizons!"
+        title: "Tomb Raider",
+        genre: "Adventure",
+        category: "Story Mode",
+        description: "Join Lara Croft on a dangerous expedition involving exploration, survival, puzzles, and intense action.",
+        platform: "PC",
+        releaseYear: "2013",
+        cover: "https://via.placeholder.com/400x300?text=Tomb+Raider",
+        screenshots: [
+            "https://via.placeholder.com/800x450?text=Tomb+Raider+Screenshot+1",
+            "https://via.placeholder.com/800x450?text=Tomb+Raider+Screenshot+2",
+            "https://via.placeholder.com/800x450?text=Tomb+Raider+Screenshot+3"
+        ],
+        systemRequirements: {
+            minimum: "OS: Windows 7, CPU: Intel Core 2 Duo, RAM: 2GB, GPU: Radeon HD 2600, Storage: 12GB",
+            recommended: "OS: Windows 10/11, CPU: Intel Core i5, RAM: 8GB, GPU: GTX 660, Storage: 12GB"
+        },
+        downloadUrl: ""
+    },
+
+    {
+        id: 6,
+        title: "Sleeping Dogs",
+        genre: "Action",
+        category: "Open World",
+        description: "Explore a detailed city while taking part in an undercover crime story packed with driving, combat, and missions.",
+        platform: "PC",
+        releaseYear: "2012",
+        cover: "https://via.placeholder.com/400x300?text=Sleeping+Dogs",
+        screenshots: [
+            "https://via.placeholder.com/800x450?text=Sleeping+Dogs+Screenshot+1",
+            "https://via.placeholder.com/800x450?text=Sleeping+Dogs+Screenshot+2",
+            "https://via.placeholder.com/800x450?text=Sleeping+Dogs+Screenshot+3"
+        ],
+        systemRequirements: {
+            minimum: "OS: Windows 7, CPU: Core 2 Duo, RAM: 2GB, GPU: GeForce 8800 GT, Storage: 15GB",
+            recommended: "OS: Windows 10/11, CPU: Intel Core i5, RAM: 4GB, GPU: GTX 560, Storage: 15GB"
+        },
+        downloadUrl: ""
+    },
+
+    {
+        id: 7,
+        title: "Mafia II",
+        genre: "Action",
+        category: "Story Mode",
+        description: "Experience a cinematic crime story set in a detailed city with driving, combat, exploration, and memorable characters.",
+        platform: "PC",
+        releaseYear: "2010",
+        cover: "https://via.placeholder.com/400x300?text=Mafia+II",
+        screenshots: [
+            "https://via.placeholder.com/800x450?text=Mafia+II+Screenshot+1",
+            "https://via.placeholder.com/800x450?text=Mafia+II+Screenshot+2",
+            "https://via.placeholder.com/800x450?text=Mafia+II+Screenshot+3"
+        ],
+        systemRequirements: {
+            minimum: "OS: Windows 7, CPU: Pentium D 3GHz, RAM: 2GB, GPU: GeForce 8600, Storage: 8GB",
+            recommended: "OS: Windows 10/11, CPU: Intel Core i5, RAM: 4GB, GPU: GTX 560, Storage: 8GB"
+        },
+        downloadUrl: ""
+    },
+
+    {
+        id: 8,
+        title: "Just Cause 2",
+        genre: "Action",
+        category: "Open World",
+        description: "Explore a huge island filled with vehicles, missions, stunts, and explosive open-world gameplay.",
+        platform: "PC",
+        releaseYear: "2010",
+        cover: "https://via.placeholder.com/400x300?text=Just+Cause+2",
+        screenshots: [
+            "https://via.placeholder.com/800x450?text=Just+Cause+2+Screenshot+1",
+            "https://via.placeholder.com/800x450?text=Just+Cause+2+Screenshot+2",
+            "https://via.placeholder.com/800x450?text=Just+Cause+2+Screenshot+3"
+        ],
+        systemRequirements: {
+            minimum: "OS: Windows Vista/7, CPU: Dual Core 2.6GHz, RAM: 2GB, GPU: GTX 8800, Storage: 10GB",
+            recommended: "OS: Windows 10/11, CPU: Intel Core i5, RAM: 4GB, GPU: GTX 560, Storage: 10GB"
+        },
+        downloadUrl: ""
+    },
+
+    {
+        id: 9,
+        title: "Euro Truck Simulator 2",
+        genre: "Simulator",
+        category: "Simulator",
+        description: "Drive across European roads, deliver cargo, customize trucks, and build your own transport business.",
+        platform: "PC",
+        releaseYear: "2012",
+        cover: "https://via.placeholder.com/400x300?text=Euro+Truck+Simulator+2",
+        screenshots: [
+            "https://via.placeholder.com/800x450?text=ETS2+Screenshot+1",
+            "https://via.placeholder.com/800x450?text=ETS2+Screenshot+2",
+            "https://via.placeholder.com/800x450?text=ETS2+Screenshot+3"
+        ],
+        systemRequirements: {
+            minimum: "OS: Windows 7, CPU: Dual Core 2.4GHz, RAM: 4GB, GPU: GTX 760, Storage: 25GB",
+            recommended: "OS: Windows 10/11, CPU: Quad Core, RAM: 8GB, GPU: GTX 1060, Storage: 25GB"
+        },
+        downloadUrl: ""
+    },
+
+    {
+        id: 10,
+        title: "Batman: Arkham City",
+        genre: "Action",
+        category: "Adventure",
+        description: "Take control of Batman in a dark open environment featuring combat, investigation, exploration, and a cinematic story.",
+        platform: "PC",
+        releaseYear: "2011",
+        cover: "https://via.placeholder.com/400x300?text=Batman+Arkham+City",
+        screenshots: [
+            "https://via.placeholder.com/800x450?text=Batman+Screenshot+1",
+            "https://via.placeholder.com/800x450?text=Batman+Screenshot+2",
+            "https://via.placeholder.com/800x450?text=Batman+Screenshot+3"
+        ],
+        systemRequirements: {
+            minimum: "OS: Windows 7, CPU: Intel Core 2 Duo, RAM: 2GB, GPU: NVIDIA 8800 GT, Storage: 17GB",
+            recommended: "OS: Windows 10/11, CPU: Intel Core i5, RAM: 8GB, GPU: GTX 660, Storage: 17GB"
+        },
+        downloadUrl: ""
     }
+];
 ];
 
 // ===================================
