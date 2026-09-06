@@ -1,5 +1,5 @@
 /* =========================================================
-   GAMING DOCK - JAVASCRIPT
+   GAMING DOCK - FRESH JAVASCRIPT
    Complete Website Functionality
    ========================================================= */
 
@@ -9,6 +9,7 @@
    ========================================================= */
 
 const games = [
+
     {
         id: 1,
         title: "Grand Theft Auto V",
@@ -17,18 +18,22 @@ const games = [
         description: "Explore Los Santos in a massive open-world action adventure featuring missions, vehicles and a cinematic story.",
         platform: "PC",
         releaseYear: "2015",
-        cover: "https://via.placeholder.com/600x400?text=Grand+Theft+Auto+V",
+
+        cover: "https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg",
+
         screenshots: [
-            "https://via.placeholder.com/1000x550?text=GTA+V+Screenshot+1",
-            "https://via.placeholder.com/1000x550?text=GTA+V+Screenshot+2",
-            "https://via.placeholder.com/1000x550?text=GTA+V+Screenshot+3"
+            "https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg",
+            "https://cdn.cloudflare.steamstatic.com/steam/apps/271590/capsule_616x353.jpg"
         ],
+
         systemRequirements: {
             minimum: "OS: Windows 10, CPU: Intel Core 2 Quad, RAM: 4GB, GPU: NVIDIA 9800 GT, Storage: 72GB",
             recommended: "OS: Windows 10/11, CPU: Intel Core i5, RAM: 8GB, GPU: GTX 1060, Storage: 72GB"
         },
+
         downloadUrl: ""
     },
+
 
     {
         id: 2,
@@ -38,18 +43,22 @@ const games = [
         description: "Experience intense street racing and police pursuits in a high-speed open-world racing experience.",
         platform: "PC",
         releaseYear: "2013",
-        cover: "https://via.placeholder.com/600x400?text=Need+for+Speed+Rivals",
+
+        cover: "https://cdn.cloudflare.steamstatic.com/steam/apps/126260/header.jpg",
+
         screenshots: [
-            "https://via.placeholder.com/1000x550?text=NFS+Rivals+Screenshot+1",
-            "https://via.placeholder.com/1000x550?text=NFS+Rivals+Screenshot+2",
-            "https://via.placeholder.com/1000x550?text=NFS+Rivals+Screenshot+3"
+            "https://cdn.cloudflare.steamstatic.com/steam/apps/126260/header.jpg",
+            "https://cdn.cloudflare.steamstatic.com/steam/apps/126260/capsule_616x353.jpg"
         ],
+
         systemRequirements: {
             minimum: "OS: Windows 7, CPU: Intel Core 2 Duo, RAM: 4GB, GPU: GTX 260, Storage: 30GB",
             recommended: "OS: Windows 10/11, CPU: Intel Core i5, RAM: 8GB, GPU: GTX 660, Storage: 30GB"
         },
+
         downloadUrl: ""
     },
+
 
     {
         id: 3,
@@ -59,18 +68,22 @@ const games = [
         description: "Enter a historical action adventure filled with exploration, combat, stealth and an epic story.",
         platform: "PC",
         releaseYear: "2012",
-        cover: "https://via.placeholder.com/600x400?text=Assassins+Creed+III",
+
+        cover: "https://cdn.cloudflare.steamstatic.com/steam/apps/208480/header.jpg",
+
         screenshots: [
-            "https://via.placeholder.com/1000x550?text=AC+III+Screenshot+1",
-            "https://via.placeholder.com/1000x550?text=AC+III+Screenshot+2",
-            "https://via.placeholder.com/1000x550?text=AC+III+Screenshot+3"
+            "https://cdn.cloudflare.steamstatic.com/steam/apps/208480/header.jpg",
+            "https://cdn.cloudflare.steamstatic.com/steam/apps/208480/capsule_616x353.jpg"
         ],
+
         systemRequirements: {
             minimum: "OS: Windows 7, CPU: Intel Core 2 Duo, RAM: 2GB, GPU: GTX 260, Storage: 17GB",
             recommended: "OS: Windows 10/11, CPU: Intel Core i5, RAM: 4GB, GPU: GTX 660, Storage: 17GB"
         },
+
         downloadUrl: ""
     },
+
 
     {
         id: 4,
@@ -80,18 +93,22 @@ const games = [
         description: "Survive a dangerous tropical island in an open-world first-person adventure packed with action and exploration.",
         platform: "PC",
         releaseYear: "2012",
-        cover: "https://via.placeholder.com/600x400?text=Far+Cry+3",
+
+        cover: "https://cdn.cloudflare.steamstatic.com/steam/apps/220240/header.jpg",
+
         screenshots: [
-            "https://via.placeholder.com/1000x550?text=Far+Cry+3+Screenshot+1",
-            "https://via.placeholder.com/1000x550?text=Far+Cry+3+Screenshot+2",
-            "https://via.placeholder.com/1000x550?text=Far+Cry+3+Screenshot+3"
+            "https://cdn.cloudflare.steamstatic.com/steam/apps/220240/header.jpg",
+            "https://cdn.cloudflare.steamstatic.com/steam/apps/220240/capsule_616x353.jpg"
         ],
+
         systemRequirements: {
             minimum: "OS: Windows 7, CPU: Intel Core 2 Duo, RAM: 4GB, GPU: GTX 460, Storage: 15GB",
             recommended: "OS: Windows 10/11, CPU: Intel Core i5, RAM: 8GB, GPU: GTX 660, Storage: 15GB"
         },
+
         downloadUrl: ""
     },
+
 
     {
         id: 5,
@@ -101,18 +118,22 @@ const games = [
         description: "Join Lara Croft on a cinematic survival adventure featuring exploration, puzzles and intense action.",
         platform: "PC",
         releaseYear: "2013",
-        cover: "https://via.placeholder.com/600x400?text=Tomb+Raider",
+
+        cover: "https://cdn.cloudflare.steamstatic.com/steam/apps/203160/header.jpg",
+
         screenshots: [
-            "https://via.placeholder.com/1000x550?text=Tomb+Raider+Screenshot+1",
-            "https://via.placeholder.com/1000x550?text=Tomb+Raider+Screenshot+2",
-            "https://via.placeholder.com/1000x550?text=Tomb+Raider+Screenshot+3"
+            "https://cdn.cloudflare.steamstatic.com/steam/apps/203160/header.jpg",
+            "https://cdn.cloudflare.steamstatic.com/steam/apps/203160/capsule_616x353.jpg"
         ],
+
         systemRequirements: {
             minimum: "OS: Windows 7, CPU: Intel Core 2 Duo, RAM: 2GB, GPU: Radeon HD 2600, Storage: 12GB",
             recommended: "OS: Windows 10/11, CPU: Intel Core i5, RAM: 8GB, GPU: GTX 660, Storage: 12GB"
         },
+
         downloadUrl: ""
     },
+
 
     {
         id: 6,
@@ -122,18 +143,22 @@ const games = [
         description: "Explore Hong Kong in an open-world action adventure featuring driving, martial arts and an engaging story.",
         platform: "PC",
         releaseYear: "2012",
-        cover: "https://via.placeholder.com/600x400?text=Sleeping+Dogs",
+
+        cover: "https://cdn.cloudflare.steamstatic.com/steam/apps/202170/header.jpg",
+
         screenshots: [
-            "https://via.placeholder.com/1000x550?text=Sleeping+Dogs+Screenshot+1",
-            "https://via.placeholder.com/1000x550?text=Sleeping+Dogs+Screenshot+2",
-            "https://via.placeholder.com/1000x550?text=Sleeping+Dogs+Screenshot+3"
+            "https://cdn.cloudflare.steamstatic.com/steam/apps/202170/header.jpg",
+            "https://cdn.cloudflare.steamstatic.com/steam/apps/202170/capsule_616x353.jpg"
         ],
+
         systemRequirements: {
             minimum: "OS: Windows Vista/7, CPU: Core 2 Duo, RAM: 2GB, GPU: GeForce 8800 GT, Storage: 15GB",
             recommended: "OS: Windows 10/11, CPU: Intel Core i5, RAM: 4GB, GPU: GTX 560, Storage: 15GB"
         },
+
         downloadUrl: ""
     },
+
 
     {
         id: 7,
@@ -143,18 +168,22 @@ const games = [
         description: "Experience a cinematic crime story set in the fictional city of Empire Bay.",
         platform: "PC",
         releaseYear: "2010",
-        cover: "https://via.placeholder.com/600x400?text=Mafia+II",
+
+        cover: "https://cdn.cloudflare.steamstatic.com/steam/apps/50130/header.jpg",
+
         screenshots: [
-            "https://via.placeholder.com/1000x550?text=Mafia+II+Screenshot+1",
-            "https://via.placeholder.com/1000x550?text=Mafia+II+Screenshot+2",
-            "https://via.placeholder.com/1000x550?text=Mafia+II+Screenshot+3"
+            "https://cdn.cloudflare.steamstatic.com/steam/apps/50130/header.jpg",
+            "https://cdn.cloudflare.steamstatic.com/steam/apps/50130/capsule_616x353.jpg"
         ],
+
         systemRequirements: {
             minimum: "OS: Windows XP/Vista/7, CPU: 2.4GHz Quad Core, RAM: 2GB, GPU: GeForce 8600, Storage: 8GB",
             recommended: "OS: Windows 10/11, CPU: Intel Core i5, RAM: 4GB, GPU: GTX 560, Storage: 8GB"
         },
+
         downloadUrl: ""
     },
+
 
     {
         id: 8,
@@ -164,18 +193,22 @@ const games = [
         description: "Explore a huge tropical island and create chaos using vehicles, weapons and an iconic grappling hook.",
         platform: "PC",
         releaseYear: "2010",
-        cover: "https://via.placeholder.com/600x400?text=Just+Cause+2",
+
+        cover: "https://cdn.cloudflare.steamstatic.com/steam/apps/8190/header.jpg",
+
         screenshots: [
-            "https://via.placeholder.com/1000x550?text=Just+Cause+2+Screenshot+1",
-            "https://via.placeholder.com/1000x550?text=Just+Cause+2+Screenshot+2",
-            "https://via.placeholder.com/1000x550?text=Just+Cause+2+Screenshot+3"
+            "https://cdn.cloudflare.steamstatic.com/steam/apps/8190/header.jpg",
+            "https://cdn.cloudflare.steamstatic.com/steam/apps/8190/capsule_616x353.jpg"
         ],
+
         systemRequirements: {
             minimum: "OS: Windows Vista/7, CPU: Dual Core, RAM: 2GB, GPU: GeForce 8800, Storage: 10GB",
             recommended: "OS: Windows 10/11, CPU: Intel Core i5, RAM: 4GB, GPU: GTX 560, Storage: 10GB"
         },
+
         downloadUrl: ""
     },
+
 
     {
         id: 9,
@@ -185,18 +218,22 @@ const games = [
         description: "Travel across Europe as a professional truck driver while building your own transportation business.",
         platform: "PC",
         releaseYear: "2012",
-        cover: "https://via.placeholder.com/600x400?text=Euro+Truck+Simulator+2",
+
+        cover: "https://cdn.cloudflare.steamstatic.com/steam/apps/227300/header.jpg",
+
         screenshots: [
-            "https://via.placeholder.com/1000x550?text=ETS2+Screenshot+1",
-            "https://via.placeholder.com/1000x550?text=ETS2+Screenshot+2",
-            "https://via.placeholder.com/1000x550?text=ETS2+Screenshot+3"
+            "https://cdn.cloudflare.steamstatic.com/steam/apps/227300/header.jpg",
+            "https://cdn.cloudflare.steamstatic.com/steam/apps/227300/capsule_616x353.jpg"
         ],
+
         systemRequirements: {
             minimum: "OS: Windows 7, CPU: Dual Core 2.4GHz, RAM: 4GB, GPU: GeForce GTS 450, Storage: 25GB",
             recommended: "OS: Windows 10/11, CPU: Intel Core i5, RAM: 8GB, GPU: GTX 760, Storage: 25GB"
         },
+
         downloadUrl: ""
     },
+
 
     {
         id: 10,
@@ -206,18 +243,22 @@ const games = [
         description: "Become Batman and explore Arkham City in a cinematic superhero action adventure.",
         platform: "PC",
         releaseYear: "2011",
-        cover: "https://via.placeholder.com/600x400?text=Batman+Arkham+City",
+
+        cover: "https://cdn.cloudflare.steamstatic.com/steam/apps/200260/header.jpg",
+
         screenshots: [
-            "https://via.placeholder.com/1000x550?text=Batman+Screenshot+1",
-            "https://via.placeholder.com/1000x550?text=Batman+Screenshot+2",
-            "https://via.placeholder.com/1000x550?text=Batman+Screenshot+3"
+            "https://cdn.cloudflare.steamstatic.com/steam/apps/200260/header.jpg",
+            "https://cdn.cloudflare.steamstatic.com/steam/apps/200260/capsule_616x353.jpg"
         ],
+
         systemRequirements: {
             minimum: "OS: Windows 7, CPU: Intel Core 2 Duo, RAM: 2GB, GPU: NVIDIA 8800 GT, Storage: 17GB",
             recommended: "OS: Windows 10/11, CPU: Intel Core i5, RAM: 4GB, GPU: GTX 560, Storage: 17GB"
         },
+
         downloadUrl: ""
     }
+
 ];
 
 
@@ -226,18 +267,19 @@ const games = [
    ========================================================= */
 
 const updates = [
+
     {
         id: 1,
-        image: "https://via.placeholder.com/700x400?text=Gaming+Dock+Update",
+        image: "https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg",
         date: "September 6, 2026",
         title: "Gaming Dock Website Update",
-        description: "Gaming Dock has been updated with a refreshed game library and improved website functionality.",
+        description: "Gaming Dock has been updated with an improved game library and website functionality.",
         content: "Gaming Dock continues to improve. New games, updates and features will be added regularly."
     },
 
     {
         id: 2,
-        image: "https://via.placeholder.com/700x400?text=New+Games",
+        image: "https://cdn.cloudflare.steamstatic.com/steam/apps/227300/header.jpg",
         date: "September 5, 2026",
         title: "New Games Coming Soon",
         description: "More games will be added to the Gaming Dock library in future updates.",
@@ -246,12 +288,13 @@ const updates = [
 
     {
         id: 3,
-        image: "https://via.placeholder.com/700x400?text=Gaming+News",
+        image: "https://cdn.cloudflare.steamstatic.com/steam/apps/220240/header.jpg",
         date: "September 4, 2026",
         title: "Gaming News & Updates",
         description: "Gaming Dock will bring gaming news and important game updates in one place.",
         content: "The updates section is designed to make it easy to keep track of new releases and gaming information."
     }
+
 ];
 
 
@@ -271,7 +314,7 @@ let currentUser = null;
 
 document.addEventListener("DOMContentLoaded", function () {
 
-    console.log("Gaming Dock JavaScript loaded successfully.");
+    console.log("Gaming Dock JavaScript loaded.");
 
     loadUserData();
 
@@ -291,7 +334,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 /* =========================================================
-   LOAD USER DATA
+   USER DATA
    ========================================================= */
 
 function loadUserData() {
@@ -309,10 +352,7 @@ function loadUserData() {
 
     } catch (error) {
 
-        console.error(
-            "Could not load user data:",
-            error
-        );
+        console.error("User data error:", error);
 
         currentUser = null;
 
@@ -320,10 +360,6 @@ function loadUserData() {
 
 }
 
-
-/* =========================================================
-   SAVE USER DATA
-   ========================================================= */
 
 function saveUserData() {
 
@@ -338,18 +374,13 @@ function saveUserData() {
 
         } else {
 
-            localStorage.removeItem(
-                "gamingDockUser"
-            );
+            localStorage.removeItem("gamingDockUser");
 
         }
 
     } catch (error) {
 
-        console.error(
-            "Could not save user data:",
-            error
-        );
+        console.error("Could not save user data:", error);
 
     }
 
@@ -362,40 +393,34 @@ function saveUserData() {
 
 function setupEventListeners() {
 
-    /* -----------------------------------------
-       NAVIGATION
-       ----------------------------------------- */
+
+    /* NAVIGATION */
 
     document
         .querySelectorAll(".nav-link")
         .forEach(function (link) {
 
-            link.addEventListener(
-                "click",
-                function (event) {
+            link.addEventListener("click", function (event) {
 
-                    event.preventDefault();
+                event.preventDefault();
 
-                    const page =
-                        this.getAttribute("data-page");
+                const page =
+                    this.getAttribute("data-page");
 
-                    if (page) {
+                if (page) {
 
-                        navigateTo(page);
-
-                    }
-
-                    closeHamburger();
+                    navigateTo(page);
 
                 }
-            );
+
+                closeHamburger();
+
+            });
 
         });
 
 
-    /* -----------------------------------------
-       HAMBURGER
-       ----------------------------------------- */
+    /* HAMBURGER */
 
     const hamburger =
         document.getElementById("hamburger");
@@ -406,27 +431,18 @@ function setupEventListeners() {
 
     if (hamburger && navMenu) {
 
-        hamburger.addEventListener(
-            "click",
-            function () {
+        hamburger.addEventListener("click", function () {
 
-                hamburger.classList.toggle(
-                    "active"
-                );
+            hamburger.classList.toggle("active");
 
-                navMenu.classList.toggle(
-                    "active"
-                );
+            navMenu.classList.toggle("active");
 
-            }
-        );
+        });
 
     }
 
 
-    /* -----------------------------------------
-       SEARCH
-       ----------------------------------------- */
+    /* SEARCH */
 
     const searchInput =
         document.getElementById("searchInput");
@@ -434,50 +450,38 @@ function setupEventListeners() {
 
     if (searchInput) {
 
-        searchInput.addEventListener(
-            "input",
-            function () {
+        searchInput.addEventListener("input", function () {
 
-                handleSearch(this.value);
+            handleSearch(this.value);
 
-            }
-        );
+        });
 
     }
 
 
-    /* -----------------------------------------
-       CATEGORY BUTTONS
-       ----------------------------------------- */
+    /* CATEGORY BUTTONS */
 
     document
         .querySelectorAll("[data-category]")
         .forEach(function (button) {
 
-            button.addEventListener(
-                "click",
-                function () {
+            button.addEventListener("click", function () {
 
-                    const category =
-                        this.getAttribute(
-                            "data-category"
-                        );
+                const category =
+                    this.getAttribute("data-category");
 
-                    if (category) {
+                if (category) {
 
-                        filterGames(category);
-
-                    }
+                    filterGames(category);
 
                 }
-            );
+
+            });
 
         });
 
 
-    /* -----------------------------------------
-       LOGIN FORM
-       ----------------------------------------- */
+    /* LOGIN */
 
     const loginForm =
         document.getElementById("loginForm");
@@ -485,23 +489,18 @@ function setupEventListeners() {
 
     if (loginForm) {
 
-        loginForm.addEventListener(
-            "submit",
-            function (event) {
+        loginForm.addEventListener("submit", function (event) {
 
-                event.preventDefault();
+            event.preventDefault();
 
-                handleLogin();
+            handleLogin();
 
-            }
-        );
+        });
 
     }
 
 
-    /* -----------------------------------------
-       REGISTER FORM
-       ----------------------------------------- */
+    /* REGISTER */
 
     const registerForm =
         document.getElementById("registerForm");
@@ -509,37 +508,29 @@ function setupEventListeners() {
 
     if (registerForm) {
 
-        registerForm.addEventListener(
-            "submit",
-            function (event) {
+        registerForm.addEventListener("submit", function (event) {
 
-                event.preventDefault();
+            event.preventDefault();
 
-                handleRegister();
+            handleRegister();
 
-            }
-        );
+        });
 
     }
 
 
     /*
-       CONTACT FORM
+       CONTACT FORM IS INTENTIONALLY NOT HANDLED HERE.
 
-       IMPORTANT:
-       No event.preventDefault() here.
+       Formspree handles the form directly through:
 
-       The Contact Form is submitted directly
-       to Formspree through the HTML form action.
-
-       Form action:
        https://formspree.io/f/xbgjaype
+
+       Therefore we do NOT use preventDefault().
     */
 
 
-    /* -----------------------------------------
-       COOKIE ACCEPT
-       ----------------------------------------- */
+    /* COOKIE ACCEPT */
 
     const cookieAccept =
         document.getElementById("cookieAccept");
@@ -547,26 +538,21 @@ function setupEventListeners() {
 
     if (cookieAccept) {
 
-        cookieAccept.addEventListener(
-            "click",
-            function () {
+        cookieAccept.addEventListener("click", function () {
 
-                localStorage.setItem(
-                    "gamingDockCookies",
-                    "accepted"
-                );
+            localStorage.setItem(
+                "gamingDockCookies",
+                "accepted"
+            );
 
-                hideCookieConsent();
+            hideCookieConsent();
 
-            }
-        );
+        });
 
     }
 
 
-    /* -----------------------------------------
-       COOKIE DECLINE
-       ----------------------------------------- */
+    /* COOKIE DECLINE */
 
     const cookieDecline =
         document.getElementById("cookieDecline");
@@ -574,47 +560,37 @@ function setupEventListeners() {
 
     if (cookieDecline) {
 
-        cookieDecline.addEventListener(
-            "click",
-            function () {
+        cookieDecline.addEventListener("click", function () {
 
-                localStorage.setItem(
-                    "gamingDockCookies",
-                    "declined"
-                );
+            localStorage.setItem(
+                "gamingDockCookies",
+                "declined"
+            );
 
-                hideCookieConsent();
+            hideCookieConsent();
 
-            }
-        );
+        });
 
     }
 
 
-    /* -----------------------------------------
-       GAME MODAL
-       ----------------------------------------- */
+    /* MODAL */
 
     const modal =
-        document.getElementById(
-            "gameDetailsModal"
-        );
+        document.getElementById("gameDetailsModal");
 
 
     if (modal) {
 
-        modal.addEventListener(
-            "click",
-            function (event) {
+        modal.addEventListener("click", function (event) {
 
-                if (event.target === modal) {
+            if (event.target === modal) {
 
-                    closeGameDetails();
-
-                }
+                closeGameDetails();
 
             }
-        );
+
+        });
 
     }
 
@@ -638,23 +614,20 @@ function navigateTo(page) {
     });
 
 
-    const pageElement =
+    const selectedPage =
         document.getElementById(page);
 
 
-    if (!pageElement) {
+    if (!selectedPage) {
 
-        console.warn(
-            "Page not found:",
-            page
-        );
+        console.warn("Page not found:", page);
 
         return;
 
     }
 
 
-    pageElement.classList.add("active");
+    selectedPage.classList.add("active");
 
     currentPage = page;
 
@@ -680,7 +653,7 @@ function navigateTo(page) {
 
 
 /* =========================================================
-   HAMBURGER CLOSE
+   HAMBURGER
    ========================================================= */
 
 function closeHamburger() {
@@ -694,18 +667,14 @@ function closeHamburger() {
 
     if (hamburger) {
 
-        hamburger.classList.remove(
-            "active"
-        );
+        hamburger.classList.remove("active");
 
     }
 
 
     if (navMenu) {
 
-        navMenu.classList.remove(
-            "active"
-        );
+        navMenu.classList.remove("active");
 
     }
 
@@ -719,37 +688,38 @@ function closeHamburger() {
 function renderGames() {
 
     const container =
-        document.getElementById(
-            "gamesContainer"
-        );
+        document.getElementById("gamesContainer");
 
 
     if (!container) {
 
-        console.warn(
-            "gamesContainer not found."
-        );
+        console.warn("gamesContainer not found.");
 
         return;
 
     }
 
 
-    container.innerHTML = "";
-
-
     const noGamesMessage =
-        document.getElementById(
-            "noGamesMessage"
-        );
+        document.getElementById("noGamesMessage");
+
+
+    /*
+       Clear only once.
+
+       No interval.
+       No repeated rendering loop.
+       No animation restart timer.
+    */
+
+    container.replaceChildren();
 
 
     if (filteredGames.length === 0) {
 
         if (noGamesMessage) {
 
-            noGamesMessage.style.display =
-                "block";
+            noGamesMessage.style.display = "block";
 
         }
 
@@ -760,8 +730,7 @@ function renderGames() {
 
     if (noGamesMessage) {
 
-        noGamesMessage.style.display =
-            "none";
+        noGamesMessage.style.display = "none";
 
     }
 
@@ -769,7 +738,7 @@ function renderGames() {
     filteredGames.forEach(function (game) {
 
         const card =
-            document.createElement("div");
+            document.createElement("article");
 
 
         card.className = "game-card";
@@ -777,13 +746,14 @@ function renderGames() {
 
         card.innerHTML = `
 
-            <div class="game-image">
+            <div class="game-card-image">
 
                 <img
                     src="${game.cover}"
                     alt="${escapeHTML(game.title)}"
                     loading="lazy"
-                    onerror="this.src='https://via.placeholder.com/600x400?text=Gaming+Dock'"
+                    decoding="async"
+                    onerror="handleImageError(this)"
                 >
 
             </div>
@@ -795,13 +765,16 @@ function renderGames() {
                     ${escapeHTML(game.category)}
                 </span>
 
+
                 <h3>
                     ${escapeHTML(game.title)}
                 </h3>
 
+
                 <p>
                     ${escapeHTML(game.description)}
                 </p>
+
 
                 <div class="game-meta">
 
@@ -821,6 +794,7 @@ function renderGames() {
 
 
                 <button
+                    type="button"
                     class="btn btn-primary"
                     onclick="viewGameDetails(${game.id})"
                 >
@@ -840,13 +814,50 @@ function renderGames() {
 
 
 /* =========================================================
+   SAFE IMAGE ERROR HANDLER
+   ========================================================= */
+
+function handleImageError(image) {
+
+    if (!image) {
+
+        return;
+
+    }
+
+
+    /*
+       Prevent infinite onerror loops.
+    */
+
+    image.onerror = null;
+
+    image.removeAttribute("src");
+
+    image.style.display = "none";
+
+
+    const wrapper =
+        image.parentElement;
+
+
+    if (wrapper) {
+
+        wrapper.classList.add("image-error");
+
+    }
+
+}
+
+
+/* =========================================================
    SEARCH
    ========================================================= */
 
 function handleSearch(searchTerm) {
 
     const term =
-        String(searchTerm)
+        String(searchTerm || "")
             .trim()
             .toLowerCase();
 
@@ -862,27 +873,19 @@ function handleSearch(searchTerm) {
 
                 return (
 
-                    game.title
-                        .toLowerCase()
-                        .includes(term)
+                    game.title.toLowerCase().includes(term)
 
                     ||
 
-                    game.genre
-                        .toLowerCase()
-                        .includes(term)
+                    game.genre.toLowerCase().includes(term)
 
                     ||
 
-                    game.category
-                        .toLowerCase()
-                        .includes(term)
+                    game.category.toLowerCase().includes(term)
 
                     ||
 
-                    game.description
-                        .toLowerCase()
-                        .includes(term)
+                    game.description.toLowerCase().includes(term)
 
                 );
 
@@ -920,15 +923,11 @@ function filterGames(category) {
 
                 return (
 
-                    game.category
-                        .toLowerCase()
-                        === selectedCategory
+                    game.category.toLowerCase() === selectedCategory
 
                     ||
 
-                    game.genre
-                        .toLowerCase()
-                        === selectedCategory
+                    game.genre.toLowerCase() === selectedCategory
 
                 );
 
@@ -956,7 +955,7 @@ function filterGames(category) {
 
 
 /* =========================================================
-   VIEW GAME DETAILS
+   GAME DETAILS
    ========================================================= */
 
 function viewGameDetails(gameId) {
@@ -971,10 +970,7 @@ function viewGameDetails(gameId) {
 
     if (!game) {
 
-        console.error(
-            "Game not found:",
-            gameId
-        );
+        console.error("Game not found:", gameId);
 
         return;
 
@@ -985,9 +981,7 @@ function viewGameDetails(gameId) {
 
 
     const modal =
-        document.getElementById(
-            "gameDetailsModal"
-        );
+        document.getElementById("gameDetailsModal");
 
 
     if (!modal) {
@@ -1004,19 +998,12 @@ function viewGameDetails(gameId) {
 
 
     const detailsContainer =
-        modal.querySelector(
-            ".modal-content"
-        ) ||
-        modal.querySelector(
-            ".game-details"
-        );
+        modal.querySelector(".modal-content");
 
 
     if (!detailsContainer) {
 
-        console.warn(
-            "Modal content container not found."
-        );
+        console.warn("Modal content not found.");
 
         return;
 
@@ -1031,6 +1018,7 @@ function viewGameDetails(gameId) {
         downloadButtonHTML = `
 
             <button
+                type="button"
                 class="btn btn-primary"
                 onclick="downloadGame(${game.id})"
             >
@@ -1057,6 +1045,7 @@ function viewGameDetails(gameId) {
         downloadButtonHTML = `
 
             <button
+                type="button"
                 class="btn btn-primary"
                 onclick="promptLogin()"
             >
@@ -1072,9 +1061,35 @@ function viewGameDetails(gameId) {
     }
 
 
+    const screenshotHTML =
+        game.screenshots
+            .map(function (image, index) {
+
+                return `
+
+                    <div class="gallery-item">
+
+                        <img
+                            src="${image}"
+                            alt="${escapeHTML(game.title)} screenshot ${index + 1}"
+                            loading="lazy"
+                            decoding="async"
+                            onclick="openScreenshot('${image}')"
+                            onerror="handleImageError(this)"
+                        >
+
+                    </div>
+
+                `;
+
+            })
+            .join("");
+
+
     detailsContainer.innerHTML = `
 
         <button
+            type="button"
             class="modal-close"
             onclick="closeGameDetails()"
             aria-label="Close"
@@ -1089,7 +1104,8 @@ function viewGameDetails(gameId) {
                 class="game-details-cover"
                 src="${game.cover}"
                 alt="${escapeHTML(game.title)}"
-                onerror="this.src='https://via.placeholder.com/600x400?text=Gaming+Dock'"
+                decoding="async"
+                onerror="handleImageError(this)"
             >
 
 
@@ -1117,10 +1133,12 @@ function viewGameDetails(gameId) {
                         ${escapeHTML(game.genre)}
                     </p>
 
+
                     <p>
                         <strong>Platform:</strong>
                         ${escapeHTML(game.platform)}
                     </p>
+
 
                     <p>
                         <strong>Release Year:</strong>
@@ -1131,7 +1149,9 @@ function viewGameDetails(gameId) {
 
 
                 <div class="download-area">
+
                     ${downloadButtonHTML}
+
                 </div>
 
             </div>
@@ -1172,34 +1192,16 @@ function viewGameDetails(gameId) {
         </div>
 
 
-        <div class="screenshots">
+        <div class="game-gallery">
 
             <h3>
                 Screenshots
             </h3>
 
 
-            <div class="screenshots-grid">
+            <div class="gallery-grid">
 
-                ${
-                    game.screenshots
-                        .map(function (image, index) {
-
-                            return `
-
-                                <img
-                                    src="${image}"
-                                    alt="${escapeHTML(game.title)} screenshot ${index + 1}"
-                                    loading="lazy"
-                                    onclick="openScreenshot('${image}')"
-                                    onerror="this.src='https://via.placeholder.com/1000x550?text=Screenshot'"
-                                >
-
-                            `;
-
-                        })
-                        .join("")
-                }
+                ${screenshotHTML}
 
             </div>
 
@@ -1210,8 +1212,7 @@ function viewGameDetails(gameId) {
 
     modal.classList.add("active");
 
-    document.body.style.overflow =
-        "hidden";
+    document.body.style.overflow = "hidden";
 
 }
 
@@ -1223,9 +1224,7 @@ function viewGameDetails(gameId) {
 function closeGameDetails() {
 
     const modal =
-        document.getElementById(
-            "gameDetailsModal"
-        );
+        document.getElementById("gameDetailsModal");
 
 
     if (modal) {
@@ -1243,7 +1242,7 @@ function closeGameDetails() {
 
 
 /* =========================================================
-   SCREENSHOT
+   OPEN SCREENSHOT
    ========================================================= */
 
 function openScreenshot(imageUrl) {
@@ -1337,24 +1336,15 @@ function promptLogin() {
 function handleLogin() {
 
     const emailInput =
-        document.getElementById(
-            "loginEmail"
-        );
+        document.getElementById("loginEmail");
 
     const passwordInput =
-        document.getElementById(
-            "loginPassword"
-        );
+        document.getElementById("loginPassword");
 
 
-    if (
-        !emailInput ||
-        !passwordInput
-    ) {
+    if (!emailInput || !passwordInput) {
 
-        console.warn(
-            "Login form fields not found."
-        );
+        console.warn("Login fields not found.");
 
         return;
 
@@ -1363,7 +1353,6 @@ function handleLogin() {
 
     const email =
         emailInput.value.trim();
-
 
     const password =
         passwordInput.value;
@@ -1382,12 +1371,12 @@ function handleLogin() {
 
 
     /*
-       FRONTEND DEMO AUTHENTICATION
+       FRONTEND DEMO AUTH ONLY.
 
-       The password is NOT stored.
+       Password is never stored.
 
-       For production authentication use
-       a secure authentication provider/backend.
+       Production authentication should use
+       Firebase, Supabase, Auth0 or a secure backend.
     */
 
 
@@ -1401,8 +1390,7 @@ function handleLogin() {
         email: email,
 
         joined:
-            new Date()
-                .toLocaleDateString()
+            new Date().toLocaleDateString()
 
     };
 
@@ -1434,19 +1422,13 @@ function handleLogin() {
 function handleRegister() {
 
     const nameInput =
-        document.getElementById(
-            "registerName"
-        );
+        document.getElementById("registerName");
 
     const emailInput =
-        document.getElementById(
-            "registerEmail"
-        );
+        document.getElementById("registerEmail");
 
     const passwordInput =
-        document.getElementById(
-            "registerPassword"
-        );
+        document.getElementById("registerPassword");
 
     const confirmInput =
         document.getElementById(
@@ -1460,9 +1442,7 @@ function handleRegister() {
         !passwordInput
     ) {
 
-        console.warn(
-            "Register form fields not found."
-        );
+        console.warn("Register fields not found.");
 
         return;
 
@@ -1472,14 +1452,11 @@ function handleRegister() {
     const name =
         nameInput.value.trim();
 
-
     const email =
         emailInput.value.trim();
 
-
     const password =
         passwordInput.value;
-
 
     const confirmPassword =
         confirmInput
@@ -1487,11 +1464,7 @@ function handleRegister() {
             : password;
 
 
-    if (
-        !name ||
-        !email ||
-        !password
-    ) {
+    if (!name || !email || !password) {
 
         showFormMessage(
             "Please fill in all required fields.",
@@ -1515,10 +1488,7 @@ function handleRegister() {
     }
 
 
-    if (
-        password !==
-        confirmPassword
-    ) {
+    if (password !== confirmPassword) {
 
         showFormMessage(
             "Passwords do not match.",
@@ -1531,10 +1501,7 @@ function handleRegister() {
 
 
     /*
-       DEMO ACCOUNT
-
-       Password is intentionally NOT stored
-       in localStorage.
+       Password is intentionally NOT stored.
     */
 
 
@@ -1545,8 +1512,7 @@ function handleRegister() {
         email: email,
 
         joined:
-            new Date()
-                .toLocaleDateString()
+            new Date().toLocaleDateString()
 
     };
 
@@ -1589,29 +1555,22 @@ function logout() {
 
 
 /* =========================================================
-   UPDATE USER UI
+   USER UI
    ========================================================= */
 
 function updateUserUI() {
 
     const profileNav =
-        document.getElementById(
-            "profileNav"
-        );
-
+        document.getElementById("profileNav");
 
     const loginNav =
-        document.getElementById(
-            "loginNav"
-        );
+        document.getElementById("loginNav");
 
 
     if (profileNav) {
 
         profileNav.style.display =
-            currentUser
-                ? ""
-                : "none";
+            currentUser ? "" : "none";
 
     }
 
@@ -1619,29 +1578,21 @@ function updateUserUI() {
     if (loginNav) {
 
         loginNav.style.display =
-            currentUser
-                ? "none"
-                : "";
+            currentUser ? "none" : "";
 
     }
 
 
-    const userNameElements =
-        document.querySelectorAll(
-            ".user-name"
-        );
-
-
-    userNameElements.forEach(
-        function (element) {
+    document
+        .querySelectorAll(".user-name")
+        .forEach(function (element) {
 
             element.textContent =
                 currentUser
                     ? currentUser.name
                     : "Guest";
 
-        }
-    );
+        });
 
 }
 
@@ -1653,9 +1604,7 @@ function updateUserUI() {
 function renderProfile() {
 
     const profileContainer =
-        document.getElementById(
-            "profileContent"
-        );
+        document.getElementById("profileContent");
 
 
     if (!profileContainer) {
@@ -1679,7 +1628,9 @@ function renderProfile() {
                     Please login to view your Gaming Dock profile.
                 </p>
 
+
                 <button
+                    type="button"
                     class="btn btn-primary"
                     onclick="navigateTo('login')"
                 >
@@ -1695,45 +1646,43 @@ function renderProfile() {
     }
 
 
+    const firstLetter =
+        escapeHTML(
+            currentUser.name
+                .charAt(0)
+                .toUpperCase()
+        );
+
+
     profileContainer.innerHTML = `
 
         <div class="profile-card">
 
             <div class="profile-avatar">
-
-                ${escapeHTML(
-                    currentUser.name
-                        .charAt(0)
-                        .toUpperCase()
-                )}
-
+                ${firstLetter}
             </div>
 
 
             <h2>
-                ${escapeHTML(
-                    currentUser.name
-                )}
+                ${escapeHTML(currentUser.name)}
             </h2>
 
 
             <p>
-                ${escapeHTML(
-                    currentUser.email
-                )}
+                ${escapeHTML(currentUser.email)}
             </p>
 
 
             <p>
                 Member since:
                 ${escapeHTML(
-                    currentUser.joined ||
-                    "Recently"
+                    currentUser.joined || "Recently"
                 )}
             </p>
 
 
             <button
+                type="button"
                 class="btn btn-primary"
                 onclick="logout()"
             >
@@ -1754,23 +1703,19 @@ function renderProfile() {
 function renderUpdates() {
 
     const container =
-        document.getElementById(
-            "updatesContainer"
-        );
+        document.getElementById("updatesContainer");
 
 
     if (!container) {
 
-        console.warn(
-            "updatesContainer not found."
-        );
+        console.warn("updatesContainer not found.");
 
         return;
 
     }
 
 
-    container.innerHTML = "";
+    container.replaceChildren();
 
 
     if (updates.length === 0) {
@@ -1796,72 +1741,63 @@ function renderUpdates() {
     }
 
 
-    updates.forEach(
-        function (update) {
+    updates.forEach(function (update) {
 
-            const card =
-                document.createElement(
-                    "article"
-                );
+        const card =
+            document.createElement("article");
 
 
-            card.className =
-                "update-card";
+        card.className = "update-card";
 
 
-            card.innerHTML = `
+        card.innerHTML = `
 
-                <div class="update-image">
+            <div class="update-image">
 
-                    <img
-                        src="${update.image}"
-                        alt="${escapeHTML(update.title)}"
-                        loading="lazy"
-                        onerror="this.src='https://via.placeholder.com/700x400?text=Gaming+Dock+Update'"
-                    >
+                <img
+                    src="${update.image}"
+                    alt="${escapeHTML(update.title)}"
+                    loading="lazy"
+                    decoding="async"
+                    onerror="handleImageError(this)"
+                >
 
-                </div>
-
-
-                <div class="update-content">
-
-                    <span class="update-date">
-                        ${escapeHTML(
-                            update.date
-                        )}
-                    </span>
+            </div>
 
 
-                    <h3>
-                        ${escapeHTML(
-                            update.title
-                        )}
-                    </h3>
+            <div class="update-content">
+
+                <span class="update-date">
+                    ${escapeHTML(update.date)}
+                </span>
 
 
-                    <p>
-                        ${escapeHTML(
-                            update.description
-                        )}
-                    </p>
+                <h3>
+                    ${escapeHTML(update.title)}
+                </h3>
 
 
-                    <button
-                        class="btn btn-secondary"
-                        onclick="readUpdate(${update.id})"
-                    >
-                        READ MORE
-                    </button>
-
-                </div>
-
-            `;
+                <p>
+                    ${escapeHTML(update.description)}
+                </p>
 
 
-            container.appendChild(card);
+                <button
+                    type="button"
+                    class="btn btn-secondary"
+                    onclick="readUpdate(${update.id})"
+                >
+                    READ MORE
+                </button>
 
-        }
-    );
+            </div>
+
+        `;
+
+
+        container.appendChild(card);
+
+    });
 
 }
 
@@ -1873,14 +1809,11 @@ function renderUpdates() {
 function readUpdate(updateId) {
 
     const update =
-        updates.find(
-            function (item) {
+        updates.find(function (item) {
 
-                return item.id ===
-                    Number(updateId);
+            return item.id === Number(updateId);
 
-            }
-        );
+        });
 
 
     if (!update) {
@@ -1903,40 +1836,27 @@ function readUpdate(updateId) {
    FORM MESSAGE
    ========================================================= */
 
-function showFormMessage(
-    message,
-    type
-) {
+function showFormMessage(message, type) {
 
     const messageElement =
-        document.getElementById(
-            "formMessage"
-        );
+        document.getElementById("formMessage");
 
 
     if (messageElement) {
 
-        messageElement.textContent =
-            message;
-
+        messageElement.textContent = message;
 
         messageElement.className =
             "form-message " + type;
 
-
-        messageElement.style.display =
-            "block";
+        messageElement.style.display = "block";
 
 
-        setTimeout(
-            function () {
+        setTimeout(function () {
 
-                messageElement.style.display =
-                    "none";
+            messageElement.style.display = "none";
 
-            },
-            4000
-        );
+        }, 4000);
 
 
         return;
@@ -1956,9 +1876,7 @@ function showFormMessage(
 function setupCookieConsent() {
 
     const cookieConsent =
-        document.getElementById(
-            "cookieConsent"
-        );
+        document.getElementById("cookieConsent");
 
 
     if (!cookieConsent) {
@@ -1969,20 +1887,16 @@ function setupCookieConsent() {
 
 
     const cookieChoice =
-        localStorage.getItem(
-            "gamingDockCookies"
-        );
+        localStorage.getItem("gamingDockCookies");
 
 
     if (cookieChoice) {
 
-        cookieConsent.style.display =
-            "none";
+        cookieConsent.style.display = "none";
 
     } else {
 
-        cookieConsent.style.display =
-            "block";
+        cookieConsent.style.display = "block";
 
     }
 
@@ -1996,15 +1910,12 @@ function setupCookieConsent() {
 function hideCookieConsent() {
 
     const cookieConsent =
-        document.getElementById(
-            "cookieConsent"
-        );
+        document.getElementById("cookieConsent");
 
 
     if (cookieConsent) {
 
-        cookieConsent.style.display =
-            "none";
+        cookieConsent.style.display = "none";
 
     }
 
@@ -2028,31 +1939,11 @@ function escapeHTML(value) {
 
 
     return String(value)
-
-        .replace(
-            /&/g,
-            "&amp;"
-        )
-
-        .replace(
-            /</g,
-            "&lt;"
-        )
-
-        .replace(
-            />/g,
-            "&gt;"
-        )
-
-        .replace(
-            /"/g,
-            "&quot;"
-        )
-
-        .replace(
-            /'/g,
-            "&#039;"
-        );
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
 
 }
 
@@ -2061,41 +1952,31 @@ function escapeHTML(value) {
    GLOBAL FUNCTIONS
    ========================================================= */
 
-window.navigateTo =
-    navigateTo;
+window.navigateTo = navigateTo;
 
-window.viewGameDetails =
-    viewGameDetails;
+window.viewGameDetails = viewGameDetails;
 
-window.closeGameDetails =
-    closeGameDetails;
+window.closeGameDetails = closeGameDetails;
 
-window.downloadGame =
-    downloadGame;
+window.downloadGame = downloadGame;
 
-window.promptLogin =
-    promptLogin;
+window.promptLogin = promptLogin;
 
-window.handleLogin =
-    handleLogin;
+window.handleLogin = handleLogin;
 
-window.handleRegister =
-    handleRegister;
+window.handleRegister = handleRegister;
 
-window.logout =
-    logout;
+window.logout = logout;
 
-window.filterGames =
-    filterGames;
+window.filterGames = filterGames;
 
-window.handleSearch =
-    handleSearch;
+window.handleSearch = handleSearch;
 
-window.readUpdate =
-    readUpdate;
+window.readUpdate = readUpdate;
 
-window.openScreenshot =
-    openScreenshot;
+window.openScreenshot = openScreenshot;
+
+window.handleImageError = handleImageError;
 
 
 /* =========================================================
@@ -2103,9 +1984,9 @@ window.openScreenshot =
    ========================================================= */
 
 console.log(
-    "Gaming Dock loaded:",
+    "Gaming Dock ready:",
     games.length,
-    "games and",
+    "games |",
     updates.length,
-    "updates."
+    "updates"
 );
