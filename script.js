@@ -9,8 +9,6 @@
 
 const games = [
     {
-     const games = [
-    {
         id: 1,
         title: "Grand Theft Auto V",
         genre: "Action",
@@ -220,7 +218,6 @@ const games = [
         downloadUrl: ""
     }
 ];   
-];
 
 // ===================================
 // DATA - UPDATES
@@ -228,8 +225,7 @@ const games = [
 
 const updates = [
     {
-        const games = [
-    {
+      
         id: 1,
         title: "Grand Theft Auto V",
         genre: "Action",
@@ -438,7 +434,6 @@ const updates = [
         },
         downloadUrl: ""
     }
-];
 ];
 
 // ===================================
