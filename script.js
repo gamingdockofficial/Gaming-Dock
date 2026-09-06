@@ -225,214 +225,93 @@ const games = [
 
 const updates = [
     {
-      
         id: 1,
-        title: "Grand Theft Auto V",
-        genre: "Action",
-        category: "Open World",
-        description: "Explore Los Santos in a massive open-world action adventure featuring missions, vehicles, and a cinematic story.",
-        platform: "PC",
-        releaseYear: "2015",
-        cover: "https://via.placeholder.com/400x300?text=Grand+Theft+Auto+V",
-        screenshots: [
-            "https://via.placeholder.com/800x450?text=GTA+V+Screenshot+1",
-            "https://via.placeholder.com/800x450?text=GTA+V+Screenshot+2",
-            "https://via.placeholder.com/800x450?text=GTA+V+Screenshot+3"
-        ],
-        systemRequirements: {
-            minimum: "OS: Windows 10, CPU: Intel Core 2 Quad, RAM: 4GB, GPU: NVIDIA 9800 GT, Storage: 72GB",
-            recommended: "OS: Windows 10/11, CPU: Intel Core i5, RAM: 8GB, GPU: GTX 1060, Storage: 72GB"
-        },
-        downloadUrl: ""
+        title: "Grand Theft Auto V Added to Gaming Dock",
+        date: "September 6, 2026",
+        image: "https://via.placeholder.com/400x250?text=Grand+Theft+Auto+V",
+        description: "Grand Theft Auto V has been added to the Gaming Dock game collection.",
+        content: "Grand Theft Auto V is now available in the Gaming Dock Games section. Check the game details for screenshots, platform information, and system requirements."
     },
 
     {
         id: 2,
-        title: "Need for Speed Rivals",
-        genre: "Racing",
-        category: "Racing",
-        description: "Experience intense high-speed races and police pursuits across a dynamic open-world racing environment.",
-        platform: "PC",
-        releaseYear: "2013",
-        cover: "https://via.placeholder.com/400x300?text=Need+for+Speed+Rivals",
-        screenshots: [
-            "https://via.placeholder.com/800x450?text=NFS+Rivals+Screenshot+1",
-            "https://via.placeholder.com/800x450?text=NFS+Rivals+Screenshot+2",
-            "https://via.placeholder.com/800x450?text=NFS+Rivals+Screenshot+3"
-        ],
-        systemRequirements: {
-            minimum: "OS: Windows 7, CPU: Intel Core 2 Duo, RAM: 4GB, GPU: GTX 460, Storage: 30GB",
-            recommended: "OS: Windows 8/10/11, CPU: Intel Core i5, RAM: 8GB, GPU: GTX 660, Storage: 30GB"
-        },
-        downloadUrl: ""
+        title: "Need for Speed Rivals Added",
+        date: "September 6, 2026",
+        image: "https://via.placeholder.com/400x250?text=Need+for+Speed+Rivals",
+        description: "Need for Speed Rivals has been added to Gaming Dock.",
+        content: "Need for Speed Rivals is now listed in the Gaming Dock Games section. Explore its details and system requirements."
     },
 
     {
         id: 3,
-        title: "Assassin's Creed III",
-        genre: "Adventure",
-        category: "Story Mode",
-        description: "Follow an epic historical adventure through a large world filled with exploration, combat, and memorable missions.",
-        platform: "PC",
-        releaseYear: "2012",
-        cover: "https://via.placeholder.com/400x300?text=Assassins+Creed+III",
-        screenshots: [
-            "https://via.placeholder.com/800x450?text=AC+III+Screenshot+1",
-            "https://via.placeholder.com/800x450?text=AC+III+Screenshot+2",
-            "https://via.placeholder.com/800x450?text=AC+III+Screenshot+3"
-        ],
-        systemRequirements: {
-            minimum: "OS: Windows 7, CPU: Intel Core 2 Duo, RAM: 2GB, GPU: GTX 260, Storage: 17GB",
-            recommended: "OS: Windows 10/11, CPU: Intel Core i5, RAM: 4GB, GPU: GTX 660, Storage: 17GB"
-        },
-        downloadUrl: ""
+        title: "Assassin's Creed III Added",
+        date: "September 6, 2026",
+        image: "https://via.placeholder.com/400x250?text=Assassins+Creed+III",
+        description: "Assassin's Creed III has joined the Gaming Dock collection.",
+        content: "Assassin's Creed III is now available in the Gaming Dock Games section. Check its complete game information."
     },
 
     {
         id: 4,
-        title: "Far Cry 3",
-        genre: "Action",
-        category: "Open World",
-        description: "Survive on a dangerous tropical island while exploring the environment, completing missions, and facing enemies.",
-        platform: "PC",
-        releaseYear: "2012",
-        cover: "https://via.placeholder.com/400x300?text=Far+Cry+3",
-        screenshots: [
-            "https://via.placeholder.com/800x450?text=Far+Cry+3+Screenshot+1",
-            "https://via.placeholder.com/800x450?text=Far+Cry+3+Screenshot+2",
-            "https://via.placeholder.com/800x450?text=Far+Cry+3+Screenshot+3"
-        ],
-        systemRequirements: {
-            minimum: "OS: Windows 7, CPU: Intel Core 2 Duo, RAM: 4GB, GPU: GTX 8800, Storage: 15GB",
-            recommended: "OS: Windows 10/11, CPU: Intel Core i5, RAM: 8GB, GPU: GTX 560, Storage: 15GB"
-        },
-        downloadUrl: ""
+        title: "Far Cry 3 Added to Gaming Dock",
+        date: "September 6, 2026",
+        image: "https://via.placeholder.com/400x250?text=Far+Cry+3",
+        description: "Far Cry 3 has been added to the Gaming Dock game collection.",
+        content: "Far Cry 3 is now listed on Gaming Dock. Explore its details, screenshots, and system requirements."
     },
 
     {
         id: 5,
-        title: "Tomb Raider",
-        genre: "Adventure",
-        category: "Story Mode",
-        description: "Join Lara Croft on a dangerous expedition involving exploration, survival, puzzles, and intense action.",
-        platform: "PC",
-        releaseYear: "2013",
-        cover: "https://via.placeholder.com/400x300?text=Tomb+Raider",
-        screenshots: [
-            "https://via.placeholder.com/800x450?text=Tomb+Raider+Screenshot+1",
-            "https://via.placeholder.com/800x450?text=Tomb+Raider+Screenshot+2",
-            "https://via.placeholder.com/800x450?text=Tomb+Raider+Screenshot+3"
-        ],
-        systemRequirements: {
-            minimum: "OS: Windows 7, CPU: Intel Core 2 Duo, RAM: 2GB, GPU: Radeon HD 2600, Storage: 12GB",
-            recommended: "OS: Windows 10/11, CPU: Intel Core i5, RAM: 8GB, GPU: GTX 660, Storage: 12GB"
-        },
-        downloadUrl: ""
+        title: "Tomb Raider Added",
+        date: "September 6, 2026",
+        image: "https://via.placeholder.com/400x250?text=Tomb+Raider",
+        description: "Tomb Raider is now part of the Gaming Dock collection.",
+        content: "Tomb Raider has been added to Gaming Dock. Visit the Games section to explore its information."
     },
 
     {
         id: 6,
-        title: "Sleeping Dogs",
-        genre: "Action",
-        category: "Open World",
-        description: "Explore a detailed city while taking part in an undercover crime story packed with driving, combat, and missions.",
-        platform: "PC",
-        releaseYear: "2012",
-        cover: "https://via.placeholder.com/400x300?text=Sleeping+Dogs",
-        screenshots: [
-            "https://via.placeholder.com/800x450?text=Sleeping+Dogs+Screenshot+1",
-            "https://via.placeholder.com/800x450?text=Sleeping+Dogs+Screenshot+2",
-            "https://via.placeholder.com/800x450?text=Sleeping+Dogs+Screenshot+3"
-        ],
-        systemRequirements: {
-            minimum: "OS: Windows 7, CPU: Core 2 Duo, RAM: 2GB, GPU: GeForce 8800 GT, Storage: 15GB",
-            recommended: "OS: Windows 10/11, CPU: Intel Core i5, RAM: 4GB, GPU: GTX 560, Storage: 15GB"
-        },
-        downloadUrl: ""
+        title: "Sleeping Dogs Added",
+        date: "September 6, 2026",
+        image: "https://via.placeholder.com/400x250?text=Sleeping+Dogs",
+        description: "Sleeping Dogs has been added to Gaming Dock.",
+        content: "Sleeping Dogs is now available in the Gaming Dock Games section with complete game information."
     },
 
     {
         id: 7,
-        title: "Mafia II",
-        genre: "Action",
-        category: "Story Mode",
-        description: "Experience a cinematic crime story set in a detailed city with driving, combat, exploration, and memorable characters.",
-        platform: "PC",
-        releaseYear: "2010",
-        cover: "https://via.placeholder.com/400x300?text=Mafia+II",
-        screenshots: [
-            "https://via.placeholder.com/800x450?text=Mafia+II+Screenshot+1",
-            "https://via.placeholder.com/800x450?text=Mafia+II+Screenshot+2",
-            "https://via.placeholder.com/800x450?text=Mafia+II+Screenshot+3"
-        ],
-        systemRequirements: {
-            minimum: "OS: Windows 7, CPU: Pentium D 3GHz, RAM: 2GB, GPU: GeForce 8600, Storage: 8GB",
-            recommended: "OS: Windows 10/11, CPU: Intel Core i5, RAM: 4GB, GPU: GTX 560, Storage: 8GB"
-        },
-        downloadUrl: ""
+        title: "Mafia II Added to Gaming Dock",
+        date: "September 6, 2026",
+        image: "https://via.placeholder.com/400x250?text=Mafia+II",
+        description: "Mafia II has joined the Gaming Dock game collection.",
+        content: "Mafia II is now listed on Gaming Dock. Check the Games section for details."
     },
 
     {
         id: 8,
-        title: "Just Cause 2",
-        genre: "Action",
-        category: "Open World",
-        description: "Explore a huge island filled with vehicles, missions, stunts, and explosive open-world gameplay.",
-        platform: "PC",
-        releaseYear: "2010",
-        cover: "https://via.placeholder.com/400x300?text=Just+Cause+2",
-        screenshots: [
-            "https://via.placeholder.com/800x450?text=Just+Cause+2+Screenshot+1",
-            "https://via.placeholder.com/800x450?text=Just+Cause+2+Screenshot+2",
-            "https://via.placeholder.com/800x450?text=Just+Cause+2+Screenshot+3"
-        ],
-        systemRequirements: {
-            minimum: "OS: Windows Vista/7, CPU: Dual Core 2.6GHz, RAM: 2GB, GPU: GTX 8800, Storage: 10GB",
-            recommended: "OS: Windows 10/11, CPU: Intel Core i5, RAM: 4GB, GPU: GTX 560, Storage: 10GB"
-        },
-        downloadUrl: ""
+        title: "Just Cause 2 Added",
+        date: "September 6, 2026",
+        image: "https://via.placeholder.com/400x250?text=Just+Cause+2",
+        description: "Just Cause 2 is now available in the Gaming Dock collection.",
+        content: "Just Cause 2 has been added to Gaming Dock. Explore its game details and requirements."
     },
 
     {
         id: 9,
-        title: "Euro Truck Simulator 2",
-        genre: "Simulator",
-        category: "Simulator",
-        description: "Drive across European roads, deliver cargo, customize trucks, and build your own transport business.",
-        platform: "PC",
-        releaseYear: "2012",
-        cover: "https://via.placeholder.com/400x300?text=Euro+Truck+Simulator+2",
-        screenshots: [
-            "https://via.placeholder.com/800x450?text=ETS2+Screenshot+1",
-            "https://via.placeholder.com/800x450?text=ETS2+Screenshot+2",
-            "https://via.placeholder.com/800x450?text=ETS2+Screenshot+3"
-        ],
-        systemRequirements: {
-            minimum: "OS: Windows 7, CPU: Dual Core 2.4GHz, RAM: 4GB, GPU: GTX 760, Storage: 25GB",
-            recommended: "OS: Windows 10/11, CPU: Quad Core, RAM: 8GB, GPU: GTX 1060, Storage: 25GB"
-        },
-        downloadUrl: ""
+        title: "Euro Truck Simulator 2 Added",
+        date: "September 6, 2026",
+        image: "https://via.placeholder.com/400x250?text=Euro+Truck+Simulator+2",
+        description: "Euro Truck Simulator 2 has been added to Gaming Dock.",
+        content: "Euro Truck Simulator 2 is now listed in the Gaming Dock Games section."
     },
 
     {
         id: 10,
-        title: "Batman: Arkham City",
-        genre: "Action",
-        category: "Adventure",
-        description: "Take control of Batman in a dark open environment featuring combat, investigation, exploration, and a cinematic story.",
-        platform: "PC",
-        releaseYear: "2011",
-        cover: "https://via.placeholder.com/400x300?text=Batman+Arkham+City",
-        screenshots: [
-            "https://via.placeholder.com/800x450?text=Batman+Screenshot+1",
-            "https://via.placeholder.com/800x450?text=Batman+Screenshot+2",
-            "https://via.placeholder.com/800x450?text=Batman+Screenshot+3"
-        ],
-        systemRequirements: {
-            minimum: "OS: Windows 7, CPU: Intel Core 2 Duo, RAM: 2GB, GPU: NVIDIA 8800 GT, Storage: 17GB",
-            recommended: "OS: Windows 10/11, CPU: Intel Core i5, RAM: 8GB, GPU: GTX 660, Storage: 17GB"
-        },
-        downloadUrl: ""
+        title: "Batman: Arkham City Added",
+        date: "September 6, 2026",
+        image: "https://via.placeholder.com/400x250?text=Batman+Arkham+City",
+        description: "Batman: Arkham City has joined the Gaming Dock collection.",
+        content: "Batman: Arkham City is now available in the Gaming Dock Games section. Explore its details and system requirements."
     }
 ];
 
