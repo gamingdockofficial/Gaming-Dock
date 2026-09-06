@@ -1,11 +1,12 @@
-/* ===================================
+/* =========================================================
    GAMING DOCK - JAVASCRIPT
-   Complete Functionality
-   =================================== */
+   Complete Website Functionality
+   ========================================================= */
 
-// ===================================
-// DATA - GAMES
-// ===================================
+
+/* =========================================================
+   GAMES DATA
+   ========================================================= */
 
 const games = [
     {
@@ -13,14 +14,14 @@ const games = [
         title: "Grand Theft Auto V",
         genre: "Action",
         category: "Open World",
-        description: "Explore Los Santos in a massive open-world action adventure featuring missions, vehicles, and a cinematic story.",
+        description: "Explore Los Santos in a massive open-world action adventure featuring missions, vehicles and a cinematic story.",
         platform: "PC",
         releaseYear: "2015",
-        cover: "https://via.placeholder.com/400x300?text=Grand+Theft+Auto+V",
+        cover: "https://via.placeholder.com/600x400?text=Grand+Theft+Auto+V",
         screenshots: [
-            "https://via.placeholder.com/800x450?text=GTA+V+Screenshot+1",
-            "https://via.placeholder.com/800x450?text=GTA+V+Screenshot+2",
-            "https://via.placeholder.com/800x450?text=GTA+V+Screenshot+3"
+            "https://via.placeholder.com/1000x550?text=GTA+V+Screenshot+1",
+            "https://via.placeholder.com/1000x550?text=GTA+V+Screenshot+2",
+            "https://via.placeholder.com/1000x550?text=GTA+V+Screenshot+3"
         ],
         systemRequirements: {
             minimum: "OS: Windows 10, CPU: Intel Core 2 Quad, RAM: 4GB, GPU: NVIDIA 9800 GT, Storage: 72GB",
@@ -34,18 +35,18 @@ const games = [
         title: "Need for Speed Rivals",
         genre: "Racing",
         category: "Racing",
-        description: "Experience intense high-speed races and police pursuits across a dynamic open-world racing environment.",
+        description: "Experience intense street racing and police pursuits in a high-speed open-world racing experience.",
         platform: "PC",
         releaseYear: "2013",
-        cover: "https://via.placeholder.com/400x300?text=Need+for+Speed+Rivals",
+        cover: "https://via.placeholder.com/600x400?text=Need+for+Speed+Rivals",
         screenshots: [
-            "https://via.placeholder.com/800x450?text=NFS+Rivals+Screenshot+1",
-            "https://via.placeholder.com/800x450?text=NFS+Rivals+Screenshot+2",
-            "https://via.placeholder.com/800x450?text=NFS+Rivals+Screenshot+3"
+            "https://via.placeholder.com/1000x550?text=NFS+Rivals+Screenshot+1",
+            "https://via.placeholder.com/1000x550?text=NFS+Rivals+Screenshot+2",
+            "https://via.placeholder.com/1000x550?text=NFS+Rivals+Screenshot+3"
         ],
         systemRequirements: {
-            minimum: "OS: Windows 7, CPU: Intel Core 2 Duo, RAM: 4GB, GPU: GTX 460, Storage: 30GB",
-            recommended: "OS: Windows 8/10/11, CPU: Intel Core i5, RAM: 8GB, GPU: GTX 660, Storage: 30GB"
+            minimum: "OS: Windows 7, CPU: Intel Core 2 Duo, RAM: 4GB, GPU: GTX 260, Storage: 30GB",
+            recommended: "OS: Windows 10/11, CPU: Intel Core i5, RAM: 8GB, GPU: GTX 660, Storage: 30GB"
         },
         downloadUrl: ""
     },
@@ -53,16 +54,16 @@ const games = [
     {
         id: 3,
         title: "Assassin's Creed III",
-        genre: "Adventure",
-        category: "Story Mode",
-        description: "Follow an epic historical adventure through a large world filled with exploration, combat, and memorable missions.",
+        genre: "Action",
+        category: "Adventure",
+        description: "Enter a historical action adventure filled with exploration, combat, stealth and an epic story.",
         platform: "PC",
         releaseYear: "2012",
-        cover: "https://via.placeholder.com/400x300?text=Assassins+Creed+III",
+        cover: "https://via.placeholder.com/600x400?text=Assassins+Creed+III",
         screenshots: [
-            "https://via.placeholder.com/800x450?text=AC+III+Screenshot+1",
-            "https://via.placeholder.com/800x450?text=AC+III+Screenshot+2",
-            "https://via.placeholder.com/800x450?text=AC+III+Screenshot+3"
+            "https://via.placeholder.com/1000x550?text=AC+III+Screenshot+1",
+            "https://via.placeholder.com/1000x550?text=AC+III+Screenshot+2",
+            "https://via.placeholder.com/1000x550?text=AC+III+Screenshot+3"
         ],
         systemRequirements: {
             minimum: "OS: Windows 7, CPU: Intel Core 2 Duo, RAM: 2GB, GPU: GTX 260, Storage: 17GB",
@@ -76,18 +77,18 @@ const games = [
         title: "Far Cry 3",
         genre: "Action",
         category: "Open World",
-        description: "Survive on a dangerous tropical island while exploring the environment, completing missions, and facing enemies.",
+        description: "Survive a dangerous tropical island in an open-world first-person adventure packed with action and exploration.",
         platform: "PC",
         releaseYear: "2012",
-        cover: "https://via.placeholder.com/400x300?text=Far+Cry+3",
+        cover: "https://via.placeholder.com/600x400?text=Far+Cry+3",
         screenshots: [
-            "https://via.placeholder.com/800x450?text=Far+Cry+3+Screenshot+1",
-            "https://via.placeholder.com/800x450?text=Far+Cry+3+Screenshot+2",
-            "https://via.placeholder.com/800x450?text=Far+Cry+3+Screenshot+3"
+            "https://via.placeholder.com/1000x550?text=Far+Cry+3+Screenshot+1",
+            "https://via.placeholder.com/1000x550?text=Far+Cry+3+Screenshot+2",
+            "https://via.placeholder.com/1000x550?text=Far+Cry+3+Screenshot+3"
         ],
         systemRequirements: {
-            minimum: "OS: Windows 7, CPU: Intel Core 2 Duo, RAM: 4GB, GPU: GTX 8800, Storage: 15GB",
-            recommended: "OS: Windows 10/11, CPU: Intel Core i5, RAM: 8GB, GPU: GTX 560, Storage: 15GB"
+            minimum: "OS: Windows 7, CPU: Intel Core 2 Duo, RAM: 4GB, GPU: GTX 460, Storage: 15GB",
+            recommended: "OS: Windows 10/11, CPU: Intel Core i5, RAM: 8GB, GPU: GTX 660, Storage: 15GB"
         },
         downloadUrl: ""
     },
@@ -95,16 +96,16 @@ const games = [
     {
         id: 5,
         title: "Tomb Raider",
-        genre: "Adventure",
-        category: "Story Mode",
-        description: "Join Lara Croft on a dangerous expedition involving exploration, survival, puzzles, and intense action.",
+        genre: "Action",
+        category: "Adventure",
+        description: "Join Lara Croft on a cinematic survival adventure featuring exploration, puzzles and intense action.",
         platform: "PC",
         releaseYear: "2013",
-        cover: "https://via.placeholder.com/400x300?text=Tomb+Raider",
+        cover: "https://via.placeholder.com/600x400?text=Tomb+Raider",
         screenshots: [
-            "https://via.placeholder.com/800x450?text=Tomb+Raider+Screenshot+1",
-            "https://via.placeholder.com/800x450?text=Tomb+Raider+Screenshot+2",
-            "https://via.placeholder.com/800x450?text=Tomb+Raider+Screenshot+3"
+            "https://via.placeholder.com/1000x550?text=Tomb+Raider+Screenshot+1",
+            "https://via.placeholder.com/1000x550?text=Tomb+Raider+Screenshot+2",
+            "https://via.placeholder.com/1000x550?text=Tomb+Raider+Screenshot+3"
         ],
         systemRequirements: {
             minimum: "OS: Windows 7, CPU: Intel Core 2 Duo, RAM: 2GB, GPU: Radeon HD 2600, Storage: 12GB",
@@ -118,17 +119,17 @@ const games = [
         title: "Sleeping Dogs",
         genre: "Action",
         category: "Open World",
-        description: "Explore a detailed city while taking part in an undercover crime story packed with driving, combat, and missions.",
+        description: "Explore Hong Kong in an open-world action adventure featuring driving, martial arts and an engaging story.",
         platform: "PC",
         releaseYear: "2012",
-        cover: "https://via.placeholder.com/400x300?text=Sleeping+Dogs",
+        cover: "https://via.placeholder.com/600x400?text=Sleeping+Dogs",
         screenshots: [
-            "https://via.placeholder.com/800x450?text=Sleeping+Dogs+Screenshot+1",
-            "https://via.placeholder.com/800x450?text=Sleeping+Dogs+Screenshot+2",
-            "https://via.placeholder.com/800x450?text=Sleeping+Dogs+Screenshot+3"
+            "https://via.placeholder.com/1000x550?text=Sleeping+Dogs+Screenshot+1",
+            "https://via.placeholder.com/1000x550?text=Sleeping+Dogs+Screenshot+2",
+            "https://via.placeholder.com/1000x550?text=Sleeping+Dogs+Screenshot+3"
         ],
         systemRequirements: {
-            minimum: "OS: Windows 7, CPU: Core 2 Duo, RAM: 2GB, GPU: GeForce 8800 GT, Storage: 15GB",
+            minimum: "OS: Windows Vista/7, CPU: Core 2 Duo, RAM: 2GB, GPU: GeForce 8800 GT, Storage: 15GB",
             recommended: "OS: Windows 10/11, CPU: Intel Core i5, RAM: 4GB, GPU: GTX 560, Storage: 15GB"
         },
         downloadUrl: ""
@@ -139,17 +140,17 @@ const games = [
         title: "Mafia II",
         genre: "Action",
         category: "Story Mode",
-        description: "Experience a cinematic crime story set in a detailed city with driving, combat, exploration, and memorable characters.",
+        description: "Experience a cinematic crime story set in the fictional city of Empire Bay.",
         platform: "PC",
         releaseYear: "2010",
-        cover: "https://via.placeholder.com/400x300?text=Mafia+II",
+        cover: "https://via.placeholder.com/600x400?text=Mafia+II",
         screenshots: [
-            "https://via.placeholder.com/800x450?text=Mafia+II+Screenshot+1",
-            "https://via.placeholder.com/800x450?text=Mafia+II+Screenshot+2",
-            "https://via.placeholder.com/800x450?text=Mafia+II+Screenshot+3"
+            "https://via.placeholder.com/1000x550?text=Mafia+II+Screenshot+1",
+            "https://via.placeholder.com/1000x550?text=Mafia+II+Screenshot+2",
+            "https://via.placeholder.com/1000x550?text=Mafia+II+Screenshot+3"
         ],
         systemRequirements: {
-            minimum: "OS: Windows 7, CPU: Pentium D 3GHz, RAM: 2GB, GPU: GeForce 8600, Storage: 8GB",
+            minimum: "OS: Windows XP/Vista/7, CPU: 2.4GHz Quad Core, RAM: 2GB, GPU: GeForce 8600, Storage: 8GB",
             recommended: "OS: Windows 10/11, CPU: Intel Core i5, RAM: 4GB, GPU: GTX 560, Storage: 8GB"
         },
         downloadUrl: ""
@@ -160,17 +161,17 @@ const games = [
         title: "Just Cause 2",
         genre: "Action",
         category: "Open World",
-        description: "Explore a huge island filled with vehicles, missions, stunts, and explosive open-world gameplay.",
+        description: "Explore a huge tropical island and create chaos using vehicles, weapons and an iconic grappling hook.",
         platform: "PC",
         releaseYear: "2010",
-        cover: "https://via.placeholder.com/400x300?text=Just+Cause+2",
+        cover: "https://via.placeholder.com/600x400?text=Just+Cause+2",
         screenshots: [
-            "https://via.placeholder.com/800x450?text=Just+Cause+2+Screenshot+1",
-            "https://via.placeholder.com/800x450?text=Just+Cause+2+Screenshot+2",
-            "https://via.placeholder.com/800x450?text=Just+Cause+2+Screenshot+3"
+            "https://via.placeholder.com/1000x550?text=Just+Cause+2+Screenshot+1",
+            "https://via.placeholder.com/1000x550?text=Just+Cause+2+Screenshot+2",
+            "https://via.placeholder.com/1000x550?text=Just+Cause+2+Screenshot+3"
         ],
         systemRequirements: {
-            minimum: "OS: Windows Vista/7, CPU: Dual Core 2.6GHz, RAM: 2GB, GPU: GTX 8800, Storage: 10GB",
+            minimum: "OS: Windows Vista/7, CPU: Dual Core, RAM: 2GB, GPU: GeForce 8800, Storage: 10GB",
             recommended: "OS: Windows 10/11, CPU: Intel Core i5, RAM: 4GB, GPU: GTX 560, Storage: 10GB"
         },
         downloadUrl: ""
@@ -181,18 +182,18 @@ const games = [
         title: "Euro Truck Simulator 2",
         genre: "Simulator",
         category: "Simulator",
-        description: "Drive across European roads, deliver cargo, customize trucks, and build your own transport business.",
+        description: "Travel across Europe as a professional truck driver while building your own transportation business.",
         platform: "PC",
         releaseYear: "2012",
-        cover: "https://via.placeholder.com/400x300?text=Euro+Truck+Simulator+2",
+        cover: "https://via.placeholder.com/600x400?text=Euro+Truck+Simulator+2",
         screenshots: [
-            "https://via.placeholder.com/800x450?text=ETS2+Screenshot+1",
-            "https://via.placeholder.com/800x450?text=ETS2+Screenshot+2",
-            "https://via.placeholder.com/800x450?text=ETS2+Screenshot+3"
+            "https://via.placeholder.com/1000x550?text=ETS2+Screenshot+1",
+            "https://via.placeholder.com/1000x550?text=ETS2+Screenshot+2",
+            "https://via.placeholder.com/1000x550?text=ETS2+Screenshot+3"
         ],
         systemRequirements: {
-            minimum: "OS: Windows 7, CPU: Dual Core 2.4GHz, RAM: 4GB, GPU: GTX 760, Storage: 25GB",
-            recommended: "OS: Windows 10/11, CPU: Quad Core, RAM: 8GB, GPU: GTX 1060, Storage: 25GB"
+            minimum: "OS: Windows 7, CPU: Dual Core 2.4GHz, RAM: 4GB, GPU: GeForce GTS 450, Storage: 25GB",
+            recommended: "OS: Windows 10/11, CPU: Intel Core i5, RAM: 8GB, GPU: GTX 760, Storage: 25GB"
         },
         downloadUrl: ""
     },
@@ -201,701 +202,1595 @@ const games = [
         id: 10,
         title: "Batman: Arkham City",
         genre: "Action",
-        category: "Adventure",
-        description: "Take control of Batman in a dark open environment featuring combat, investigation, exploration, and a cinematic story.",
+        category: "Story Mode",
+        description: "Become Batman and explore Arkham City in a cinematic superhero action adventure.",
         platform: "PC",
         releaseYear: "2011",
-        cover: "https://via.placeholder.com/400x300?text=Batman+Arkham+City",
+        cover: "https://via.placeholder.com/600x400?text=Batman+Arkham+City",
         screenshots: [
-            "https://via.placeholder.com/800x450?text=Batman+Screenshot+1",
-            "https://via.placeholder.com/800x450?text=Batman+Screenshot+2",
-            "https://via.placeholder.com/800x450?text=Batman+Screenshot+3"
+            "https://via.placeholder.com/1000x550?text=Batman+Screenshot+1",
+            "https://via.placeholder.com/1000x550?text=Batman+Screenshot+2",
+            "https://via.placeholder.com/1000x550?text=Batman+Screenshot+3"
         ],
         systemRequirements: {
             minimum: "OS: Windows 7, CPU: Intel Core 2 Duo, RAM: 2GB, GPU: NVIDIA 8800 GT, Storage: 17GB",
-            recommended: "OS: Windows 10/11, CPU: Intel Core i5, RAM: 8GB, GPU: GTX 660, Storage: 17GB"
+            recommended: "OS: Windows 10/11, CPU: Intel Core i5, RAM: 4GB, GPU: GTX 560, Storage: 17GB"
         },
         downloadUrl: ""
     }
-];   
+];
 
-// ===================================
-// DATA - UPDATES
-// ===================================
+
+/* =========================================================
+   UPDATES DATA
+   ========================================================= */
 
 const updates = [
     {
         id: 1,
-        title: "Grand Theft Auto V Added to Gaming Dock",
+        image: "https://via.placeholder.com/700x400?text=Gaming+Dock+Update",
         date: "September 6, 2026",
-        image: "https://via.placeholder.com/400x250?text=Grand+Theft+Auto+V",
-        description: "Grand Theft Auto V has been added to the Gaming Dock game collection.",
-        content: "Grand Theft Auto V is now available in the Gaming Dock Games section. Check the game details for screenshots, platform information, and system requirements."
+        title: "Gaming Dock Website Update",
+        description: "Gaming Dock has been updated with a refreshed game library and improved website functionality.",
+        content: "Gaming Dock continues to improve. New games, updates and features will be added regularly."
     },
 
     {
         id: 2,
-        title: "Need for Speed Rivals Added",
-        date: "September 6, 2026",
-        image: "https://via.placeholder.com/400x250?text=Need+for+Speed+Rivals",
-        description: "Need for Speed Rivals has been added to Gaming Dock.",
-        content: "Need for Speed Rivals is now listed in the Gaming Dock Games section. Explore its details and system requirements."
+        image: "https://via.placeholder.com/700x400?text=New+Games",
+        date: "September 5, 2026",
+        title: "New Games Coming Soon",
+        description: "More games will be added to the Gaming Dock library in future updates.",
+        content: "Keep checking Gaming Dock for new game listings, information and updates."
     },
 
     {
         id: 3,
-        title: "Assassin's Creed III Added",
-        date: "September 6, 2026",
-        image: "https://via.placeholder.com/400x250?text=Assassins+Creed+III",
-        description: "Assassin's Creed III has joined the Gaming Dock collection.",
-        content: "Assassin's Creed III is now available in the Gaming Dock Games section. Check its complete game information."
-    },
-
-    {
-        id: 4,
-        title: "Far Cry 3 Added to Gaming Dock",
-        date: "September 6, 2026",
-        image: "https://via.placeholder.com/400x250?text=Far+Cry+3",
-        description: "Far Cry 3 has been added to the Gaming Dock game collection.",
-        content: "Far Cry 3 is now listed on Gaming Dock. Explore its details, screenshots, and system requirements."
-    },
-
-    {
-        id: 5,
-        title: "Tomb Raider Added",
-        date: "September 6, 2026",
-        image: "https://via.placeholder.com/400x250?text=Tomb+Raider",
-        description: "Tomb Raider is now part of the Gaming Dock collection.",
-        content: "Tomb Raider has been added to Gaming Dock. Visit the Games section to explore its information."
-    },
-
-    {
-        id: 6,
-        title: "Sleeping Dogs Added",
-        date: "September 6, 2026",
-        image: "https://via.placeholder.com/400x250?text=Sleeping+Dogs",
-        description: "Sleeping Dogs has been added to Gaming Dock.",
-        content: "Sleeping Dogs is now available in the Gaming Dock Games section with complete game information."
-    },
-
-    {
-        id: 7,
-        title: "Mafia II Added to Gaming Dock",
-        date: "September 6, 2026",
-        image: "https://via.placeholder.com/400x250?text=Mafia+II",
-        description: "Mafia II has joined the Gaming Dock game collection.",
-        content: "Mafia II is now listed on Gaming Dock. Check the Games section for details."
-    },
-
-    {
-        id: 8,
-        title: "Just Cause 2 Added",
-        date: "September 6, 2026",
-        image: "https://via.placeholder.com/400x250?text=Just+Cause+2",
-        description: "Just Cause 2 is now available in the Gaming Dock collection.",
-        content: "Just Cause 2 has been added to Gaming Dock. Explore its game details and requirements."
-    },
-
-    {
-        id: 9,
-        title: "Euro Truck Simulator 2 Added",
-        date: "September 6, 2026",
-        image: "https://via.placeholder.com/400x250?text=Euro+Truck+Simulator+2",
-        description: "Euro Truck Simulator 2 has been added to Gaming Dock.",
-        content: "Euro Truck Simulator 2 is now listed in the Gaming Dock Games section."
-    },
-
-    {
-        id: 10,
-        title: "Batman: Arkham City Added",
-        date: "September 6, 2026",
-        image: "https://via.placeholder.com/400x250?text=Batman+Arkham+City",
-        description: "Batman: Arkham City has joined the Gaming Dock collection.",
-        content: "Batman: Arkham City is now available in the Gaming Dock Games section. Explore its details and system requirements."
+        image: "https://via.placeholder.com/700x400?text=Gaming+News",
+        date: "September 4, 2026",
+        title: "Gaming News & Updates",
+        description: "Gaming Dock will bring gaming news and important game updates in one place.",
+        content: "The updates section is designed to make it easy to keep track of new releases and gaming information."
     }
 ];
 
-// ===================================
-// STATE MANAGEMENT
-// ===================================
 
-let currentUser = null;
-let currentPage = 'home';
+/* =========================================================
+   GLOBAL VARIABLES
+   ========================================================= */
+
+let currentPage = "home";
 let filteredGames = [...games];
-let selectedCategory = 'all';
+let currentGame = null;
+let currentUser = null;
 
-// Load user from localStorage on page load
-function loadUserData() {
-    const userData = localStorage.getItem('gamingDockUser');
-    if (userData) {
-        try {
-            currentUser = JSON.parse(userData);
-            updateUserUI();
-        } catch (e) {
-            console.log('Invalid user data');
-            currentUser = null;
-        }
-    }
-}
 
-// ===================================
-// INITIALIZATION
-// ===================================
+/* =========================================================
+   DOM READY
+   ========================================================= */
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", function () {
+
+    console.log("Gaming Dock JavaScript loaded successfully.");
+
     loadUserData();
+
     renderGames();
     renderUpdates();
+
     setupEventListeners();
     setupCookieConsent();
+
     updateUserUI();
-    navigateTo('home');
+
+    navigateTo("home");
 });
 
-// ===================================
-// EVENT LISTENERS
-// ===================================
 
-function setupEventListeners() {
-    // Navigation
-    document.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const page = this.getAttribute('data-page');
-            navigateTo(page);
-            closeHamburger();
-        });
-    });
+/* =========================================================
+   LOAD USER DATA
+   ========================================================= */
 
-    // Hamburger Menu
-    const hamburger = document.getElementById('hamburger');
-    const navMenu = document.getElementById('navMenu');
-    
-    hamburger.addEventListener('click', function() {
-        hamburger.classList.toggle('active');
-        navMenu.classList.toggle('active');
-    });
+function loadUserData() {
 
-    // Search
-    const searchInput = document.getElementById('searchInput');
-    if (searchInput) {
-        searchInput.addEventListener('input', handleSearch);
-    }
+    try {
 
-    // Category Filter
-    document.querySelectorAll('.category-btn').forEach(btn => {
-        btn.addEventListener('click', function() {
-            document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
-            this.classList.add('active');
-            selectedCategory = this.getAttribute('data-category');
-            filterGames();
-        });
-    });
+        const savedUser = localStorage.getItem("gamingDockUser");
 
-    // Contact Form
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', handleContactForm);
-    }
-}
-
-// ===================================
-// NAVIGATION
-// ===================================
-
-function navigateTo(page) {
-    // Hide all pages
-    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-    
-    // Show selected page
-    const pageElement = document.getElementById(page);
-    if (pageElement) {
-        pageElement.classList.add('active');
-        currentPage = page;
-        
-        // Update nav links
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('data-page') === page) {
-                link.classList.add('active');
-            }
-        });
-
-        // Special handling for certain pages
-        if (page === 'profile') {
-            if (!currentUser) {
-                navigateTo('login');
-                return;
-            }
-            displayProfile();
+        if (savedUser) {
+            currentUser = JSON.parse(savedUser);
         }
 
-        // Scroll to top
-        window.scrollTo(0, 0);
+    } catch (error) {
+
+        console.error("Could not load user data:", error);
+        currentUser = null;
+
     }
 }
+
+
+/* =========================================================
+   SAVE USER DATA
+   ========================================================= */
+
+function saveUserData() {
+
+    try {
+
+        if (currentUser) {
+            localStorage.setItem(
+                "gamingDockUser",
+                JSON.stringify(currentUser)
+            );
+        } else {
+            localStorage.removeItem("gamingDockUser");
+        }
+
+    } catch (error) {
+
+        console.error("Could not save user data:", error);
+
+    }
+}
+
+
+/* =========================================================
+   EVENT LISTENERS
+   ========================================================= */
+
+function setupEventListeners() {
+
+    /* Navigation */
+
+    document.querySelectorAll(".nav-link").forEach(function (link) {
+
+        link.addEventListener("click", function (event) {
+
+            event.preventDefault();
+
+            const page = this.getAttribute("data-page");
+
+            if (page) {
+                navigateTo(page);
+            }
+
+            closeHamburger();
+
+        });
+
+    });
+
+
+    /* Hamburger */
+
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("navMenu");
+
+    if (hamburger && navMenu) {
+
+        hamburger.addEventListener("click", function () {
+
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+
+        });
+
+    }
+
+
+    /* Search */
+
+    const searchInput = document.getElementById("searchInput");
+
+    if (searchInput) {
+
+        searchInput.addEventListener("input", function () {
+
+            handleSearch(this.value);
+
+        });
+
+    }
+
+
+    /* Category buttons */
+
+    document.querySelectorAll("[data-category]").forEach(function (button) {
+
+        button.addEventListener("click", function () {
+
+            const category = this.getAttribute("data-category");
+
+            if (category) {
+                filterGames(category);
+            }
+
+        });
+
+    });
+
+
+    /* Login form */
+
+    const loginForm = document.getElementById("loginForm");
+
+    if (loginForm) {
+
+        loginForm.addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            handleLogin();
+
+        });
+
+    }
+
+
+    /* Register form */
+
+    const registerForm = document.getElementById("registerForm");
+
+    if (registerForm) {
+
+        registerForm.addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            handleRegister();
+
+        });
+
+    }
+
+
+    /* Contact form */
+
+    const contactForm = document.getElementById("contactForm");
+
+    if (contactForm) {
+
+        contactForm.addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            handleContactForm();
+
+        });
+
+    }
+
+
+    /* Cookie accept */
+
+    const cookieAccept = document.getElementById("cookieAccept");
+
+    if (cookieAccept) {
+
+        cookieAccept.addEventListener("click", function () {
+
+            localStorage.setItem("gamingDockCookies", "accepted");
+
+            hideCookieConsent();
+
+        });
+
+    }
+
+
+    /* Cookie decline */
+
+    const cookieDecline = document.getElementById("cookieDecline");
+
+    if (cookieDecline) {
+
+        cookieDecline.addEventListener("click", function () {
+
+            localStorage.setItem("gamingDockCookies", "declined");
+
+            hideCookieConsent();
+
+        });
+
+    }
+
+
+    /* Close modal */
+
+    const modal = document.getElementById("gameDetailsModal");
+
+    if (modal) {
+
+        modal.addEventListener("click", function (event) {
+
+            if (event.target === modal) {
+                closeGameDetails();
+            }
+
+        });
+
+    }
+
+}
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+function navigateTo(page) {
+
+    const allPages = document.querySelectorAll(".page");
+
+    allPages.forEach(function (pageElement) {
+
+        pageElement.classList.remove("active");
+
+    });
+
+
+    const pageElement = document.getElementById(page);
+
+    if (!pageElement) {
+
+        console.warn("Page not found:", page);
+
+        return;
+
+    }
+
+
+    pageElement.classList.add("active");
+
+    currentPage = page;
+
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+
+    if (page === "profile") {
+
+        renderProfile();
+
+    }
+
+
+    updateUserUI();
+
+    closeHamburger();
+
+}
+
+
+/* =========================================================
+   HAMBURGER CLOSE
+   ========================================================= */
 
 function closeHamburger() {
-    document.getElementById('hamburger').classList.remove('active');
-    document.getElementById('navMenu').classList.remove('active');
+
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("navMenu");
+
+    if (hamburger) {
+        hamburger.classList.remove("active");
+    }
+
+    if (navMenu) {
+        navMenu.classList.remove("active");
+    }
+
 }
 
-// ===================================
-// GAMES RENDERING
-// ===================================
+
+/* =========================================================
+   RENDER GAMES
+   ========================================================= */
 
 function renderGames() {
-    const container = document.getElementById('gamesContainer');
-    if (!container) return;
 
-    container.innerHTML = '';
-    
-    if (filteredGames.length === 0) {
-        document.getElementById('noGamesMessage').style.display = 'block';
+    const container = document.getElementById("gamesContainer");
+
+    if (!container) {
+
+        console.warn("gamesContainer not found.");
+
         return;
-    }
-    
-    document.getElementById('noGamesMessage').style.display = 'none';
 
-    filteredGames.forEach(game => {
-        const gameCard = document.createElement('div');
-        gameCard.className = 'game-card';
-        gameCard.innerHTML = `
-            <div class="game-card-image">
-                <img src="${game.cover}" alt="${game.title}">
+    }
+
+
+    container.innerHTML = "";
+
+
+    if (filteredGames.length === 0) {
+
+        const noGamesMessage =
+            document.getElementById("noGamesMessage");
+
+        if (noGamesMessage) {
+            noGamesMessage.style.display = "block";
+        }
+
+        return;
+
+    }
+
+
+    const noGamesMessage =
+        document.getElementById("noGamesMessage");
+
+    if (noGamesMessage) {
+        noGamesMessage.style.display = "none";
+    }
+
+
+    filteredGames.forEach(function (game) {
+
+        const card = document.createElement("div");
+
+        card.className = "game-card";
+
+
+        card.innerHTML = `
+            <div class="game-image">
+                <img
+                    src="${game.cover}"
+                    alt="${escapeHTML(game.title)}"
+                    loading="lazy"
+                    onerror="this.src='https://via.placeholder.com/600x400?text=Gaming+Dock'"
+                >
             </div>
+
             <div class="game-card-content">
-                <h3 class="game-title">${game.title}</h3>
-                <span class="game-genre">${game.genre}</span>
-                <p class="game-description">${game.description}</p>
+
+                <span class="game-category">
+                    ${escapeHTML(game.category)}
+                </span>
+
+                <h3>${escapeHTML(game.title)}</h3>
+
+                <p>${escapeHTML(game.description)}</p>
+
                 <div class="game-meta">
-                    <div class="game-meta-item">
-                        <span>📱 ${game.platform.split(',')[0].trim()}</span>
-                    </div>
-                    <div class="game-meta-item">
-                        <span>📅 ${game.releaseYear}</span>
-                    </div>
+                    <span>${escapeHTML(game.genre)}</span>
+                    <span>${escapeHTML(game.platform)}</span>
+                    <span>${escapeHTML(game.releaseYear)}</span>
                 </div>
-                <button class="game-card-button" onclick="viewGameDetails(${game.id})">VIEW DETAILS</button>
+
+                <button
+                    class="btn btn-primary"
+                    onclick="viewGameDetails(${game.id})"
+                >
+                    VIEW DETAILS
+                </button>
+
             </div>
         `;
-        container.appendChild(gameCard);
+
+
+        container.appendChild(card);
+
     });
+
 }
 
-// ===================================
-// GAME SEARCH & FILTER
-// ===================================
 
-function handleSearch(event) {
-    const searchTerm = event.target.value.toLowerCase();
-    
-    filteredGames = games.filter(game => {
-        const matchesSearch = game.title.toLowerCase().includes(searchTerm) ||
-                            game.genre.toLowerCase().includes(searchTerm) ||
-                            game.description.toLowerCase().includes(searchTerm);
-        const matchesCategory = selectedCategory === 'all' || game.category === selectedCategory;
-        return matchesSearch && matchesCategory;
-    });
-    
-    renderGames();
-}
+/* =========================================================
+   SEARCH
+   ========================================================= */
 
-function filterGames() {
-    const searchTerm = document.getElementById('searchInput').value.toLowerCase();
-    
-    filteredGames = games.filter(game => {
-        const matchesSearch = game.title.toLowerCase().includes(searchTerm) ||
-                            game.genre.toLowerCase().includes(searchTerm) ||
-                            game.description.toLowerCase().includes(searchTerm);
-        const matchesCategory = selectedCategory === 'all' || game.category === selectedCategory;
-        return matchesSearch && matchesCategory;
-    });
-    
-    renderGames();
-}
+function handleSearch(searchTerm) {
 
-function filterByCategory(category) {
-    navigateTo('games');
-    setTimeout(() => {
-        selectedCategory = category;
-        document.querySelectorAll('.category-btn').forEach(btn => {
-            btn.classList.remove('active');
-            if (btn.getAttribute('data-category') === category) {
-                btn.classList.add('active');
-            }
+    const term = searchTerm.trim().toLowerCase();
+
+
+    if (!term) {
+
+        filteredGames = [...games];
+
+    } else {
+
+        filteredGames = games.filter(function (game) {
+
+            return (
+                game.title.toLowerCase().includes(term) ||
+                game.genre.toLowerCase().includes(term) ||
+                game.category.toLowerCase().includes(term) ||
+                game.description.toLowerCase().includes(term)
+            );
+
         });
-        filterGames();
-    }, 100);
+
+    }
+
+
+    renderGames();
+
 }
 
-// ===================================
-// GAME DETAILS MODAL
-// ===================================
+
+/* =========================================================
+   CATEGORY FILTER
+   ========================================================= */
+
+function filterGames(category) {
+
+    if (!category || category.toLowerCase() === "all") {
+
+        filteredGames = [...games];
+
+    } else {
+
+        const selectedCategory = category.toLowerCase();
+
+        filteredGames = games.filter(function (game) {
+
+            return (
+                game.category.toLowerCase() === selectedCategory ||
+                game.genre.toLowerCase() === selectedCategory
+            );
+
+        });
+
+    }
+
+
+    renderGames();
+
+
+    const gamesSection = document.getElementById("games");
+
+    if (gamesSection) {
+
+        gamesSection.scrollIntoView({
+            behavior: "smooth"
+        });
+
+    }
+
+}
+
+
+/* =========================================================
+   VIEW GAME DETAILS
+   ========================================================= */
 
 function viewGameDetails(gameId) {
-    const game = games.find(g => g.id === gameId);
-    if (!game) return;
 
-    const modal = document.getElementById('gameDetailsModal');
-    const container = document.getElementById('gameDetailsContainer');
+    const game = games.find(function (item) {
 
-    const downloadButtonHTML = currentUser
-        ? `<button class="btn-primary btn-full" onclick="downloadGame(${game.id})">
-             ${game.downloadUrl ? 'DOWNLOAD GAME' : 'DOWNLOAD GAME - Link Coming Soon'}
-           </button>`
-        : `<button class="btn-secondary btn-full" onclick="promptLogin()">
-             LOGIN TO DOWNLOAD
-           </button>`;
+        return item.id === Number(gameId);
 
-    container.innerHTML = `
-        <div class="game-details-header">
-            <div class="game-details-cover">
-                <img src="${game.cover}" alt="${game.title}">
-            </div>
-            <div class="game-details-info">
-                <h2 class="game-details-title">${game.title}</h2>
-                <div class="game-details-meta">
-                    <div class="game-details-meta-item">
-                        <span class="game-details-meta-label">Genre</span>
-                        <span class="game-details-meta-value">${game.genre}</span>
-                    </div>
-                    <div class="game-details-meta-item">
-                        <span class="game-details-meta-label">Platform</span>
-                        <span class="game-details-meta-value">${game.platform}</span>
-                    </div>
-                    <div class="game-details-meta-item">
-                        <span class="game-details-meta-label">Released</span>
-                        <span class="game-details-meta-value">${game.releaseYear}</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="game-details-description">
-            <h3>About This Game</h3>
-            <p>${game.description}</p>
-        </div>
-
-        <div class="game-details-requirements">
-            <h3>System Requirements</h3>
-            <div class="requirements-box">
-                <h4>Minimum</h4>
-                <p>${game.systemRequirements.minimum}</p>
-            </div>
-            <div class="requirements-box">
-                <h4>Recommended</h4>
-                <p>${game.systemRequirements.recommended}</p>
-            </div>
-        </div>
-
-        <div class="game-details-download">
-            <h3>Ready to Play?</h3>
-            <p class="download-message ${!currentUser ? 'login-required' : game.downloadUrl ? '' : 'available-soon'}">
-                ${!currentUser ? 'You must be logged in to download this game.' : game.downloadUrl ? 'Start your adventure now!' : 'Download link will be available soon.'}
-            </p>
-            ${downloadButtonHTML}
-        </div>
-
-        ${game.screenshots && game.screenshots.length > 0 ? `
-            <div class="game-gallery">
-                <h3>Screenshots</h3>
-                <div class="gallery-grid">
-                    ${game.screenshots.map(screenshot => `
-                        <div class="gallery-item">
-                            <img src="${screenshot}" alt="Screenshot">
-                        </div>
-                    `).join('')}
-                </div>
-            </div>
-        ` : ''}
-    `;
-
-    modal.classList.add('active');
-    document.body.style.overflow = 'hidden';
-}
-
-function closeGameDetails() {
-    const modal = document.getElementById('gameDetailsModal');
-    modal.classList.remove('active');
-    document.body.style.overflow = 'auto';
-}
-
-function downloadGame(gameId) {
-    const game = games.find(g => g.id === gameId);
-    if (!game) return;
-
-    if (!currentUser) {
-        promptLogin();
-        return;
-    }
-
-    if (!game.downloadUrl) {
-        alert('Download link will be available soon. Please check back later!');
-        return;
-    }
-
-    window.location.href = game.downloadUrl;
-}
-
-function promptLogin() {
-    alert('Please log in to download games. Redirecting to login page...');
-    closeGameDetails();
-    navigateTo('login');
-}
-
-// ===================================
-// UPDATES RENDERING
-// ===================================
-
-function renderUpdates() {
-    const container = document.getElementById('updatesContainer');
-    if (!container) return;
-
-    container.innerHTML = '';
-
-    updates.forEach(update => {
-        const updateCard = document.createElement('div');
-        updateCard.className = 'update-card';
-        updateCard.innerHTML = `
-            <div class="update-image">
-                <img src="${update.image}" alt="${update.title}">
-            </div>
-            <div class="update-content">
-                <p class="update-date">${update.date}</p>
-                <h3 class="update-title">${update.title}</h3>
-                <p class="update-description">${update.description}</p>
-                <button class="update-card-button" onclick="alert('${update.content}')">READ MORE</button>
-            </div>
-        `;
-        container.appendChild(updateCard);
     });
-}
 
-// ===================================
-// AUTHENTICATION
-// ===================================
 
-function handleLogin(event) {
-    event.preventDefault();
+    if (!game) {
 
-    const email = document.getElementById('loginEmail').value;
-    const password = document.getElementById('loginPassword').value;
+        console.error("Game not found:", gameId);
 
-    // Frontend validation only
-    if (!email || !password) {
-        showAuthMessage('loginMessage', 'Please fill in all fields', 'error');
         return;
+
     }
 
-    if (!email.includes('@')) {
-        showAuthMessage('loginMessage', 'Please enter a valid email', 'error');
+
+    currentGame = game;
+
+
+    const modal = document.getElementById("gameDetailsModal");
+
+    if (!modal) {
+
+        alert(
+            game.title +
+            "\n\n" +
+            game.description
+        );
+
         return;
+
     }
 
-    // Simulate successful login (FRONTEND ONLY - NOT SECURE)
-    const user = {
-        email: email,
-        username: email.split('@')[0],
-        memberSince: new Date().toLocaleDateString()
-    };
 
-    currentUser = user;
-    localStorage.setItem('gamingDockUser', JSON.stringify(user));
+    const detailsContainer =
+        modal.querySelector(".modal-content") ||
+        modal.querySelector(".game-details");
 
-    showAuthMessage('loginMessage', 'Login successful! Redirecting...', 'success');
-    
-    setTimeout(() => {
-        document.getElementById('loginForm').reset();
-        updateUserUI();
-        navigateTo('home');
-    }, 1500);
-}
 
-function handleRegister(event) {
-    event.preventDefault();
+    if (!detailsContainer) {
 
-    const username = document.getElementById('registerUsername').value;
-    const email = document.getElementById('registerEmail').value;
-    const password = document.getElementById('registerPassword').value;
-    const confirm = document.getElementById('registerConfirm').value;
+        console.warn("Modal content container not found.");
 
-    // Frontend validation
-    if (!username || !email || !password || !confirm) {
-        showAuthMessage('registerMessage', 'Please fill in all fields', 'error');
         return;
+
     }
 
-    if (username.length < 3) {
-        showAuthMessage('registerMessage', 'Username must be at least 3 characters', 'error');
-        return;
-    }
 
-    if (!email.includes('@')) {
-        showAuthMessage('registerMessage', 'Please enter a valid email', 'error');
-        return;
-    }
+    let downloadButtonHTML = "";
 
-    if (password.length < 6) {
-        showAuthMessage('registerMessage', 'Password must be at least 6 characters', 'error');
-        return;
-    }
-
-    if (password !== confirm) {
-        showAuthMessage('registerMessage', 'Passwords do not match', 'error');
-        return;
-    }
-
-    // Simulate successful registration
-    const user = {
-        email: email,
-        username: username,
-        memberSince: new Date().toLocaleDateString()
-    };
-
-    currentUser = user;
-    localStorage.setItem('gamingDockUser', JSON.stringify(user));
-
-    showAuthMessage('registerMessage', 'Registration successful! Redirecting to home...', 'success');
-    
-    setTimeout(() => {
-        document.getElementById('registerForm').reset();
-        updateUserUI();
-        navigateTo('home');
-    }, 1500);
-}
-
-function handleLogout() {
-    currentUser = null;
-    localStorage.removeItem('gamingDockUser');
-    updateUserUI();
-    navigateTo('home');
-    alert('You have been logged out');
-}
-
-function showAuthMessage(elementId, message, type) {
-    const messageElement = document.getElementById(elementId);
-    if (messageElement) {
-        messageElement.textContent = message;
-        messageElement.className = `auth-message ${type}`;
-    }
-}
-
-// ===================================
-// USER UI UPDATES
-// ===================================
-
-function updateUserUI() {
-    const profileNav = document.getElementById('profileNav');
-    const loginNav = document.getElementById('loginNav');
 
     if (currentUser) {
-        profileNav.style.display = 'block';
-        loginNav.style.display = 'none';
+
+        if (game.downloadUrl) {
+
+            downloadButtonHTML = `
+                <button
+                    class="btn btn-primary"
+                    onclick="downloadGame(${game.id})"
+                >
+                    DOWNLOAD GAME
+                </button>
+            `;
+
+        } else {
+
+            downloadButtonHTML = `
+                <button
+                    class="btn btn-primary"
+                    onclick="downloadGame(${game.id})"
+                >
+                    DOWNLOAD GAME
+                </button>
+
+                <p class="download-info">
+                    Download link will be available soon.
+                </p>
+            `;
+
+        }
+
     } else {
-        profileNav.style.display = 'none';
-        loginNav.style.display = 'block';
+
+        downloadButtonHTML = `
+            <button
+                class="btn btn-primary"
+                onclick="promptLogin()"
+            >
+                LOGIN TO DOWNLOAD
+            </button>
+
+            <p class="download-info">
+                You must be logged in to download this game.
+            </p>
+        `;
+
     }
+
+
+    detailsContainer.innerHTML = `
+
+        <button
+            class="modal-close"
+            onclick="closeGameDetails()"
+            aria-label="Close"
+        >
+            &times;
+        </button>
+
+        <div class="game-details-inner">
+
+            <img
+                class="game-details-cover"
+                src="${game.cover}"
+                alt="${escapeHTML(game.title)}"
+                onerror="this.src='https://via.placeholder.com/600x400?text=Gaming+Dock'"
+            >
+
+            <div class="game-details-info">
+
+                <span class="game-category">
+                    ${escapeHTML(game.category)}
+                </span>
+
+                <h2>${escapeHTML(game.title)}</h2>
+
+                <p class="game-description">
+                    ${escapeHTML(game.description)}
+                </p>
+
+                <div class="game-details-meta">
+
+                    <p>
+                        <strong>Genre:</strong>
+                        ${escapeHTML(game.genre)}
+                    </p>
+
+                    <p>
+                        <strong>Platform:</strong>
+                        ${escapeHTML(game.platform)}
+                    </p>
+
+                    <p>
+                        <strong>Release Year:</strong>
+                        ${escapeHTML(game.releaseYear)}
+                    </p>
+
+                </div>
+
+                <div class="download-area">
+                    ${downloadButtonHTML}
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="requirements">
+
+            <h3>System Requirements</h3>
+
+            <h4>Minimum</h4>
+
+            <p>
+                ${escapeHTML(game.systemRequirements.minimum)}
+            </p>
+
+            <h4>Recommended</h4>
+
+            <p>
+                ${escapeHTML(game.systemRequirements.recommended)}
+            </p>
+
+        </div>
+
+
+        <div class="screenshots">
+
+            <h3>Screenshots</h3>
+
+            <div class="screenshots-grid">
+
+                ${game.screenshots.map(function (image, index) {
+
+                    return `
+                        <img
+                            src="${image}"
+                            alt="${escapeHTML(game.title)} screenshot ${index + 1}"
+                            loading="lazy"
+                            onclick="openScreenshot('${image}')"
+                            onerror="this.src='https://via.placeholder.com/1000x550?text=Screenshot'"
+                        >
+                    `;
+
+                }).join("")}
+
+            </div>
+
+        </div>
+
+    `;
+
+
+    modal.classList.add("active");
+
+    document.body.style.overflow = "hidden";
+
 }
 
-function displayProfile() {
+
+/* =========================================================
+   CLOSE GAME DETAILS
+   ========================================================= */
+
+function closeGameDetails() {
+
+    const modal =
+        document.getElementById("gameDetailsModal");
+
+
+    if (modal) {
+
+        modal.classList.remove("active");
+
+    }
+
+
+    document.body.style.overflow = "";
+
+    currentGame = null;
+
+}
+
+
+/* =========================================================
+   SCREENSHOT
+   ========================================================= */
+
+function openScreenshot(imageUrl) {
+
+    window.open(imageUrl, "_blank");
+
+}
+
+
+/* =========================================================
+   DOWNLOAD GAME
+   ========================================================= */
+
+function downloadGame(gameId) {
+
+    const game = games.find(function (item) {
+
+        return item.id === Number(gameId);
+
+    });
+
+
+    if (!game) {
+
+        alert("Game not found.");
+
+        return;
+
+    }
+
+
     if (!currentUser) {
-        navigateTo('login');
+
+        alert(
+            "You must be logged in to download this game."
+        );
+
+        promptLogin();
+
         return;
+
     }
 
-    document.getElementById('profileUsername').textContent = currentUser.username;
-    document.getElementById('profileEmail').textContent = currentUser.email;
-    document.getElementById('profileUsernameDisplay').textContent = currentUser.username;
-    document.getElementById('profileEmailDisplay').textContent = currentUser.email;
-    document.getElementById('profileMemberSince').textContent = currentUser.memberSince;
+
+    if (!game.downloadUrl) {
+
+        alert(
+            "Download link will be available soon."
+        );
+
+        return;
+
+    }
+
+
+    window.location.href = game.downloadUrl;
+
 }
 
-// ===================================
-// CONTACT FORM
-// ===================================
 
-function handleContactForm(event) {
-    event.preventDefault();
+/* =========================================================
+   LOGIN PROMPT
+   ========================================================= */
 
-    const name = document.getElementById('contactName').value;
-    const email = document.getElementById('contactEmail').value;
-    const subject = document.getElementById('contactSubject').value;
-    const message = document.getElementById('contactMessage').value;
+function promptLogin() {
 
-    // Frontend validation
-    if (!name || !email || !subject || !message) {
-        showFormMessage('Please fill in all fields');
-        return;
-    }
+    closeGameDetails();
 
-    if (!email.includes('@')) {
-        showFormMessage('Please enter a valid email');
-        return;
-    }
+    navigateTo("login");
 
-    if (message.length < 10) {
-        showFormMessage('Message must be at least 10 characters');
-        return;
-    }
-
-    // Simulate form submission
-    console.log('Form Data:', { name, email, subject, message });
-    
-    showFormMessage('Message sent successfully! We will contact you soon.', 'success');
-    
-    setTimeout(() => {
-        document.getElementById('contactForm').reset();
-        showFormMessage('');
-    }, 2000);
 }
 
-function showFormMessage(message, type = 'error') {
-    // Create or update message element
-    let messageElement = document.querySelector('.form-message');
-    if (!messageElement) {
-        messageElement = document.createElement('div');
-        messageElement.className = 'form-message';
-        document.getElementById('contactForm').appendChild(messageElement);
+
+/* =========================================================
+   LOGIN
+   ========================================================= */
+
+function handleLogin() {
+
+    const emailInput =
+        document.getElementById("loginEmail");
+
+    const passwordInput =
+        document.getElementById("loginPassword");
+
+
+    if (!emailInput || !passwordInput) {
+
+        console.warn("Login form fields not found.");
+
+        return;
+
     }
 
-    messageElement.textContent = message;
-    messageElement.className = `form-message ${type}`;
+
+    const email = emailInput.value.trim();
+    const password = passwordInput.value;
+
+
+    if (!email || !password) {
+
+        showFormMessage(
+            "Please enter your email and password.",
+            "error"
+        );
+
+        return;
+
+    }
+
+
+    /*
+       DEMO FRONTEND LOGIN
+
+       This does NOT store the password.
+       For real production authentication,
+       use Firebase Auth, Supabase Auth,
+       Auth0 or a secure backend.
+    */
+
+
+    currentUser = {
+
+        name:
+            email
+                .split("@")[0]
+                .replace(/[._-]/g, " "),
+
+        email: email,
+
+        joined:
+            new Date().toLocaleDateString()
+
+    };
+
+
+    saveUserData();
+
+    updateUserUI();
+
+
+    showFormMessage(
+        "Login successful!",
+        "success"
+    );
+
+
+    setTimeout(function () {
+
+        navigateTo("profile");
+
+    }, 700);
+
 }
 
-// ===================================
-// COOKIE CONSENT
-// ===================================
+
+/* =========================================================
+   REGISTER
+   ========================================================= */
+
+function handleRegister() {
+
+    const nameInput =
+        document.getElementById("registerName");
+
+    const emailInput =
+        document.getElementById("registerEmail");
+
+    const passwordInput =
+        document.getElementById("registerPassword");
+
+    const confirmInput =
+        document.getElementById("registerConfirmPassword");
+
+
+    if (
+        !nameInput ||
+        !emailInput ||
+        !passwordInput
+    ) {
+
+        console.warn("Register form fields not found.");
+
+        return;
+
+    }
+
+
+    const name = nameInput.value.trim();
+    const email = emailInput.value.trim();
+    const password = passwordInput.value;
+
+    const confirmPassword =
+        confirmInput
+            ? confirmInput.value
+            : password;
+
+
+    if (!name || !email || !password) {
+
+        showFormMessage(
+            "Please fill in all required fields.",
+            "error"
+        );
+
+        return;
+
+    }
+
+
+    if (password.length < 6) {
+
+        showFormMessage(
+            "Password should contain at least 6 characters.",
+            "error"
+        );
+
+        return;
+
+    }
+
+
+    if (password !== confirmPassword) {
+
+        showFormMessage(
+            "Passwords do not match.",
+            "error"
+        );
+
+        return;
+
+    }
+
+
+    /*
+       DEMO ACCOUNT
+
+       Password is intentionally NOT saved
+       in localStorage.
+    */
+
+
+    currentUser = {
+
+        name: name,
+
+        email: email,
+
+        joined:
+            new Date().toLocaleDateString()
+
+    };
+
+
+    saveUserData();
+
+    updateUserUI();
+
+
+    showFormMessage(
+        "Account created successfully!",
+        "success"
+    );
+
+
+    setTimeout(function () {
+
+        navigateTo("profile");
+
+    }, 700);
+
+}
+
+
+/* =========================================================
+   LOGOUT
+   ========================================================= */
+
+function logout() {
+
+    currentUser = null;
+
+    saveUserData();
+
+    updateUserUI();
+
+    navigateTo("home");
+
+}
+
+
+/* =========================================================
+   UPDATE USER UI
+   ========================================================= */
+
+function updateUserUI() {
+
+    const profileNav =
+        document.getElementById("profileNav");
+
+    const loginNav =
+        document.getElementById("loginNav");
+
+
+    if (profileNav) {
+
+        profileNav.style.display =
+            currentUser ? "" : "none";
+
+    }
+
+
+    if (loginNav) {
+
+        loginNav.style.display =
+            currentUser ? "none" : "";
+
+    }
+
+
+    const userNameElements =
+        document.querySelectorAll(".user-name");
+
+
+    userNameElements.forEach(function (element) {
+
+        element.textContent =
+            currentUser
+                ? currentUser.name
+                : "Guest";
+
+    });
+
+}
+
+
+/* =========================================================
+   PROFILE
+   ========================================================= */
+
+function renderProfile() {
+
+    const profileContainer =
+        document.getElementById("profileContent");
+
+
+    if (!profileContainer) {
+
+        return;
+
+    }
+
+
+    if (!currentUser) {
+
+        profileContainer.innerHTML = `
+
+            <div class="profile-login-message">
+
+                <h2>Login Required</h2>
+
+                <p>
+                    Please login to view your Gaming Dock profile.
+                </p>
+
+                <button
+                    class="btn btn-primary"
+                    onclick="navigateTo('login')"
+                >
+                    LOGIN
+                </button>
+
+            </div>
+
+        `;
+
+        return;
+
+    }
+
+
+    profileContainer.innerHTML = `
+
+        <div class="profile-card">
+
+            <div class="profile-avatar">
+                ${escapeHTML(
+                    currentUser.name
+                        .charAt(0)
+                        .toUpperCase()
+                )}
+            </div>
+
+            <h2>
+                ${escapeHTML(currentUser.name)}
+            </h2>
+
+            <p>
+                ${escapeHTML(currentUser.email)}
+            </p>
+
+            <p>
+                Member since:
+                ${escapeHTML(currentUser.joined || "Recently")}
+            </p>
+
+            <button
+                class="btn btn-primary"
+                onclick="logout()"
+            >
+                LOGOUT
+            </button>
+
+        </div>
+
+    `;
+
+}
+
+
+/* =========================================================
+   UPDATES
+   ========================================================= */
+
+function renderUpdates() {
+
+    const container =
+        document.getElementById("updatesContainer");
+
+
+    if (!container) {
+
+        console.warn("updatesContainer not found.");
+
+        return;
+
+    }
+
+
+    container.innerHTML = "";
+
+
+    if (updates.length === 0) {
+
+        container.innerHTML = `
+
+            <div class="no-updates">
+
+                <h3>Latest Game Updates</h3>
+
+                <p>
+                    New Release Games Update will appear here.
+                </p>
+
+            </div>
+
+        `;
+
+        return;
+
+    }
+
+
+    updates.forEach(function (update) {
+
+        const card =
+            document.createElement("article");
+
+
+        card.className = "update-card";
+
+
+        card.innerHTML = `
+
+            <div class="update-image">
+
+                <img
+                    src="${update.image}"
+                    alt="${escapeHTML(update.title)}"
+                    loading="lazy"
+                    onerror="this.src='https://via.placeholder.com/700x400?text=Gaming+Dock+Update'"
+                >
+
+            </div>
+
+            <div class="update-content">
+
+                <span class="update-date">
+                    ${escapeHTML(update.date)}
+                </span>
+
+                <h3>
+                    ${escapeHTML(update.title)}
+                </h3>
+
+                <p>
+                    ${escapeHTML(update.description)}
+                </p>
+
+                <button
+                    class="btn btn-secondary"
+                    onclick="readUpdate(${update.id})"
+                >
+                    READ MORE
+                </button>
+
+            </div>
+
+        `;
+
+
+        container.appendChild(card);
+
+    });
+
+}
+
+
+/* =========================================================
+   READ UPDATE
+   ========================================================= */
+
+function readUpdate(updateId) {
+
+    const update =
+        updates.find(function (item) {
+
+            return item.id === Number(updateId);
+
+        });
+
+
+    if (!update) {
+
+        return;
+
+    }
+
+
+    alert(
+        update.title +
+        "\n\n" +
+        update.content
+    );
+
+}
+
+
+/* =========================================================
+   CONTACT FORM
+   ========================================================= */
+
+function handleContactForm() {
+
+    const name =
+        document.getElementById("contactName");
+
+    const email =
+        document.getElementById("contactEmail");
+
+    const subject =
+        document.getElementById("contactSubject");
+
+    const message =
+        document.getElementById("contactMessage");
+
+
+    if (!name || !email || !message) {
+
+        console.warn("Contact form fields not found.");
+
+        return;
+
+    }
+
+
+    if (
+        !name.value.trim() ||
+        !email.value.trim() ||
+        !message.value.trim()
+    ) {
+
+        showFormMessage(
+            "Please fill in all required fields.",
+            "error"
+        );
+
+        return;
+
+    }
+
+
+    /*
+       This is only frontend validation.
+
+       A static HTML/JS website cannot securely
+       send Gmail messages directly.
+
+       Connect a backend/email service later
+       for actual email delivery.
+    */
+
+
+    console.log("Gaming Dock Contact Form:", {
+
+        name: name.value.trim(),
+
+        email: email.value.trim(),
+
+        subject:
+            subject
+                ? subject.value.trim()
+                : "",
+
+        message: message.value.trim()
+
+    });
+
+
+    showFormMessage(
+        "Your message has been received. We will contact you soon.",
+        "success"
+    );
+
+
+    const form =
+        document.getElementById("contactForm");
+
+
+    if (form) {
+
+        form.reset();
+
+    }
+
+}
+
+
+/* =========================================================
+   FORM MESSAGE
+   ========================================================= */
+
+function showFormMessage(message, type) {
+
+    const messageElement =
+        document.getElementById("formMessage");
+
+
+    if (messageElement) {
+
+        messageElement.textContent = message;
+
+        messageElement.className =
+            "form-message " + type;
+
+        messageElement.style.display = "block";
+
+
+        setTimeout(function () {
+
+            messageElement.style.display = "none";
+
+        }, 4000);
+
+
+        return;
+
+    }
+
+
+    alert(message);
+
+}
+
+
+/* =========================================================
+   COOKIE CONSENT
+   ========================================================= */
 
 function setupCookieConsent() {
-    const cookieConsent = document.getElementById('cookieConsent');
-    const cookieAccept = document.getElementById('cookieAccept');
-    const cookieDecline = document.getElementById('cookieDecline');
 
-    // Check if user has already made a choice
-    const cookieChoice = localStorage.getItem('gamingDockCookieChoice');
-    if (!cookieChoice) {
-        cookieConsent.classList.add('active');
+    const cookieConsent =
+        document.getElementById("cookieConsent");
+
+
+    if (!cookieConsent) {
+
+        return;
+
     }
 
-    cookieAccept.addEventListener('click', function() {
-        localStorage.setItem('gamingDockCookieChoice', 'accepted');
-        cookieConsent.classList.remove('active');
-    });
 
-    cookieDecline.addEventListener('click', function() {
-        localStorage.setItem('gamingDockCookieChoice', 'declined');
-        cookieConsent.classList.remove('active');
-    });
+    const cookieChoice =
+        localStorage.getItem("gamingDockCookies");
+
+
+    if (cookieChoice) {
+
+        cookieConsent.style.display = "none";
+
+    } else {
+
+        cookieConsent.style.display = "block";
+
+    }
+
 }
 
-// ===================================
-// MODAL CLOSING
-// ===================================
 
-document.addEventListener('click', function(event) {
-    const modal = document.getElementById('gameDetailsModal');
-    if (event.target === modal) {
-        closeGameDetails();
+/* =========================================================
+   HIDE COOKIE CONSENT
+   ========================================================= */
+
+function hideCookieConsent() {
+
+    const cookieConsent =
+        document.getElementById("cookieConsent");
+
+
+    if (cookieConsent) {
+
+        cookieConsent.style.display = "none";
+
     }
-});
+
+}
+
+
+/* =========================================================
+   ESCAPE HTML
+   ========================================================= */
+
+function escapeHTML(value) {
+
+    if (value === undefined || value === null) {
+
+        return "";
+
+    }
+
+
+    return String(value)
+
+        .replace(/&/g, "&amp;")
+
+        .replace(/</g, "&lt;")
+
+        .replace(/>/g, "&gt;")
+
+        .replace(/"/g, "&quot;")
+
+        .replace(/'/g, "&#039;");
+
+}
+
+
+/* =========================================================
+   GLOBAL FUNCTIONS
+   ========================================================= */
+
+window.navigateTo = navigateTo;
+
+window.viewGameDetails = viewGameDetails;
+
+window.closeGameDetails = closeGameDetails;
+
+window.downloadGame = downloadGame;
+
+window.promptLogin = promptLogin;
+
+window.handleLogin = handleLogin;
+
+window.handleRegister = handleRegister;
+
+window.logout = logout;
+
+window.filterGames = filterGames;
+
+window.handleSearch = handleSearch;
+
+window.readUpdate = readUpdate;
+
+window.openScreenshot = openScreenshot;
+
+
+/* =========================================================
+   DEBUG MESSAGE
+   ========================================================= */
+
+console.log(
+    "Gaming Dock loaded:",
+    games.length,
+    "games and",
+    updates.length,
+    "updates."
+);
