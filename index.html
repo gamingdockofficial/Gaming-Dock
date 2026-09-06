@@ -3,238 +3,503 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gaming Dock - Your ultimate destination for discovering the latest games, updates, and gaming content. Explore action, adventure, racing, and more.">
-    <meta name="keywords" content="gaming, games, video games, gaming news, game updates, gaming platform">
-    <meta name="author" content="Gaming Dock">
-    
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Gaming Dock - Your Ultimate Gaming Destination">
-    <meta property="og:description" content="Discover the latest games, updates, and gaming content all in one place.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="./assets/og-image.jpg">
-    
-    <title>Gaming Dock - Your Ultimate Gaming Destination</title>
+    <title>Gaming Dock - Premium PC Gaming Platform</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <span class="logo-text">GAMING<span class="logo-accent">DOCK</span></span>
+    <!-- Cookie Consent Banner -->
+    <div id="cookieBanner" class="cookie-banner">
+        <div class="cookie-content">
+            <p>We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies. <a href="#privacy-policy">Privacy Policy</a></p>
+            <div class="cookie-buttons">
+                <button id="acceptCookies" class="btn-primary">Accept Cookies</button>
+                <button id="manageCookies" class="btn-secondary">Manage Preferences</button>
             </div>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#games" class="nav-link">Games</a></li>
-                <li><a href="#updates" class="nav-link">Updates</a></li>
-                <li><a href="#categories" class="nav-link">Categories</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
+        </div>
+    </div>
+
+    <!-- Cookie Preferences Modal -->
+    <div id="cookiePreferencesModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Cookie Preferences</h2>
+            <div class="cookie-options">
+                <div class="cookie-option">
+                    <label>
+                        <input type="checkbox" checked disabled>
+                        <span><strong>Essential Cookies</strong> - Required for basic site functionality</span>
+                    </label>
+                </div>
+                <div class="cookie-option">
+                    <label>
+                        <input type="checkbox" id="analyticsCookies">
+                        <span><strong>Analytics Cookies</strong> - Help us improve our website</span>
+                    </label>
+                </div>
+                <div class="cookie-option">
+                    <label>
+                        <input type="checkbox" id="marketingCookies">
+                        <span><strong>Marketing Cookies</strong> - Personalized content and ads</span>
+                    </label>
+                </div>
+            </div>
+            <button id="saveCookiePreferences" class="btn-primary">Save Preferences</button>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🎮</span>
+                <span class="logo-text">Gaming Dock</span>
+            </div>
+            
             <div class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-background">
-            <div class="hero-grid"></div>
-            <div class="hero-glow"></div>
-        </div>
-        <div class="hero-content">
-            <div class="hero-logo">
-                <span class="hero-logo-text">GAMING<span class="hero-logo-accent">DOCK</span></span>
-            </div>
-            <h1 class="hero-title">YOUR ULTIMATE GAMING DOCK</h1>
-            <p class="hero-description">Discover the latest games, updates, and gaming content all in one place. Your gaming journey starts here.</p>
-            <div class="hero-buttons">
-                <a href="#games" class="btn btn-primary">EXPLORE GAMES</a>
-                <a href="#updates" class="btn btn-secondary">LATEST UPDATES</a>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
-        </div>
-    </section>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#games" class="nav-link">Games</a></li>
+                <li><a href="#categories" class="nav-link">Categories</a></li>
+                <li><a href="#updates" class="nav-link">Updates</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
 
-    <!-- Games Section -->
-    <section class="games-section" id="games">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">EXPLORE GAMES</h2>
-                <p class="section-subtitle">Discover your next gaming adventure</p>
-            </div>
-
-            <!-- Search Bar -->
-            <div class="search-container">
-                <input type="text" id="searchInput" class="search-input" placeholder="Search games by name...">
-                <span class="search-icon">🔍</span>
-            </div>
-
-            <!-- Categories Filter -->
-            <div class="categories-filter" id="categories">
-                <button class="category-btn active" data-category="all">All Games</button>
-                <button class="category-btn" data-category="Action">Action</button>
-                <button class="category-btn" data-category="Adventure">Adventure</button>
-                <button class="category-btn" data-category="Racing">Racing</button>
-                <button class="category-btn" data-category="Simulator">Simulator</button>
-                <button class="category-btn" data-category="Story Mode">Story Mode</button>
-                <button class="category-btn" data-category="Open World">Open World</button>
-                <button class="category-btn" data-category="Multiplayer">Multiplayer</button>
-            </div>
-
-            <!-- Games Grid -->
-            <div class="games-grid" id="gamesGrid">
-                <!-- Games will be dynamically loaded here -->
-            </div>
-
-            <!-- No Results Message -->
-            <div class="no-results" id="noResults">
-                <p>No games found matching your search.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Latest Updates Section -->
-    <section class="updates-section" id="updates">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">LATEST GAME UPDATES</h2>
-                <p class="section-subtitle">Stay up to date with the gaming world</p>
-            </div>
-
-            <div class="updates-grid" id="updatesGrid">
-                <!-- Updates will be dynamically loaded here -->
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about-section" id="about">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">ABOUT GAMING DOCK</h2>
-                <p class="section-subtitle">Your ultimate gaming destination</p>
-            </div>
-            <div class="about-content">
-                <div class="about-card">
-                    <div class="about-icon">🎮</div>
-                    <h3>Extensive Game Library</h3>
-                    <p>Discover thousands of games across all genres and platforms. From indie gems to AAA titles.</p>
+            <div class="nav-actions">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search games..." class="search-input">
+                    <span class="search-icon">🔍</span>
                 </div>
-                <div class="about-card">
-                    <div class="about-icon">📰</div>
-                    <h3>Latest Updates</h3>
-                    <p>Stay informed with the latest gaming news, patches, and release announcements.</p>
-                </div>
-                <div class="about-card">
-                    <div class="about-icon">🌟</div>
-                    <h3>Curated Content</h3>
-                    <p>Hand-picked recommendations and detailed game information to help you choose your next adventure.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact-section" id="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">GET IN TOUCH</h2>
-                <p class="section-subtitle">Have questions? We'd love to hear from you</p>
-            </div>
-            <div class="contact-content">
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <input type="text" id="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">SEND MESSAGE</button>
-                </form>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <h3>Email</h3>
-                        <p>contact@gamingdock.com</p>
-                    </div>
-                    <div class="contact-item">
-                        <h3>Follow Us</h3>
-                        <div class="social-links">
-                            <a href="#" class="social-link">Facebook</a>
-                            <a href="#" class="social-link">Twitter</a>
-                            <a href="#" class="social-link">Instagram</a>
-                            <a href="#" class="social-link">Discord</a>
+                <button id="loginBtn" class="btn-login">Login</button>
+                <div id="userProfile" class="user-profile" style="display: none;">
+                    <div class="profile-dropdown">
+                        <span class="profile-name"></span>
+                        <div class="dropdown-content">
+                            <p class="profile-email"></p>
+                            <button id="logoutBtn" class="btn-logout">Logout</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </nav>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <span class="logo-text">GAMING<span class="logo-accent">DOCK</span></span>
-                    </div>
-                    <p class="footer-description">Your ultimate destination for gaming. Discover, explore, and stay updated with the latest in the gaming world.</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#games">Games</a></li>
-                        <li><a href="#updates">Updates</a></li>
-                        <li><a href="#about">About</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Categories</h3>
-                    <ul class="footer-links">
-                        <li><a href="#games">Action</a></li>
-                        <li><a href="#games">Adventure</a></li>
-                        <li><a href="#games">Racing</a></li>
-                        <li><a href="#games">Multiplayer</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Connect</h3>
-                    <div class="social-links">
-                        <a href="#" class="social-link">Facebook</a>
-                        <a href="#" class="social-link">Twitter</a>
-                        <a href="#" class="social-link">Instagram</a>
-                        <a href="#" class="social-link">Discord</a>
-                    </div>
+    <!-- Main Content -->
+    <main id="mainContent">
+        <!-- Home Section -->
+        <section id="home" class="section">
+            <!-- Featured Banner -->
+            <div class="featured-banner">
+                <div class="banner-overlay"></div>
+                <div class="banner-content">
+                    <h1 class="banner-title">Featured Game</h1>
+                    <p class="banner-subtitle">Experience the ultimate gaming adventure</p>
+                    <button class="btn-primary banner-btn">Explore Now</button>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Gaming Dock. All rights reserved.</p>
+
+            <!-- Featured Games -->
+            <div class="games-section">
+                <h2 class="section-title">Featured Games</h2>
+                <div id="featuredGames" class="games-grid"></div>
             </div>
+
+            <!-- Popular Games -->
+            <div class="games-section">
+                <h2 class="section-title">Popular Games</h2>
+                <div id="popularGames" class="games-grid"></div>
+            </div>
+
+            <!-- Latest Games -->
+            <div class="games-section">
+                <h2 class="section-title">Latest Games</h2>
+                <div id="latestGames" class="games-grid"></div>
+            </div>
+        </section>
+
+        <!-- Games Section -->
+        <section id="games" class="section" style="display: none;">
+            <h2 class="page-title">All Games</h2>
+            <div id="allGames" class="games-grid"></div>
+        </section>
+
+        <!-- Categories Section -->
+        <section id="categories" class="section" style="display: none;">
+            <h2 class="page-title">Browse by Category</h2>
+            <div class="category-filters">
+                <button class="category-btn active" data-category="All">All</button>
+                <button class="category-btn" data-category="Action">Action</button>
+                <button class="category-btn" data-category="Adventure">Adventure</button>
+                <button class="category-btn" data-category="Racing">Racing</button>
+                <button class="category-btn" data-category="Open World">Open World</button>
+                <button class="category-btn" data-category="Story">Story</button>
+                <button class="category-btn" data-category="Simulator">Simulator</button>
+                <button class="category-btn" data-category="Sports">Sports</button>
+            </div>
+            <div id="categoryGames" class="games-grid"></div>
+        </section>
+
+        <!-- Updates Section -->
+        <section id="updates" class="section" style="display: none;">
+            <h2 class="page-title">Latest Updates</h2>
+            <div class="updates-container">
+                <div class="update-card">
+                    <span class="update-date">December 2024</span>
+                    <h3>New Games Added</h3>
+                    <p>We've added 5 new exciting games to our collection. Check out the latest releases in racing and adventure genres.</p>
+                </div>
+                <div class="update-card">
+                    <span class="update-date">November 2024</span>
+                    <h3>Platform Improvements</h3>
+                    <p>Enhanced search functionality and improved download speeds. Better mobile experience across all devices.</p>
+                </div>
+                <div class="update-card">
+                    <span class="update-date">October 2024</span>
+                    <h3>New Categories</h3>
+                    <p>Introduced new game categories including Simulator and Sports. Find your favorite games easier than ever.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section" style="display: none;">
+            <h2 class="page-title">About Gaming Dock</h2>
+            <div class="about-content">
+                <p>Gaming Dock is your premium destination for discovering and downloading PC games. We offer a curated collection of games across multiple genres, from action-packed adventures to immersive simulators.</p>
+                <p>Our platform is designed with gamers in mind, providing detailed game information, system requirements, and screenshots to help you make informed decisions about your next gaming experience.</p>
+                <h3>Our Mission</h3>
+                <p>To provide a seamless, secure, and enjoyable platform for gamers worldwide to discover and access their favorite games.</p>
+                <h3>Features</h3>
+                <ul>
+                    <li>Extensive game library across multiple genres</li>
+                    <li>Detailed game information and screenshots</li>
+                    <li>System requirements for informed decisions</li>
+                    <li>Secure download management</li>
+                    <li>Mobile-friendly interface</li>
+                    <li>Regular updates with new games</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section" style="display: none;">
+            <h2 class="page-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>Have questions or need support? We're here to help!</p>
+                    <p><strong>Email:</strong> <a href="mailto:gamingdockofficial@gmail.com">gamingdockofficial@gmail.com</a></p>
+                </div>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="contactName">Name</label>
+                        <input type="text" id="contactName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactEmail">Email</label>
+                        <input type="email" id="contactEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactSubject">Subject</label>
+                        <input type="text" id="contactSubject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactMessage">Message</label>
+                        <textarea id="contactMessage" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                    <p class="form-note">Note: This is a frontend form. Backend integration required to send emails.</p>
+                </form>
+            </div>
+        </section>
+
+        <!-- Privacy Policy Section -->
+        <section id="privacy-policy" class="section" style="display: none;">
+            <h2 class="page-title">Privacy Policy</h2>
+            <div class="legal-content">
+                <p><strong>Last Updated:</strong> December 2024</p>
+                
+                <h3>1. Information We Collect</h3>
+                <p>When you register for an account on Gaming Dock, we collect:</p>
+                <ul>
+                    <li>Username</li>
+                    <li>Email address</li>
+                    <li>Password (encrypted and stored securely on our servers)</li>
+                </ul>
+
+                <h3>2. Cookies</h3>
+                <p>We use cookies to enhance your experience on our website. Cookies help us:</p>
+                <ul>
+                    <li>Remember your login status</li>
+                    <li>Save your preferences</li>
+                    <li>Improve our services through analytics</li>
+                </ul>
+
+                <h3>3. Authentication</h3>
+                <p><strong>Important Security Note:</strong> Gaming Dock does NOT store passwords in browser localStorage or any client-side storage. All authentication is handled server-side with industry-standard encryption and security practices.</p>
+                <p>Your password is:</p>
+                <ul>
+                    <li>Encrypted using secure hashing algorithms</li>
+                    <li>Never stored in plain text</li>
+                    <li>Never visible to our staff</li>
+                    <li>Transmitted only over secure HTTPS connections</li>
+                </ul>
+
+                <h3>4. Downloads</h3>
+                <p>When you download games from Gaming Dock:</p>
+                <ul>
+                    <li>You must be logged in to access download links</li>
+                    <li>Downloads are tracked for security and analytics purposes</li>
+                    <li>Download URLs are protected and require authentication</li>
+                </ul>
+
+                <h3>5. Third-Party Services</h3>
+                <p>We may use third-party services for:</p>
+                <ul>
+                    <li>CAPTCHA verification (Cloudflare Turnstile)</li>
+                    <li>Analytics and website improvement</li>
+                    <li>Content delivery and hosting</li>
+                </ul>
+
+                <h3>6. Data Security</h3>
+                <p>We implement industry-standard security measures to protect your data:</p>
+                <ul>
+                    <li>HTTPS encryption for all data transmission</li>
+                    <li>Secure server-side password hashing</li>
+                    <li>Regular security audits</li>
+                    <li>Protection against common web vulnerabilities</li>
+                </ul>
+
+                <h3>7. Your Rights</h3>
+                <p>You have the right to:</p>
+                <ul>
+                    <li>Access your personal data</li>
+                    <li>Request data correction or deletion</li>
+                    <li>Opt-out of marketing communications</li>
+                    <li>Withdraw consent for data processing</li>
+                </ul>
+
+                <h3>8. Contact</h3>
+                <p>For privacy-related questions or requests, contact us at: <a href="mailto:gamingdockofficial@gmail.com">gamingdockofficial@gmail.com</a></p>
+            </div>
+        </section>
+
+        <!-- Terms & Conditions Section -->
+        <section id="terms" class="section" style="display: none;">
+            <h2 class="page-title">Terms & Conditions</h2>
+            <div class="legal-content">
+                <p><strong>Last Updated:</strong> December 2024</p>
+
+                <h3>1. Website Usage</h3>
+                <p>By accessing and using Gaming Dock, you agree to comply with these terms and conditions. Gaming Dock is a platform for discovering and downloading PC games.</p>
+
+                <h3>2. Accounts</h3>
+                <p>To download games, you must create an account. You agree to:</p>
+                <ul>
+                    <li>Provide accurate and complete information</li>
+                    <li>Maintain the security of your account credentials</li>
+                    <li>Not share your account with others</li>
+                    <li>Notify us immediately of any unauthorized access</li>
+                    <li>Use a unique username not already registered</li>
+                </ul>
+
+                <h3>3. Downloads</h3>
+                <p>Games available for download on Gaming Dock:</p>
+                <ul>
+                    <li>Are provided for personal, non-commercial use</li>
+                    <li>May be subject to their own license agreements</li>
+                    <li>Require you to be logged in to access</li>
+                    <li>May have system requirements that must be met</li>
+                </ul>
+                <p><strong>Download Protection:</strong> While our frontend requires login to display download buttons, real server-side authentication and authorization are required to prevent direct access to protected files. Direct URL access to game files is prevented through server-side security measures.</p>
+
+                <h3>4. User Responsibilities</h3>
+                <p>You agree not to:</p>
+                <ul>
+                    <li>Use the website for any illegal purposes</li>
+                    <li>Attempt to bypass security measures</li>
+                    <li>Distribute downloaded games without authorization</li>
+                    <li>Upload malicious content or viruses</li>
+                    <li>Impersonate other users or entities</li>
+                </ul>
+
+                <h3>5. Intellectual Property</h3>
+                <p>All content on Gaming Dock, including logos, designs, and text, is protected by copyright and trademark laws. Games are property of their respective publishers and developers.</p>
+
+                <h3>6. External Links</h3>
+                <p>Gaming Dock may contain links to external websites. We are not responsible for the content or privacy practices of these sites.</p>
+
+                <h3>7. Disclaimers</h3>
+                <p>Gaming Dock is provided "as is" without warranties of any kind. We do not guarantee:</p>
+                <ul>
+                    <li>Uninterrupted or error-free service</li>
+                    <li>That games will work on all systems</li>
+                    <li>Availability of specific games at all times</li>
+                </ul>
+
+                <h3>8. Limitation of Liability</h3>
+                <p>Gaming Dock shall not be liable for any damages arising from your use of the website or downloaded games, including but not limited to direct, indirect, incidental, or consequential damages.</p>
+
+                <h3>9. Changes to Terms</h3>
+                <p>We reserve the right to modify these terms at any time. Continued use of the website after changes constitutes acceptance of the new terms.</p>
+
+                <h3>10. Contact</h3>
+                <p>For questions about these terms, contact us at: <a href="mailto:gamingdockofficial@gmail.com">gamingdockofficial@gmail.com</a></p>
+            </div>
+        </section>
+                    </main>
+
+        <!-- Game Details Modal -->
+    <div id="gameDetailsModal" class="modal">
+        <div class="modal-content game-details">
+            <span class="close-modal">&times;</span>
+            <div id="gameDetailsContent"></div>
         </div>
-    </footer>
+    </div>
 
-    <!-- Game Detail Modal -->
-    <div class="modal" id="gameModal">
-        <div class="modal-content">
-            <span class="modal-close" id="modalClose">&times;</span>
-            <div class="modal-body" id="modalBody">
-                <!-- Game details will be loaded here -->
+    <!-- Screenshot Lightbox -->
+    <div id="screenshotLightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img id="lightboxImage" src="" alt="">
+        <button class="lightbox-prev">❮</button>
+        <button class="lightbox-next">❯</button>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content auth-modal">
+            <span class="close-modal">&times;</span>
+            <h2>Login to Gaming Dock</h2>
+            
+            <!-- CAPTCHA Placeholder -->
+            <div class="captcha-placeholder">
+                <p><strong>CAPTCHA Integration Area</strong></p>
+                <p>To integrate Cloudflare Turnstile or similar CAPTCHA:</p>
+                <ol>
+                    <li>Sign up for Cloudflare Turnstile at cloudflare.com</li>
+                    <li>Get your site key and secret key</li>
+                    <li>Add the Turnstile script to this page</li>
+                    <li>Insert the widget div here: <code>&lt;div class="cf-turnstile"&gt;</code></li>
+                    <li>Verify the token server-side (backend required)</li>
+                </ol>
+                <p><em>Never expose secret keys in frontend code!</em></p>
+            </div>
+
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginUsername">Username or Email</label>
+                    <input type="text" id="loginUsername" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="btn-primary">Login</button>
+                <p class="auth-switch">Don't have an account? <span id="showRegister" class="link">Register</span></p>
+            </form>
+            
+            <div class="backend-note">
+                <p><strong>⚠️ Backend Required:</strong></p>
+                <p>This is a frontend interface only. For real authentication, you need:</p>
+                <ul>
+                    <li>A backend server (Node.js, Python, PHP, etc.)</li>
+                    <li>Database to store user credentials securely</li>
+                    <li>Password hashing (bcrypt, Argon2, etc.)</li>
+                    <li>Session management or JWT tokens</li>
+                    <li>HTTPS for secure data transmission</li>
+                </ul>
+                <p><strong>Do NOT store passwords in localStorage!</strong> This demo uses localStorage only to demonstrate frontend functionality.</p>
             </div>
         </div>
     </div>
+
+    <!-- Register Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content auth-modal">
+            <span class="close-modal">&times;</span>
+            <h2>Register for Gaming Dock</h2>
+            
+            <!-- CAPTCHA Placeholder -->
+            <div class="captcha-placeholder">
+                <p><strong>CAPTCHA Integration Area</strong></p>
+                <p>Add CAPTCHA verification here to prevent automated registrations.</p>
+            </div>
+
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="registerUsername">Username</label>
+                    <input type="text" id="registerUsername" required>
+                    <span id="usernameStatus" class="validation-status"></span>
+                </div>
+                <div class="form-group">
+                    <label for="registerEmail">Email</label>
+                    <input type="email" id="registerEmail" required>
+                    <span id="emailStatus" class="validation-status"></span>
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword">Password</label>
+                    <input type="password" id="registerPassword" required minlength="6">
+                </div>
+                <div class="form-group">
+                    <label for="registerConfirmPassword">Confirm Password</label>
+                    <input type="password" id="registerConfirmPassword" required>
+                </div>
+                <button type="submit" class="btn-primary">Register</button>
+                <p class="auth-switch">Already have an account? <span id="showLogin" class="link">Login</span></p>
+            </form>
+
+            <div class="backend-note">
+                <p><strong>⚠️ Backend Required:</strong></p>
+                <p>Real registration requires server-side processing to:</p>
+                <ul>
+                    <li>Validate username and email uniqueness</li>
+                    <li>Hash passwords securely (never store plain text!)</li>
+                    <li>Store user data in a database</li>
+                    <li>Send verification emails</li>
+                    <li>Implement rate limiting</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Gaming Dock</h3>
+                <p>Your premium destination for PC gaming.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#games">Games</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#privacy-policy" class="footer-link">Privacy Policy</a></li>
+                    <li><a href="#terms" class="footer-link">Terms & Conditions</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: <a href="mailto:gamingdockofficial@gmail.com">gamingdockofficial@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Gaming Dock. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
